@@ -1,0 +1,25 @@
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\bin\Release\Serial_Communication.exe.manifest
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\bin\Release\Serial_Communication.application
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\bin\Release\Serial_Communication.exe
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\bin\Release\Serial_Communication.pdb
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.Form1.resources
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.Properties.Resources.resources
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.exe.manifest
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.application
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.exe
+C:\Documents and Settings\1007805\My Documents\Visual Studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.pdb
+D:\Student\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.exe
+D:\Student\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.pdb
+D:\Student\Serial_Communication\Serial_Communication\bin\Release\Serial_Communication.exe.manifest
+D:\Student\Serial_Communication\Serial_Communication\bin\Release\Serial_Communication.application
+D:\Student\Serial_Communication\Serial_Communication\bin\Release\Serial_Communication.exe
+D:\Student\Serial_Communication\Serial_Communication\bin\Release\Serial_Communication.pdb
+D:\Student\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.csprojResolveAssemblyReference.cache
+D:\Student\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.Form1.resources
+D:\Student\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.Properties.Resources.resources
+D:\Student\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.csproj.GenerateResource.Cache
+D:\Student\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.exe.manifest
+D:\Student\Serial_Communication\Serial_Communication\obj\x86\Release\Serial_Communication.application

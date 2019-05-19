@@ -1,0 +1,16 @@
+C:\Documents and Settings\1007805\my documents\visual studio 2010\Projects\Serial_Communication\Serial_Communication\bin\Debug\Serial_Communication.exe
+C:\Documents and Settings\1007805\my documents\visual studio 2010\Projects\Serial_Communication\Serial_Communication\bin\Debug\Serial_Communication.pdb
+C:\Documents and Settings\1007805\my documents\visual studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\1007805\my documents\visual studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Debug\Serial_Communication.Form1.resources
+C:\Documents and Settings\1007805\my documents\visual studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Debug\Serial_Communication.Properties.Resources.resources
+C:\Documents and Settings\1007805\my documents\visual studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\1007805\my documents\visual studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\1007805\my documents\visual studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Debug\Serial_Communication.exe
+C:\Documents and Settings\1007805\my documents\visual studio 2010\Projects\Serial_Communication\Serial_Communication\obj\x86\Debug\Serial_Communication.pdb
+C:\Users\User\Downloads\Serial_Communication_Project\Serial_Communication\obj\x86\Debug\Serial_Communication.csprojAssemblyReference.cache
+C:\Users\User\Downloads\Serial_Communication_Project\Serial_Communication\obj\x86\Debug\Serial_Communication.Form1.resources
+C:\Users\User\Downloads\Serial_Communication_Project\Serial_Communication\obj\x86\Debug\Serial_Communication.Properties.Resources.resources
+C:\Users\User\Downloads\Serial_Communication_Project\Serial_Communication\obj\x86\Debug\Serial_Communication.csproj.GenerateResource.cache
+C:\Users\User\Downloads\Serial_Communication_Project\Serial_Communication\obj\x86\Debug\Serial_Communication.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Serial_Communication_Project\Serial_Communication\obj\x86\Debug\Serial_Communication.exe
+C:\Users\User\Downloads\Serial_Communication_Project\Serial_Communication\obj\x86\Debug\Serial_Communication.pdb

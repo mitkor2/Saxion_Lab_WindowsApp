@@ -1,0 +1,22 @@
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\bin\Debug\kayChartTest.exe.config
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\bin\Debug\kayChartTest.exe
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\bin\Debug\kayChartTest.pdb
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\bin\Debug\kayChart.dll
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\obj\Debug\kayChartTest.csprojResolveAssemblyReference.cache
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\obj\Debug\kayChartTest.Form1.resources
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\obj\Debug\kayChartTest.Properties.Resources.resources
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\obj\Debug\kayChartTest.csproj.GenerateResource.Cache
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\obj\Debug\kayChartTest.exe
+c:\users\x3rv1th\documents\visual studio 2015\Projects\kayChartTest\kayChartTest\obj\Debug\kayChartTest.pdb
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\bin\Debug\kayChartTest.exe.config
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\bin\Debug\kayChartTest.exe
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\bin\Debug\kayChartTest.pdb
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\bin\Debug\kayChart.dll
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\obj\Debug\kayChartTest.csprojAssemblyReference.cache
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\obj\Debug\kayChartTest.Form1.resources
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\obj\Debug\kayChartTest.Properties.Resources.resources
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\obj\Debug\kayChartTest.csproj.GenerateResource.cache
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\obj\Debug\kayChartTest.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\obj\Debug\kayChartTest.csproj.CopyComplete
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\obj\Debug\kayChartTest.exe
+C:\Users\User\Downloads\kayChartTest-master\kayChartTest\kayChartTest\obj\Debug\kayChartTest.pdb

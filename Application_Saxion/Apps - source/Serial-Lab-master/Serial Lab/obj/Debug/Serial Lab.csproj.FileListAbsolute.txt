@@ -1,0 +1,5 @@
+C:\Users\User\Downloads\Serial-Lab-master\Serial Lab\obj\Debug\Serial Lab.csprojAssemblyReference.cache
+C:\Users\User\Downloads\Serial-Lab-master\Serial Lab\obj\Debug\Seriallab.AboutBox1.resources
+C:\Users\User\Downloads\Serial-Lab-master\Serial Lab\obj\Debug\Seriallab.MainForm.resources
+C:\Users\User\Downloads\Serial-Lab-master\Serial Lab\obj\Debug\Seriallab.Properties.Resources.resources
+C:\Users\User\Downloads\Serial-Lab-master\Serial Lab\obj\Debug\Serial Lab.csproj.GenerateResource.cache
