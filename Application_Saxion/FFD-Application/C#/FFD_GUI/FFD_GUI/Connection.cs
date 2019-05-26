@@ -108,7 +108,7 @@ namespace FFD_GUI
             try
             {
                 //split data receive from serialport
-                arrList = serialPort1.ReadLine().Split(',');
+                arrList = serialPort1.ReadLine().Split(';');
                 this.mainForm.port_sensor1 = arrList[0];
                 this.mainForm.port_sensor2 = arrList[1];
                 this.mainForm.port_sensor3 = arrList[2];
@@ -122,6 +122,23 @@ namespace FFD_GUI
                 this.mainForm.port_sensor11 = arrList[10];
                 this.mainForm.port_sensor12 = arrList[11];
                 this.mainForm.port_sensor13 = arrList[12];
+                this.mainForm.port_sensor14 = arrList[13];
+                this.mainForm.port_sensor15 = arrList[14];
+                this.mainForm.port_sensor16 = arrList[15];
+                this.mainForm.port_sensor17 = arrList[16];
+                this.mainForm.port_sensor18 = arrList[17];
+                this.mainForm.port_sensor19 = arrList[18];
+                this.mainForm.port_sensor20 = arrList[19];
+                this.mainForm.port_sensor21 = arrList[20];
+                this.mainForm.port_sensor22 = arrList[21];
+                this.mainForm.port_sensor23 = arrList[22];
+                this.mainForm.port_sensor24 = arrList[23];
+                this.mainForm.port_sensor25 = arrList[24];
+                this.mainForm.port_sensor26 = arrList[25];
+                this.mainForm.port_sensor27 = arrList[26];
+                this.mainForm.port_sensor28 = arrList[27];
+                this.mainForm.port_sensor29 = arrList[28];
+               
 
             }
             catch
@@ -251,3 +268,5 @@ namespace FFD_GUI
         }
     }
 }
+
+

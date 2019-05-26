@@ -21,5 +21,21 @@ namespace FFD_GUI
         {
 
         }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+
+            System.Diagnostics.Process.Start("https://robor.nl");
+        }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.saxion.nl/onderzoek/smart-industry/advanced-forensic-technology");
+        }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.brandweer.nl/twente");
+        }
     }
 }

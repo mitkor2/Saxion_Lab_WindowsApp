@@ -47,10 +47,10 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.datalogger_options_panel = new System.Windows.Forms.Panel();
+            this.datalogger_append_radiobutton = new System.Windows.Forms.RadioButton();
             this.datalogger_checkbox = new System.Windows.Forms.CheckBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.alert_messege = new System.Windows.Forms.NotifyIcon(this.components);
-            this.datalogger_append_radiobutton = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -228,6 +228,20 @@
             this.datalogger_options_panel.Size = new System.Drawing.Size(338, 37);
             this.datalogger_options_panel.TabIndex = 28;
             // 
+            // datalogger_append_radiobutton
+            // 
+            this.datalogger_append_radiobutton.AutoSize = true;
+            this.datalogger_append_radiobutton.Checked = true;
+            this.datalogger_append_radiobutton.Enabled = false;
+            this.datalogger_append_radiobutton.Location = new System.Drawing.Point(205, 9);
+            this.datalogger_append_radiobutton.Margin = new System.Windows.Forms.Padding(4);
+            this.datalogger_append_radiobutton.Name = "datalogger_append_radiobutton";
+            this.datalogger_append_radiobutton.Size = new System.Drawing.Size(78, 21);
+            this.datalogger_append_radiobutton.TabIndex = 28;
+            this.datalogger_append_radiobutton.TabStop = true;
+            this.datalogger_append_radiobutton.Text = "Append";
+            this.datalogger_append_radiobutton.UseVisualStyleBackColor = true;
+            // 
             // datalogger_checkbox
             // 
             this.datalogger_checkbox.AutoSize = true;
@@ -256,20 +270,6 @@
             // 
             this.alert_messege.Text = "notifyIcon1";
             this.alert_messege.Visible = true;
-            // 
-            // datalogger_append_radiobutton
-            // 
-            this.datalogger_append_radiobutton.AutoSize = true;
-            this.datalogger_append_radiobutton.Checked = true;
-            this.datalogger_append_radiobutton.Enabled = false;
-            this.datalogger_append_radiobutton.Location = new System.Drawing.Point(205, 9);
-            this.datalogger_append_radiobutton.Margin = new System.Windows.Forms.Padding(4);
-            this.datalogger_append_radiobutton.Name = "datalogger_append_radiobutton";
-            this.datalogger_append_radiobutton.Size = new System.Drawing.Size(78, 21);
-            this.datalogger_append_radiobutton.TabIndex = 28;
-            this.datalogger_append_radiobutton.TabStop = true;
-            this.datalogger_append_radiobutton.Text = "Append";
-            this.datalogger_append_radiobutton.UseVisualStyleBackColor = true;
             // 
             // Connection
             // 

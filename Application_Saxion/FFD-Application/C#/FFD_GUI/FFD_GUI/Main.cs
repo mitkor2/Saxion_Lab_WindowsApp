@@ -29,8 +29,8 @@ namespace FFD_GUI
         }
         class Datacon
         {
-            public string[] rdata = new string[13];
-            public string[] dataport_sensor = new string[13];
+            public string[] rdata = new string[28];
+            public string[] dataport_sensor = new string[28];
         }
         Datacon d = new Datacon();
         Settings u = new Settings();
@@ -60,6 +60,22 @@ namespace FFD_GUI
         public string port_sensor11 { get { return d.rdata[10]; } set { d.dataport_sensor[10] = value; } }
         public string port_sensor12 { get { return d.rdata[11]; } set { d.dataport_sensor[11] = value; } }
         public string port_sensor13 { get { return d.rdata[12]; } set { d.dataport_sensor[12] = value; } }
+        public string port_sensor14 { get { return d.rdata[13]; } set { d.dataport_sensor[13] = value; } }
+        public string port_sensor15 { get { return d.rdata[14]; } set { d.dataport_sensor[14] = value; } }
+        public string port_sensor16 { get { return d.rdata[15]; } set { d.dataport_sensor[15] = value; } }
+        public string port_sensor17 { get { return d.rdata[16]; } set { d.dataport_sensor[16] = value; } }
+        public string port_sensor18 { get { return d.rdata[17]; } set { d.dataport_sensor[17] = value; } }
+        public string port_sensor19 { get { return d.rdata[18]; } set { d.dataport_sensor[18] = value; } }
+        public string port_sensor20 { get { return d.rdata[19]; } set { d.dataport_sensor[19] = value; } }
+        public string port_sensor21 { get { return d.rdata[20]; } set { d.dataport_sensor[20] = value; } }
+        public string port_sensor22 { get { return d.rdata[21]; } set { d.dataport_sensor[21] = value; } }
+        public string port_sensor23 { get { return d.rdata[22]; } set { d.dataport_sensor[22] = value; } }
+        public string port_sensor24 { get { return d.rdata[23]; } set { d.dataport_sensor[23] = value; } }
+        public string port_sensor25 { get { return d.rdata[24]; } set { d.dataport_sensor[24] = value; } }
+        public string port_sensor26 { get { return d.rdata[25]; } set { d.dataport_sensor[25] = value; } }
+        public string port_sensor27 { get { return d.rdata[26]; } set { d.dataport_sensor[26] = value; } }
+        public string port_sensor28 { get { return d.rdata[27]; } set { d.dataport_sensor[27] = value; } }
+        public string port_sensor29 { get { return d.rdata[28]; } set { d.dataport_sensor[28] = value; } }
         public string value_sensor1_y { get { return u.returndata[0]; } set { u.Yaxis[0] = value; } }
         public string value_sensor2_y { get { return u.returndata[1]; } set { u.Yaxis[1] = value; } }
         public string value_sensor3_y { get { return u.returndata[2]; } set { u.Yaxis[2] = value; } }
@@ -452,6 +468,7 @@ namespace FFD_GUI
         private void Timer1_Tick(object sender, EventArgs e)
         {
             Draw();
+           // d.dataport_sensor[0] = 
             //display value on graph
             // text color and value
             lblsensor1.ForeColor = Color.Blue;
