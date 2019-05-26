@@ -38,6 +38,10 @@
             this.lblPort = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbStopbits = new System.Windows.Forms.ComboBox();
+            this.cbParity = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbDatabits = new System.Windows.Forms.ComboBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
@@ -51,10 +55,6 @@
             this.datalogger_checkbox = new System.Windows.Forms.CheckBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.alert_messege = new System.Windows.Forms.NotifyIcon(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbParity = new System.Windows.Forms.ComboBox();
-            this.cbStopbits = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -156,6 +156,46 @@
             this.groupBox1.Text = "Config";
             this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
+            // cbStopbits
+            // 
+            this.cbStopbits.FormattingEnabled = true;
+            this.cbStopbits.Location = new System.Drawing.Point(90, 178);
+            this.cbStopbits.Margin = new System.Windows.Forms.Padding(4);
+            this.cbStopbits.Name = "cbStopbits";
+            this.cbStopbits.Size = new System.Drawing.Size(124, 28);
+            this.cbStopbits.TabIndex = 11;
+            // 
+            // cbParity
+            // 
+            this.cbParity.FormattingEnabled = true;
+            this.cbParity.Location = new System.Drawing.Point(90, 108);
+            this.cbParity.Margin = new System.Windows.Forms.Padding(4);
+            this.cbParity.Name = "cbParity";
+            this.cbParity.Size = new System.Drawing.Size(124, 28);
+            this.cbParity.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 116);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Parity";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 186);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Stop Bits";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -226,6 +266,7 @@
             this.groupBox2.TabIndex = 51;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Data logger";
+            this.groupBox2.Enter += new System.EventHandler(this.GroupBox2_Enter);
             // 
             // datalogger_options_panel
             // 
@@ -279,46 +320,6 @@
             // 
             this.alert_messege.Text = "notifyIcon1";
             this.alert_messege.Visible = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 186);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Stop Bits";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 116);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Parity";
-            // 
-            // cbParity
-            // 
-            this.cbParity.FormattingEnabled = true;
-            this.cbParity.Location = new System.Drawing.Point(90, 108);
-            this.cbParity.Margin = new System.Windows.Forms.Padding(4);
-            this.cbParity.Name = "cbParity";
-            this.cbParity.Size = new System.Drawing.Size(124, 28);
-            this.cbParity.TabIndex = 10;
-            // 
-            // cbStopbits
-            // 
-            this.cbStopbits.FormattingEnabled = true;
-            this.cbStopbits.Location = new System.Drawing.Point(90, 178);
-            this.cbStopbits.Margin = new System.Windows.Forms.Padding(4);
-            this.cbStopbits.Name = "cbStopbits";
-            this.cbStopbits.Size = new System.Drawing.Size(124, 28);
-            this.cbStopbits.TabIndex = 11;
             // 
             // Connection
             // 

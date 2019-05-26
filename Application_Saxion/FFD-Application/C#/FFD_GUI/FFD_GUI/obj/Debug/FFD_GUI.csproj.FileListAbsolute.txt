@@ -98,3 +98,7 @@ E:\Work\Saxion_Lab_WindowsApp\Application_Saxion\FFD-Application\C#\FFD_GUI\FFD_
 E:\Work\Saxion_Lab_WindowsApp\Application_Saxion\FFD-Application\C#\FFD_GUI\FFD_GUI\obj\Debug\FFD_GUI.csproj.CopyComplete
 E:\Work\Saxion_Lab_WindowsApp\Application_Saxion\FFD-Application\C#\FFD_GUI\FFD_GUI\obj\Debug\FFD_GUI.exe
 E:\Work\Saxion_Lab_WindowsApp\Application_Saxion\FFD-Application\C#\FFD_GUI\FFD_GUI\obj\Debug\FFD_GUI.pdb
+E:\Work\Saxion_Lab_WindowsApp\Application_Saxion\FFD-Application\C#\FFD_GUI\FFD_GUI\bin\Debug\FFD_GUI.exe.manifest
+E:\Work\Saxion_Lab_WindowsApp\Application_Saxion\FFD-Application\C#\FFD_GUI\FFD_GUI\bin\Debug\FFD_GUI.application
+E:\Work\Saxion_Lab_WindowsApp\Application_Saxion\FFD-Application\C#\FFD_GUI\FFD_GUI\obj\Debug\FFD_GUI.exe.manifest
+E:\Work\Saxion_Lab_WindowsApp\Application_Saxion\FFD-Application\C#\FFD_GUI\FFD_GUI\obj\Debug\FFD_GUI.application

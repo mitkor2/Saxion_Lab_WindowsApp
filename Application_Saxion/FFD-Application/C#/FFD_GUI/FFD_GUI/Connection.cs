@@ -156,8 +156,8 @@ namespace FFD_GUI
                 using (System.IO.StreamWriter file =
                 new System.IO.StreamWriter(@datalogger_checkbox.Text, true))
                 {
-                    file.WriteLine("sensor1:" + arrList[0] + "sensor2:" + arrList[1] + "sensor3:" + arrList[2] + "sensor4:" + arrList[3] + "sensor5:" + arrList[4] + "sensor6:" + arrList[5]);
-                    file.WriteLine("sensor7:" + arrList[6] + "sensor8:" + arrList[7] + "sensor9:" + arrList[8] + "sensor10:" + arrList[9] + "sensor11:" + arrList[10] + "sensor12:" + arrList[11]+ "sensor13:" + arrList[12]);
+                    file.WriteLine("H2S:" + arrList[0] + "HCN:" + arrList[1] + "HCL:" + arrList[2] + "NO2-AE:" + arrList[4] + "CO-AF:" + arrList[6] + "PID-A1:" + arrList[7]);
+                    file.WriteLine("CH-D3:" + arrList[8] + "NO-A1:" + arrList[9] + "CL2-A1:" + arrList[11] + "IRC-A1:" + arrList[12] + "CO-A1:" + arrList[13] + "NH3:" + arrList[14]+ "SO2:" + arrList[15]);
                 }
             }
             catch
@@ -284,6 +284,11 @@ namespace FFD_GUI
         }
 
         private void CbBaud_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox2_Enter(object sender, EventArgs e)
         {
 
         }
