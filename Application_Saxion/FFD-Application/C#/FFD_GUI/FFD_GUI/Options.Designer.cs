@@ -44,6 +44,7 @@
             this.dng13 = new System.Windows.Forms.NumericUpDown();
             this.btnAxisFit = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.button3 = new System.Windows.Forms.Button();
             this.dng43 = new System.Windows.Forms.NumericUpDown();
             this.dng42 = new System.Windows.Forms.NumericUpDown();
             this.dng41 = new System.Windows.Forms.NumericUpDown();
@@ -56,6 +57,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.apply_sensor4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.button4 = new System.Windows.Forms.Button();
             this.apply_sensor7 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -68,6 +70,7 @@
             this.dng72 = new System.Windows.Forms.NumericUpDown();
             this.dng73 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.button7 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -80,6 +83,7 @@
             this.dng102 = new System.Windows.Forms.NumericUpDown();
             this.dng103 = new System.Windows.Forms.NumericUpDown();
             this.table = new System.Windows.Forms.TableLayoutPanel();
+            this.button6 = new System.Windows.Forms.Button();
             this.apply_sensor11 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -92,6 +96,7 @@
             this.dng112 = new System.Windows.Forms.NumericUpDown();
             this.dng113 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.button5 = new System.Windows.Forms.Button();
             this.apply_sensor8 = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -104,6 +109,7 @@
             this.dng82 = new System.Windows.Forms.NumericUpDown();
             this.dng83 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
             this.apply_sensor5 = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -116,6 +122,7 @@
             this.dng52 = new System.Windows.Forms.NumericUpDown();
             this.dng53 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.apply_sensor2 = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
@@ -128,6 +135,7 @@
             this.dng22 = new System.Windows.Forms.NumericUpDown();
             this.dng23 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.button9 = new System.Windows.Forms.Button();
             this.apply_sensor13 = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -140,6 +148,7 @@
             this.dng132 = new System.Windows.Forms.NumericUpDown();
             this.dng133 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.button10 = new System.Windows.Forms.Button();
             this.apply_sensor9 = new System.Windows.Forms.Button();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -152,6 +161,7 @@
             this.dng92 = new System.Windows.Forms.NumericUpDown();
             this.dng93 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.button11 = new System.Windows.Forms.Button();
             this.apply_sensor6 = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
@@ -164,6 +174,7 @@
             this.dng62 = new System.Windows.Forms.NumericUpDown();
             this.dng63 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.button12 = new System.Windows.Forms.Button();
             this.apply_sensor3 = new System.Windows.Forms.Button();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -189,6 +200,7 @@
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.button8 = new System.Windows.Forms.Button();
             this.apply_sensor12 = new System.Windows.Forms.Button();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
@@ -201,18 +213,7 @@
             this.dng122 = new System.Windows.Forms.NumericUpDown();
             this.dng123 = new System.Windows.Forms.NumericUpDown();
             this.alert_messege = new System.Windows.Forms.NotifyIcon(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudY1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudX1)).BeginInit();
@@ -544,6 +545,15 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 168);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 31);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Auto axis";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // dng43
             // 
             this.dng43.DecimalPlaces = 2;
@@ -751,6 +761,15 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel3.TabIndex = 2;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(3, 168);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(114, 31);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Auto axis";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // apply_sensor7
             // 
@@ -960,6 +979,15 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(3, 168);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(114, 31);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Auto axis";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -1168,6 +1196,15 @@
             this.table.Size = new System.Drawing.Size(240, 204);
             this.table.TabIndex = 7;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(3, 168);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(114, 31);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "Auto axis";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // apply_sensor11
             // 
             this.apply_sensor11.Location = new System.Drawing.Point(123, 167);
@@ -1375,6 +1412,15 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel6.TabIndex = 6;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(3, 168);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(114, 31);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Auto axis";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // apply_sensor8
             // 
@@ -1585,6 +1631,15 @@
             this.tableLayoutPanel7.TabIndex = 5;
             this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel7_Paint);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(3, 168);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 31);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Auto axis";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // apply_sensor5
             // 
             this.apply_sensor5.Location = new System.Drawing.Point(123, 167);
@@ -1792,6 +1847,15 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel8.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(3, 168);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 31);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Auto axis";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // apply_sensor2
             // 
@@ -2001,6 +2065,15 @@
             this.tableLayoutPanel9.TabIndex = 11;
             this.tableLayoutPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel9_Paint);
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(3, 168);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(114, 31);
+            this.button9.TabIndex = 17;
+            this.button9.Text = "Auto axis";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // apply_sensor13
             // 
             this.apply_sensor13.Location = new System.Drawing.Point(123, 167);
@@ -2206,8 +2279,18 @@
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel10.TabIndex = 10;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(3, 168);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(114, 31);
+            this.button10.TabIndex = 18;
+            this.button10.Text = "Auto axis";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // apply_sensor9
             // 
@@ -2418,6 +2501,15 @@
             this.tableLayoutPanel11.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel11.TabIndex = 9;
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(3, 168);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(114, 31);
+            this.button11.TabIndex = 18;
+            this.button11.Text = "Auto axis";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
             // apply_sensor6
             // 
             this.apply_sensor6.Location = new System.Drawing.Point(123, 167);
@@ -2624,6 +2716,15 @@
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel12.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel12.TabIndex = 8;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(3, 168);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(114, 31);
+            this.button12.TabIndex = 18;
+            this.button12.Text = "Auto axis";
+            this.button12.UseVisualStyleBackColor = true;
             // 
             // apply_sensor3
             // 
@@ -2964,6 +3065,15 @@
             this.tableLayoutPanel13.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel13.TabIndex = 24;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(3, 168);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(114, 31);
+            this.button8.TabIndex = 17;
+            this.button8.Text = "Auto axis";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // apply_sensor12
             // 
             this.apply_sensor12.Location = new System.Drawing.Point(123, 167);
@@ -3146,113 +3256,16 @@
             this.alert_messege.Text = "notifyIcon1";
             this.alert_messege.Visible = true;
             // 
-            // button1
+            // button13
             // 
-            this.button1.Location = new System.Drawing.Point(3, 168);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 31);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Auto axis";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(3, 168);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 31);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Auto axis";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 168);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 31);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Auto axis";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(3, 168);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(114, 31);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Auto axis";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(3, 168);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 31);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Auto axis";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(3, 168);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(114, 31);
-            this.button6.TabIndex = 17;
-            this.button6.Text = "Auto axis";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(3, 168);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(114, 31);
-            this.button7.TabIndex = 17;
-            this.button7.Text = "Auto axis";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(3, 168);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(114, 31);
-            this.button8.TabIndex = 17;
-            this.button8.Text = "Auto axis";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(3, 168);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(114, 31);
-            this.button9.TabIndex = 17;
-            this.button9.Text = "Auto axis";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(3, 168);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(114, 31);
-            this.button10.TabIndex = 18;
-            this.button10.Text = "Auto axis";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(3, 168);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(114, 31);
-            this.button11.TabIndex = 18;
-            this.button11.Text = "Auto axis";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(3, 168);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(114, 31);
-            this.button12.TabIndex = 18;
-            this.button12.Text = "Auto axis";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button13.Location = new System.Drawing.Point(1051, 582);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(114, 31);
+            this.button13.TabIndex = 26;
+            this.button13.Text = "Apply";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.Button13_Click);
             // 
             // Options
             // 
@@ -3260,6 +3273,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1480, 741);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.label73);
             this.Controls.Add(this.tableLayoutPanel13);
             this.Controls.Add(this.label69);
@@ -3573,5 +3587,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button13;
     }
 }

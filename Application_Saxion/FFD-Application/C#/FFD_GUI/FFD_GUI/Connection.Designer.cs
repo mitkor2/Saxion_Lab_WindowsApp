@@ -51,6 +51,10 @@
             this.datalogger_checkbox = new System.Windows.Forms.CheckBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.alert_messege = new System.Windows.Forms.NotifyIcon(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbParity = new System.Windows.Forms.ComboBox();
+            this.cbStopbits = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -63,7 +67,7 @@
             this.cbPorts.Location = new System.Drawing.Point(90, 33);
             this.cbPorts.Margin = new System.Windows.Forms.Padding(4);
             this.cbPorts.Name = "cbPorts";
-            this.cbPorts.Size = new System.Drawing.Size(104, 28);
+            this.cbPorts.Size = new System.Drawing.Size(124, 28);
             this.cbPorts.TabIndex = 5;
             this.cbPorts.SelectedIndexChanged += new System.EventHandler(this.CbPorts_SelectedIndexChanged);
             // 
@@ -73,15 +77,16 @@
             this.cbBaud.Location = new System.Drawing.Point(90, 70);
             this.cbBaud.Margin = new System.Windows.Forms.Padding(4);
             this.cbBaud.Name = "cbBaud";
-            this.cbBaud.Size = new System.Drawing.Size(104, 28);
+            this.cbBaud.Size = new System.Drawing.Size(124, 28);
             this.cbBaud.TabIndex = 5;
+            this.cbBaud.SelectedIndexChanged += new System.EventHandler(this.CbBaud_SelectedIndexChanged);
             // 
             // btnDisConn
             // 
-            this.btnDisConn.Location = new System.Drawing.Point(213, 84);
+            this.btnDisConn.Location = new System.Drawing.Point(222, 132);
             this.btnDisConn.Margin = new System.Windows.Forms.Padding(4);
             this.btnDisConn.Name = "btnDisConn";
-            this.btnDisConn.Size = new System.Drawing.Size(137, 35);
+            this.btnDisConn.Size = new System.Drawing.Size(137, 38);
             this.btnDisConn.TabIndex = 0;
             this.btnDisConn.Text = "Disconnect";
             this.btnDisConn.UseVisualStyleBackColor = true;
@@ -100,10 +105,10 @@
             // 
             // btnConn
             // 
-            this.btnConn.Location = new System.Drawing.Point(213, 41);
+            this.btnConn.Location = new System.Drawing.Point(222, 86);
             this.btnConn.Margin = new System.Windows.Forms.Padding(4);
             this.btnConn.Name = "btnConn";
-            this.btnConn.Size = new System.Drawing.Size(137, 35);
+            this.btnConn.Size = new System.Drawing.Size(137, 38);
             this.btnConn.TabIndex = 0;
             this.btnConn.Text = "Connect";
             this.btnConn.UseVisualStyleBackColor = true;
@@ -128,6 +133,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbStopbits);
+            this.groupBox1.Controls.Add(this.cbParity);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cbDatabits);
             this.groupBox1.Controls.Add(this.cbPorts);
@@ -141,7 +150,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(367, 152);
+            this.groupBox1.Size = new System.Drawing.Size(367, 219);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Config";
@@ -151,7 +160,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 114);
+            this.label1.Location = new System.Drawing.Point(8, 150);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 20);
@@ -161,10 +170,10 @@
             // cbDatabits
             // 
             this.cbDatabits.FormattingEnabled = true;
-            this.cbDatabits.Location = new System.Drawing.Point(90, 106);
+            this.cbDatabits.Location = new System.Drawing.Point(90, 142);
             this.cbDatabits.Margin = new System.Windows.Forms.Padding(4);
             this.cbDatabits.Name = "cbDatabits";
-            this.cbDatabits.Size = new System.Drawing.Size(104, 28);
+            this.cbDatabits.Size = new System.Drawing.Size(124, 28);
             this.cbDatabits.TabIndex = 6;
             // 
             // serialPort1
@@ -178,10 +187,10 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.byte_counter_label,
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 252);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 323);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(398, 24);
+            this.statusStrip1.Size = new System.Drawing.Size(395, 24);
             this.statusStrip1.TabIndex = 50;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -209,7 +218,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.datalogger_options_panel);
-            this.groupBox2.Location = new System.Drawing.Point(13, 170);
+            this.groupBox2.Location = new System.Drawing.Point(13, 240);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -271,11 +280,51 @@
             this.alert_messege.Text = "notifyIcon1";
             this.alert_messege.Visible = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 186);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Stop Bits";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 116);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Parity";
+            // 
+            // cbParity
+            // 
+            this.cbParity.FormattingEnabled = true;
+            this.cbParity.Location = new System.Drawing.Point(90, 108);
+            this.cbParity.Margin = new System.Windows.Forms.Padding(4);
+            this.cbParity.Name = "cbParity";
+            this.cbParity.Size = new System.Drawing.Size(124, 28);
+            this.cbParity.TabIndex = 10;
+            // 
+            // cbStopbits
+            // 
+            this.cbStopbits.FormattingEnabled = true;
+            this.cbStopbits.Location = new System.Drawing.Point(90, 178);
+            this.cbStopbits.Margin = new System.Windows.Forms.Padding(4);
+            this.cbStopbits.Name = "cbStopbits";
+            this.cbStopbits.Size = new System.Drawing.Size(124, 28);
+            this.cbStopbits.TabIndex = 11;
+            // 
             // Connection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(398, 276);
+            this.ClientSize = new System.Drawing.Size(395, 347);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox1);
@@ -318,5 +367,9 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.NotifyIcon alert_messege;
         private System.Windows.Forms.RadioButton datalogger_append_radiobutton;
+        private System.Windows.Forms.ComboBox cbStopbits;
+        private System.Windows.Forms.ComboBox cbParity;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

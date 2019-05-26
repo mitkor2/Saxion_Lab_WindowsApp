@@ -31,6 +31,7 @@ namespace FFD_GUI
         {
             public string[] rdata = new string[28];
             public string[] dataport_sensor = new string[28];
+            public double[] data = new double[13];
         }
         Datacon d = new Datacon();
         Settings u = new Settings();
@@ -47,22 +48,22 @@ namespace FFD_GUI
         int TickStart11;
         int TickStart12;
         int TickStart13;
-        public string port_sensor1 { get { return d.rdata[0]; } set { d.dataport_sensor[0] = value; } }
-        public string port_sensor2 { get { return d.rdata[1]; } set { d.dataport_sensor[1] = value; } }
-        public string port_sensor3 { get { return d.rdata[2]; } set { d.dataport_sensor[2] = value; } }
+        public string port_sensor1 { get { return d.rdata[0]; } set { d.dataport_sensor[0] = Convert.ToString((((Convert.ToDouble(value)-5120)/1.28)/320)); } }
+        public string port_sensor2 { get { return d.rdata[1]; } set { d.dataport_sensor[1] = Convert.ToString((((Convert.ToDouble(value) - 4470) / 1.28) / 320)); } }
+        public string port_sensor3 { get { return d.rdata[2]; } set { d.dataport_sensor[2] = Convert.ToString((((Convert.ToDouble(value) - 5120) / 1.28) / 80)); } }
         public string port_sensor4 { get { return d.rdata[3]; } set { d.dataport_sensor[3] = value; } }
-        public string port_sensor5 { get { return d.rdata[4]; } set { d.dataport_sensor[4] = value; } }
+        public string port_sensor5 { get { return d.rdata[4]; } set { d.dataport_sensor[4] = Convert.ToString((((Convert.ToDouble(value) - 5068) / 1.28) / 80)); } }
         public string port_sensor6 { get { return d.rdata[5]; } set { d.dataport_sensor[5] = value; } }
-        public string port_sensor7 { get { return d.rdata[6]; } set { d.dataport_sensor[6] = value; } }
-        public string port_sensor8 { get { return d.rdata[7]; } set { d.dataport_sensor[7] = value; } }
-        public string port_sensor9 { get { return d.rdata[8]; } set { d.dataport_sensor[8] = value; } }
-        public string port_sensor10 { get { return d.rdata[9]; } set { d.dataport_sensor[9] = value; } }
+        public string port_sensor7 { get { return d.rdata[6]; } set { d.dataport_sensor[6] = Convert.ToString((((Convert.ToDouble(value) - 5070) / 1.28) / 3.2)); } }
+        public string port_sensor8 { get { return d.rdata[7]; } set { d.dataport_sensor[7] = Convert.ToString((((Convert.ToDouble(value) - 0) * 0.015625) / 0.3)); } }
+        public string port_sensor9 { get { return d.rdata[8]; } set { d.dataport_sensor[8] = Convert.ToString((((Convert.ToDouble(value) - 5087) / 1.28)*3.2)); } }
+        public string port_sensor10 { get { return d.rdata[9]; } set { d.dataport_sensor[9] = Convert.ToString((((Convert.ToDouble(value) - 5095) / 1.28) /64)); } }
         public string port_sensor11 { get { return d.rdata[10]; } set { d.dataport_sensor[10] = value; } }
-        public string port_sensor12 { get { return d.rdata[11]; } set { d.dataport_sensor[11] = value; } }
-        public string port_sensor13 { get { return d.rdata[12]; } set { d.dataport_sensor[12] = value; } }
-        public string port_sensor14 { get { return d.rdata[13]; } set { d.dataport_sensor[13] = value; } }
-        public string port_sensor15 { get { return d.rdata[14]; } set { d.dataport_sensor[14] = value; } }
-        public string port_sensor16 { get { return d.rdata[15]; } set { d.dataport_sensor[15] = value; } }
+        public string port_sensor12 { get { return d.rdata[11]; } set { d.dataport_sensor[11] = Convert.ToString((((Convert.ToDouble(value) - 5120) / 1.28) /800)); } }
+        public string port_sensor13 { get { return d.rdata[12]; } set { d.dataport_sensor[12] = Convert.ToString((((Convert.ToDouble(value) - 3590) / 1.28) /3200)); } }
+        public string port_sensor14 { get { return d.rdata[13]; } set { d.dataport_sensor[13] = Convert.ToString((((Convert.ToDouble(value) - 5120) / 1.28) / 3.2)); } }
+        public string port_sensor15 { get { return d.rdata[14]; } set { d.dataport_sensor[14] = Convert.ToString((((Convert.ToDouble(value) - 5120) / 1.28) / 16)); } }
+        public string port_sensor16 { get { return d.rdata[15]; } set { d.dataport_sensor[15] = Convert.ToString((((Convert.ToDouble(value) - 4030) / 1.28) /160)); } }
         public string port_sensor17 { get { return d.rdata[16]; } set { d.dataport_sensor[16] = value; } }
         public string port_sensor18 { get { return d.rdata[17]; } set { d.dataport_sensor[17] = value; } }
         public string port_sensor19 { get { return d.rdata[18]; } set { d.dataport_sensor[18] = value; } }
@@ -176,7 +177,32 @@ namespace FFD_GUI
         //
         private void Main_Load(object sender, EventArgs e)
         {
+            if (u.Yaxis[0] != null)
+            {
+                    try
+                    {
 
+                        if (double.Parse(u.Danger1[0]) <= double.Parse(d.dataport_sensor[0]))
+                        {
+                            MessageBox.Show("H2S - Danger level 1 is reached", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        if (double.Parse(u.Danger2[0]) <= double.Parse(d.dataport_sensor[0]))
+                        {
+                            MessageBox.Show("H2S - Danger level 2 is reached", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        if (double.Parse(u.Danger3[0]) <= double.Parse(d.dataport_sensor[0]))
+                        {
+                            MessageBox.Show("H2S - Danger level 3 is reached", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+            }
             GraphPane myPane1 = zedGraphControl1.GraphPane;
             myPane1.Title.Text = "H2S";
             myPane1.XAxis.Title.Text = "Time, Seconds";
@@ -184,14 +210,14 @@ namespace FFD_GUI
 
             RollingPointPairList list1 = new RollingPointPairList(60000);
             LineItem Curve1 = myPane1.AddCurve("H2S Value", list1, Color.Blue, SymbolType.None);
-            /* myPane1.XAxis.Scale.Min = -10;
+             myPane1.XAxis.Scale.Min = 0;
              myPane1.XAxis.Scale.Max = 10;
              myPane1.YAxis.Scale.Min = -10;
-             myPane1.YAxis.Scale.Max = 10;*/
-            myPane1.YAxis.Scale.MinAuto = true;
-            myPane1.YAxis.Scale.MaxAuto = true;
-            myPane1.XAxis.Scale.MinAuto = true;
-            myPane1.XAxis.Scale.MaxAuto = true;
+             myPane1.YAxis.Scale.Max = 10;
+            /* myPane1.YAxis.Scale.MinAuto = true;
+             myPane1.YAxis.Scale.MaxAuto = true;
+             myPane1.XAxis.Scale.MinAuto = true;
+             myPane1.XAxis.Scale.MaxAuto = true;*/
             myPane1.XAxis.MajorGrid.IsVisible = true;
             myPane1.YAxis.MajorGrid.IsVisible = true;
             zedGraphControl1.AxisChange();
@@ -210,8 +236,8 @@ namespace FFD_GUI
             //
             myPane2.XAxis.Scale.Min = 0;
             myPane2.XAxis.Scale.Max = 10;
-            myPane2.YAxis.Scale.Min = -540;
-            myPane2.YAxis.Scale.Max = 540;
+            myPane2.YAxis.Scale.Min = -10;
+            myPane2.YAxis.Scale.Max = 10;
 
             zedGraphControl2.AxisChange();
             TickStart2 = Environment.TickCount;
@@ -229,8 +255,8 @@ namespace FFD_GUI
 
             myPane3.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane3.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane3.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane3.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane3.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane3.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl3.AxisChange();//Tu do Scroll do thi
             TickStart3 = Environment.TickCount;
@@ -247,8 +273,8 @@ namespace FFD_GUI
 
             myPane4.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane4.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane4.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane4.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane4.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane4.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl4.AxisChange();//Tu do Scroll do thi
             TickStart4 = Environment.TickCount;
@@ -265,8 +291,8 @@ namespace FFD_GUI
 
             myPane5.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane5.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane5.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane5.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane5.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane5.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl5.AxisChange();//Tu do Scroll do thi
             TickStart5 = Environment.TickCount;
@@ -283,8 +309,8 @@ namespace FFD_GUI
 
             myPane6.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane6.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane6.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane6.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane6.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane6.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl6.AxisChange();//Tu do Scroll do thi
             TickStart6 = Environment.TickCount;
@@ -301,8 +327,8 @@ namespace FFD_GUI
 
             myPane7.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane7.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane7.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane7.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane7.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane7.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl7.AxisChange();//Tu do Scroll do thi
             TickStart7 = Environment.TickCount;
@@ -319,8 +345,8 @@ namespace FFD_GUI
 
             myPane8.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane8.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane8.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane8.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane8.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane8.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl8.AxisChange();//Tu do Scroll do thi
             TickStart8 = Environment.TickCount;
@@ -337,8 +363,8 @@ namespace FFD_GUI
 
             myPane9.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane9.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane9.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane9.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane9.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane9.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl9.AxisChange();//Tu do Scroll do thi
             TickStart9 = Environment.TickCount;
@@ -355,8 +381,8 @@ namespace FFD_GUI
 
             myPane10.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane10.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane10.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane10.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane10.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane10.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl10.AxisChange();//Tu do Scroll do thi
             TickStart10 = Environment.TickCount;
@@ -373,8 +399,8 @@ namespace FFD_GUI
 
             myPane11.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane11.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane11.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane11.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane11.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane11.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl11.AxisChange();//Tu do Scroll do thi
             TickStart11 = Environment.TickCount;
@@ -391,8 +417,8 @@ namespace FFD_GUI
 
             myPane12.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane12.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane12.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane12.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane12.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane12.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl12.AxisChange();//Tu do Scroll do thi
             TickStart12 = Environment.TickCount;
@@ -409,8 +435,8 @@ namespace FFD_GUI
 
             myPane13.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
             myPane13.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane13.YAxis.Scale.Min = -120;//Gia tri nho nhat cua truc Y
-            myPane13.YAxis.Scale.Max = 120;//Gia tri lon nhat cua truc Y
+            myPane13.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
+            myPane13.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
 
             zedGraphControl13.AxisChange();//Tu do Scroll do thi
             TickStart13 = Environment.TickCount;
@@ -436,16 +462,6 @@ namespace FFD_GUI
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            //Console.WriteLine(u.Yaxis[0]);
-            //  Console.WriteLine(u.Xaxis[0]);
-            // Console.WriteLine(u.Danger1[0]);
-            //Console.WriteLine(u.Danger2[0]);
-            //Console.WriteLine(u.Danger3[0]);
-            Console.WriteLine(d.dataport_sensor[0]);
-            Console.WriteLine(d.dataport_sensor[1]);
-            Console.WriteLine(d.dataport_sensor[2]);
-            Console.WriteLine(d.dataport_sensor[3]);
-            Console.WriteLine(d.dataport_sensor[4]);
 
         }
 
@@ -467,36 +483,35 @@ namespace FFD_GUI
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
+
+
             Draw();
-           // d.dataport_sensor[0] = 
-            //display value on graph
-            // text color and value
             lblsensor1.ForeColor = Color.Blue;
-            lblsensor1.Text = d.dataport_sensor[0];
+            lblsensor1.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[0]));
             lblsensor2.ForeColor = Color.Blue;
-            lblsensor2.Text = d.dataport_sensor[1];
+            lblsensor2.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[15]));
             lblsensor3.ForeColor = Color.Blue;
-            lblsensor3.Text = d.dataport_sensor[2];
+            lblsensor3.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[11]));
             lblsensor4.ForeColor = Color.Blue;
-            lblsensor4.Text = d.dataport_sensor[3];
+            lblsensor4.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[1]));
             lblsensor5.ForeColor = Color.Blue;
-            lblsensor5.Text = d.dataport_sensor[4];
+            lblsensor5.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[7]));
             lblsensor6.ForeColor = Color.Blue;
-            lblsensor6.Text = d.dataport_sensor[5];
+            lblsensor6.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[12]));
             lblsensor7.ForeColor = Color.Blue;
-            lblsensor7.Text = d.dataport_sensor[6];
+            lblsensor7.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[2]));
             lblsensor8.ForeColor = Color.Blue;
-            lblsensor8.Text = d.dataport_sensor[7];
+            lblsensor8.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[8]));
             lblsensor9.ForeColor = Color.Blue;
-            lblsensor9.Text = d.dataport_sensor[8];
+            lblsensor9.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[6]));
             lblsensor10.ForeColor = Color.Blue;
-            lblsensor10.Text = d.dataport_sensor[9];
+            lblsensor10.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[4]));
             lblsensor11.ForeColor = Color.Blue;
-            lblsensor11.Text = d.dataport_sensor[10];
+            lblsensor11.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[9]));
             lblsensor12.ForeColor = Color.Blue;
-            lblsensor12.Text = d.dataport_sensor[11];
+            lblsensor12.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[14]));
             lblsensor13.ForeColor = Color.Blue;
-            lblsensor13.Text = d.dataport_sensor[12];
+            lblsensor13.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[13]));
 
         }
 
@@ -630,18 +645,18 @@ namespace FFD_GUI
             double time13 = (Environment.TickCount - TickStart13) / 1000.0;
             //
             list1.Add(time1, Convert.ToDouble(d.dataport_sensor[0]));
-            list2.Add(time2, Convert.ToDouble(d.dataport_sensor[1]));
-            list3.Add(time3, Convert.ToDouble(d.dataport_sensor[2]));
-            list4.Add(time4, Convert.ToDouble(d.dataport_sensor[3]));
-            list5.Add(time5, Convert.ToDouble(d.dataport_sensor[4]));
-            list6.Add(time6, Convert.ToDouble(d.dataport_sensor[5]));
-            list7.Add(time7, Convert.ToDouble(d.dataport_sensor[6]));
-            list8.Add(time8, Convert.ToDouble(d.dataport_sensor[7]));
-            list9.Add(time9, Convert.ToDouble(d.dataport_sensor[8]));
-            list10.Add(time10, Convert.ToDouble(d.dataport_sensor[9]));
-            list11.Add(time11, Convert.ToDouble(d.dataport_sensor[10]));
-            list12.Add(time12, Convert.ToDouble(d.dataport_sensor[11]));
-            list13.Add(time13, Convert.ToDouble(d.dataport_sensor[12]));
+            list2.Add(time2, Convert.ToDouble(d.dataport_sensor[15]));
+            list3.Add(time3, Convert.ToDouble(d.dataport_sensor[11]));
+            list4.Add(time4, Convert.ToDouble(d.dataport_sensor[1]));
+            list5.Add(time5, Convert.ToDouble(d.dataport_sensor[7]));
+            list6.Add(time6, Convert.ToDouble(d.dataport_sensor[12]));
+            list7.Add(time7, Convert.ToDouble(d.dataport_sensor[2]));
+            list8.Add(time8, Convert.ToDouble(d.dataport_sensor[8]));
+            list9.Add(time9, Convert.ToDouble(d.dataport_sensor[6]));
+            list10.Add(time10, Convert.ToDouble(d.dataport_sensor[4]));
+            list11.Add(time11, Convert.ToDouble(d.dataport_sensor[9]));
+            list12.Add(time12, Convert.ToDouble(d.dataport_sensor[14]));
+            list13.Add(time13, Convert.ToDouble(d.dataport_sensor[13]));
 
 
             Scale xScale1 = zedGraphControl1.GraphPane.XAxis.Scale;
@@ -778,12 +793,280 @@ namespace FFD_GUI
             string mitko = "10";
             GraphPane myPane1 = zedGraphControl1.GraphPane;
             myPane1.YAxis.Scale.Min = -10;
-            myPane1.YAxis.Scale.Max = double.Parse(mitko); 
+            if (u.Xaxis[0] != null)
+            {
+                try
+                {
+                    myPane1.YAxis.Scale.Max = double.Parse(u.Xaxis[0]);
+                }
+                catch
+                {
+                    return;
+                }
+            }
+            else
+            {
+                myPane1.YAxis.Scale.Max = double.Parse(mitko);
+            }
+
+            Console.WriteLine(u.Xaxis[0]);
         }
 
         private void Lblsensor13_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void Timer2_Tick(object sender, EventArgs e)
+        {
+            /*list1.Add(time1, Convert.ToDouble(d.dataport_sensor[0]));
+            list2.Add(time2, Convert.ToDouble(d.dataport_sensor[15]));
+            list3.Add(time3, Convert.ToDouble(d.dataport_sensor[11]));
+            list4.Add(time4, Convert.ToDouble(d.dataport_sensor[1]));
+            list5.Add(time5, Convert.ToDouble(d.dataport_sensor[7]));
+            list6.Add(time6, Convert.ToDouble(d.dataport_sensor[12]));
+            list7.Add(time7, Convert.ToDouble(d.dataport_sensor[2]));
+            list8.Add(time8, Convert.ToDouble(d.dataport_sensor[8]));
+            list9.Add(time9, Convert.ToDouble(d.dataport_sensor[6]));
+            list10.Add(time10, Convert.ToDouble(d.dataport_sensor[4]));
+            list11.Add(time11, Convert.ToDouble(d.dataport_sensor[9]));
+            list12.Add(time12, Convert.ToDouble(d.dataport_sensor[14]));
+            list13.Add(time13, Convert.ToDouble(d.dataport_sensor[13]));*/
+            GraphPane myPane1 = zedGraphControl1.GraphPane;
+            if (u.Yaxis[0] != null)
+            {
+                if (u.Xaxis[0] != null)
+                { 
+                    try
+                    {
+                        myPane1.YAxis.Scale.Max = double.Parse(u.Yaxis[0]);
+                        myPane1.YAxis.Scale.Min = -double.Parse(u.Yaxis[0]);
+                        myPane1.XAxis.Scale.Max = double.Parse(u.Xaxis[0]);
+                        myPane1.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane2 = zedGraphControl2.GraphPane;
+            if (u.Yaxis[1] != null)
+            {
+                if (u.Xaxis[1] != null)
+                {
+                    try
+                    {
+                        myPane2.YAxis.Scale.Max = double.Parse(u.Yaxis[1]);
+                        myPane2.YAxis.Scale.Min = -double.Parse(u.Yaxis[1]);
+                        myPane2.XAxis.Scale.Max = double.Parse(u.Xaxis[1]);
+                        myPane2.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane3 = zedGraphControl3.GraphPane;
+            if (u.Yaxis[2] != null)
+            {
+                if (u.Xaxis[2] != null)
+                {
+                    try
+                    {
+                        myPane3.YAxis.Scale.Max = double.Parse(u.Yaxis[2]);
+                        myPane3.YAxis.Scale.Min = -double.Parse(u.Yaxis[2]);
+                        myPane3.XAxis.Scale.Max = double.Parse(u.Xaxis[2]);
+                        myPane3.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane4 = zedGraphControl4.GraphPane;
+            if (u.Yaxis[3] != null)
+            {
+                if (u.Xaxis[3] != null)
+                {
+                    try
+                    {
+                        myPane4.YAxis.Scale.Max = double.Parse(u.Yaxis[3]);
+                        myPane4.YAxis.Scale.Min = -double.Parse(u.Yaxis[3]);
+                        myPane4.XAxis.Scale.Max = double.Parse(u.Xaxis[3]);
+                        myPane4.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane5 = zedGraphControl5.GraphPane;
+            if (u.Yaxis[4] != null)
+            {
+                if (u.Xaxis[4] != null)
+                {
+                    try
+                    {
+                        myPane5.YAxis.Scale.Max = double.Parse(u.Yaxis[4]);
+                        myPane5.YAxis.Scale.Min = -double.Parse(u.Yaxis[4]);
+                        myPane5.XAxis.Scale.Max = double.Parse(u.Xaxis[4]);
+                        myPane5.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane6 = zedGraphControl6.GraphPane;
+            if (u.Yaxis[5] != null)
+            {
+                if (u.Xaxis[5] != null)
+                {
+                    try
+                    {
+                        myPane6.YAxis.Scale.Max = double.Parse(u.Yaxis[5]);
+                        myPane6.YAxis.Scale.Min = -double.Parse(u.Yaxis[5]);
+                        myPane6.XAxis.Scale.Max = double.Parse(u.Xaxis[5]);
+                        myPane6.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane7 = zedGraphControl7.GraphPane;
+            if (u.Yaxis[6] != null)
+            {
+                if (u.Xaxis[6] != null)
+                {
+                    try
+                    {
+                        myPane7.YAxis.Scale.Max = double.Parse(u.Yaxis[6]);
+                        myPane7.YAxis.Scale.Min = -double.Parse(u.Yaxis[6]);
+                        myPane7.XAxis.Scale.Max = double.Parse(u.Xaxis[6]);
+                        myPane7.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane8 = zedGraphControl8.GraphPane;
+            if (u.Yaxis[7] != null)
+            {
+                if (u.Xaxis[7] != null)
+                {
+                    try
+                    {
+                        myPane8.YAxis.Scale.Max = double.Parse(u.Yaxis[7]);
+                        myPane8.YAxis.Scale.Min = -double.Parse(u.Yaxis[7]);
+                        myPane8.XAxis.Scale.Max = double.Parse(u.Xaxis[7]);
+                        myPane8.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane9 = zedGraphControl9.GraphPane;
+            if (u.Yaxis[8] != null)
+            {
+                if (u.Xaxis[8] != null)
+                {
+                    try
+                    {
+                        myPane9.YAxis.Scale.Max = double.Parse(u.Yaxis[8]);
+                        myPane9.YAxis.Scale.Min = -double.Parse(u.Yaxis[8]);
+                        myPane9.XAxis.Scale.Max = double.Parse(u.Xaxis[8]);
+                        myPane9.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane10 = zedGraphControl10.GraphPane;
+            if (u.Yaxis[9] != null)
+            {
+                if (u.Xaxis[9] != null)
+                {
+                    try
+                    {
+                        myPane10.YAxis.Scale.Max = double.Parse(u.Yaxis[9]);
+                        myPane10.YAxis.Scale.Min = -double.Parse(u.Yaxis[9]);
+                        myPane10.XAxis.Scale.Max = double.Parse(u.Xaxis[9]);
+                        myPane10.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane11 = zedGraphControl11.GraphPane;
+            if (u.Yaxis[10] != null)
+            {
+                if (u.Xaxis[10] != null)
+                {
+                    try
+                    {
+                        myPane11.YAxis.Scale.Max = double.Parse(u.Yaxis[10]);
+                        myPane11.YAxis.Scale.Min = -double.Parse(u.Yaxis[10]);
+                        myPane11.XAxis.Scale.Max = double.Parse(u.Xaxis[10]);
+                        myPane11.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane12 = zedGraphControl12.GraphPane;
+            if (u.Yaxis[11] != null)
+            {
+                if (u.Xaxis[11] != null)
+                {
+                    try
+                    {
+                        myPane12.YAxis.Scale.Max = double.Parse(u.Yaxis[11]);
+                        myPane12.YAxis.Scale.Min = -double.Parse(u.Yaxis[11]);
+                        myPane12.XAxis.Scale.Max = double.Parse(u.Xaxis[11]);
+                        myPane12.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            GraphPane myPane13 = zedGraphControl13.GraphPane;
+            if (u.Yaxis[12] != null)
+            {
+                if (u.Xaxis[3] != null)
+                {
+                    try
+                    {
+                        myPane13.YAxis.Scale.Max = double.Parse(u.Yaxis[12]);
+                        myPane13.YAxis.Scale.Min = -double.Parse(u.Yaxis[12]);
+                        myPane13.XAxis.Scale.Max = double.Parse(u.Xaxis[12]);
+                        myPane13.XAxis.Scale.Min = 0;
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
     }
 }

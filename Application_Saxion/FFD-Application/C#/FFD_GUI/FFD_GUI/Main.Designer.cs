@@ -51,7 +51,6 @@
             this.zedGraphControl11 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl12 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl13 = new ZedGraph.ZedGraphControl();
-            this.btnConn = new System.Windows.Forms.Button();
             this.lblsensor2 = new System.Windows.Forms.Label();
             this.lblsensor3 = new System.Windows.Forms.Label();
             this.lblsensor4 = new System.Windows.Forms.Label();
@@ -163,7 +162,8 @@
             // 
             // timer2
             // 
-            this.timer2.Interval = 300;
+            this.timer2.Interval = 10;
+            this.timer2.Tick += new System.EventHandler(this.Timer2_Tick);
             // 
             // zedGraphControl4
             // 
@@ -324,17 +324,6 @@
             this.zedGraphControl13.ScrollMinY2 = 0D;
             this.zedGraphControl13.Size = new System.Drawing.Size(394, 228);
             this.zedGraphControl13.TabIndex = 75;
-            // 
-            // btnConn
-            // 
-            this.btnConn.Location = new System.Drawing.Point(718, 0);
-            this.btnConn.Margin = new System.Windows.Forms.Padding(4);
-            this.btnConn.Name = "btnConn";
-            this.btnConn.Size = new System.Drawing.Size(137, 35);
-            this.btnConn.TabIndex = 76;
-            this.btnConn.Text = "Connect";
-            this.btnConn.UseVisualStyleBackColor = true;
-            this.btnConn.Click += new System.EventHandler(this.BtnConn_Click);
             // 
             // lblsensor2
             // 
@@ -503,7 +492,6 @@
             this.Controls.Add(this.lblsensor4);
             this.Controls.Add(this.lblsensor3);
             this.Controls.Add(this.lblsensor2);
-            this.Controls.Add(this.btnConn);
             this.Controls.Add(this.zedGraphControl13);
             this.Controls.Add(this.zedGraphControl12);
             this.Controls.Add(this.zedGraphControl11);
@@ -554,7 +542,6 @@
         private ZedGraph.ZedGraphControl zedGraphControl11;
         private ZedGraph.ZedGraphControl zedGraphControl12;
         private ZedGraph.ZedGraphControl zedGraphControl13;
-        private System.Windows.Forms.Button btnConn;
         private System.Windows.Forms.Label lblsensor2;
         private System.Windows.Forms.Label lblsensor3;
         private System.Windows.Forms.Label lblsensor4;

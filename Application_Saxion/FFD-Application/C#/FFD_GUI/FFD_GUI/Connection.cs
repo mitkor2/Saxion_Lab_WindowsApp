@@ -35,8 +35,8 @@ namespace FFD_GUI
                     {
                         serialPort1.PortName = cbPorts.Text;
                         serialPort1.BaudRate = Convert.ToInt32(cbBaud.Text);
-                        serialPort1.Parity = Parity.None;
-                        serialPort1.StopBits = StopBits.One;
+                        serialPort1.Parity = (Parity)Enum.Parse(typeof(Parity), cbParity.Text);
+                        serialPort1.StopBits = (StopBits)Enum.Parse(typeof(StopBits), cbStopbits.Text);
                         serialPort1.DataBits = Convert.ToInt32(cbDatabits.Text);
                         serialPort1.Handshake = Handshake.None;
                         serialPort1.RtsEnable = true;
@@ -50,7 +50,8 @@ namespace FFD_GUI
                         cbBaud.Enabled = false;
                         cbPorts.Enabled = false;
                         cbDatabits.Enabled = false;
-
+                        cbStopbits.Enabled = false;
+                        cbParity.Enabled = false;
                         if (datalogger_checkbox.Checked)
                         {
                             try
@@ -97,6 +98,8 @@ namespace FFD_GUI
                 cbBaud.Enabled = true;
                 cbPorts.Enabled = true;
                 cbDatabits.Enabled = true;
+                cbStopbits.Enabled = true;
+                cbParity.Enabled = true;
             }
             catch
             {
@@ -106,7 +109,7 @@ namespace FFD_GUI
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             try
-            {
+            { 
                 //split data receive from serialport
                 arrList = serialPort1.ReadLine().Split(';');
                 this.mainForm.port_sensor1 = arrList[0];
@@ -185,6 +188,8 @@ namespace FFD_GUI
             cbBaud.Enabled = true;
             cbPorts.Enabled = true;
             cbDatabits.Enabled = true;
+            cbStopbits.Enabled = true;
+            cbParity.Enabled = true;
             //Disable button control
 
             //Load value//
@@ -202,7 +207,18 @@ namespace FFD_GUI
 
             cbDatabits.Items.Add(8);
             cbDatabits.Items.Add(7);
-            //
+            cbDatabits.Items.Add(6);
+            cbDatabits.Items.Add(5);
+
+            cbStopbits.Items.Add("One");
+            cbStopbits.Items.Add("OnePointFive");
+            cbStopbits.Items.Add("Two");
+
+            cbParity.Items.Add("None");
+            cbParity.Items.Add("Even");
+            cbParity.Items.Add("Odd");
+            cbParity.Items.Add("Mark");
+            cbParity.Items.Add("Space");
             btnDisConn.Enabled = false;
             }
         private void UserControl_state(bool value)
@@ -263,6 +279,11 @@ namespace FFD_GUI
         }
 
         private void Datalogger_overwrite_radiobutton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CbBaud_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
