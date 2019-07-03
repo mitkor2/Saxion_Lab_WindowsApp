@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FFD_GUI.exe" size="888792">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FFD_GUI.exe" size="891864">
       <assemblyIdentity name="FFD_GUI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fpfbqJJ2fgBO0RI1m/+tGDsWZBOypTDchgX62+beBIY=</dsig:DigestValue>
+        <dsig:DigestValue>4X1Rp208o9Q2MvOHPKyvBxJE8qLFzrH8ccCLaeK/Kfo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

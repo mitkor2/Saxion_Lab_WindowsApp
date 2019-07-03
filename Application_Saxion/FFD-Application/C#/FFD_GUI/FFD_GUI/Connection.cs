@@ -156,8 +156,10 @@ namespace FFD_GUI
                 using (System.IO.StreamWriter file =
                 new System.IO.StreamWriter(@datalogger_checkbox.Text, true))
                 {
-                    file.WriteLine("H2S:" + arrList[0] + "HCN:" + arrList[1] + "HCL:" + arrList[2] + "NO2-AE:" + arrList[4] + "CO-AF:" + arrList[6] + "PID-A1:" + arrList[7]);
-                    file.WriteLine("CH-D3:" + arrList[8] + "NO-A1:" + arrList[9] + "CL2-A1:" + arrList[11] + "IRC-A1:" + arrList[12] + "CO-A1:" + arrList[13] + "NH3:" + arrList[14]+ "SO2:" + arrList[15]);
+                    // file.WriteLine("H2S:" + arrList[0] + "HCN:" + arrList[1] + "HCL:" + arrList[2] + "NO2-AE:" + arrList[4] + "CO-AF:" + arrList[6] + "PID-A1:" + arrList[7]);
+                    //file.WriteLine("CH-D3:" + arrList[8] + "NO-A1:" + arrList[9] + "CL2-A1:" + arrList[11] + "IRC-A1:" + arrList[12] + "CO-A1:" + arrList[13] + "NH3:" + arrList[14]+ "SO2:" + arrList[15]);
+                    //H2S,HCN,HCL,NO2-AE,CO-AF,PID-A1,CH-D3,NO-A1,CL2-A1,IRC-A1,CO-A1,NH3,SO2,RH,TEMP
+                    file.WriteLine(arrList[0] + "," + arrList[1] + "," + arrList[2] + "," + arrList[4] + "," + arrList[6] + "," + arrList[7]+"," + arrList[8] + "," + arrList[9] + "," + arrList[11] + "," + arrList[12] + "," + arrList[13] + "," + arrList[14] + "," + arrList[15] + "," + arrList[20] + "," + arrList[21]);
                 }
             }
             catch

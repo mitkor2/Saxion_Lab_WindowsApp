@@ -22,9 +22,9 @@ namespace FFD_GUI
             public string[] returndata = new string[65];
             public string[] Yaxis = new string[13];
             public string[] Xaxis = new string[13];
-            public string[] Danger1 = new string[13];
-            public string[] Danger2 = new string[13];
-            public string[] Danger3 = new string[13];
+            public string[] Danger1 = new string[15];
+            public string[] Danger2 = new string[15];
+            public string[] Danger3 = new string[15];
             public string[] sensor_data = new string[13];
         }
         class Datacon
@@ -116,6 +116,8 @@ namespace FFD_GUI
         public string value_sensor11_d1 { get { return u.returndata[36]; } set { u.Danger1[10] = value; } }
         public string value_sensor12_d1 { get { return u.returndata[37]; } set { u.Danger1[11] = value; } }
         public string value_sensor13_d1 { get { return u.returndata[38]; } set { u.Danger1[12] = value; } }
+        public string value_sensor14_d1 { get { return u.returndata[39]; } set { u.Danger1[13] = value; } }
+        public string value_sensor15_d1 { get { return u.returndata[40]; } set { u.Danger1[14] = value; } }
         public string value_sensor1_d2 { get { return u.returndata[39]; } set { u.Danger2[0] = value; } }
         public string value_sensor2_d2 { get { return u.returndata[40]; } set { u.Danger2[1] = value; } }
         public string value_sensor3_d2 { get { return u.returndata[41]; } set { u.Danger2[2] = value; } }
@@ -129,6 +131,8 @@ namespace FFD_GUI
         public string value_sensor11_d2 { get { return u.returndata[49]; } set { u.Danger2[10] = value; } }
         public string value_sensor12_d2 { get { return u.returndata[50]; } set { u.Danger2[11] = value; } }
         public string value_sensor13_d2 { get { return u.returndata[51]; } set { u.Danger2[12] = value; } }
+        public string value_sensor14_d2 { get { return u.returndata[52]; } set { u.Danger2[13] = value; } }
+        public string value_sensor15_d2 { get { return u.returndata[53]; } set { u.Danger2[14] = value; } }
         public string value_sensor1_d3 { get { return u.returndata[52]; } set { u.Danger3[0] = value; } }
         public string value_sensor2_d3 { get { return u.returndata[53]; } set { u.Danger3[1] = value; } }
         public string value_sensor3_d3 { get { return u.returndata[54]; } set { u.Danger3[2] = value; } }
@@ -142,6 +146,8 @@ namespace FFD_GUI
         public string value_sensor11_d3 { get { return u.returndata[62]; } set { u.Danger3[10] = value; } }
         public string value_sensor12_d3 { get { return u.returndata[63]; } set { u.Danger3[11] = value; } }
         public string value_sensor13_d3 { get { return u.returndata[64]; } set { u.Danger3[12] = value; } }
+        public string value_sensor14_d3 { get { return u.returndata[65]; } set { u.Danger3[13] = value; } }
+        public string value_sensor15_d3 { get { return u.returndata[66]; } set { u.Danger3[14] = value; } }
         private About about;
 
         public Main()
@@ -798,6 +804,74 @@ namespace FFD_GUI
 
         private void Timer2_Tick(object sender, EventArgs e)
         {
+            if (u.Danger1[13] != null)
+            {
+                if (u.Danger2[13] != null)
+                {
+                    if (u.Danger3[13] != null)
+                    {
+                        try
+                        {
+                            if (double.Parse(u.Danger1[13]) <= double.Parse(d.dataport_sensor[20]))
+                            {
+                                lblsensor14.ForeColor = Color.Red;
+                                MessageBox.Show("Humidity - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            if (double.Parse(u.Danger2[13]) <= double.Parse(d.dataport_sensor[20]))
+                            {
+                                lblsensor14.ForeColor = Color.Red;
+                                MessageBox.Show("Humidity - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            if (double.Parse(u.Danger3[13]) <= double.Parse(d.dataport_sensor[20]))
+                            {
+                                lblsensor14.ForeColor = Color.Red;
+                                MessageBox.Show("Humidity- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                        catch
+                        {
+                            return;
+                        }
+                    }
+                }
+            }
+            if (u.Danger1[14] != null)
+            {
+                if (u.Danger2[14] != null)
+                {
+                    if (u.Danger3[14] != null)
+                    {
+                        try
+                        {
+                            if (double.Parse(u.Danger1[14]) <= double.Parse(d.dataport_sensor[21]))
+                            {
+                                lblsensor15.ForeColor = Color.Red;
+                                MessageBox.Show("Temperature - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            if (double.Parse(u.Danger2[14]) <= double.Parse(d.dataport_sensor[21]))
+                            {
+                                lblsensor15.ForeColor = Color.Red;
+                                MessageBox.Show("Temperature - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            if (double.Parse(u.Danger3[14]) <= double.Parse(d.dataport_sensor[21]))
+                            {
+                                lblsensor15.ForeColor = Color.Red;
+                                MessageBox.Show("Temperature Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                        catch
+                        {
+                            return;
+                        }
+                    }
+                }
+            }
             GraphPane myPane1 = zedGraphControl1.GraphPane;
             if (u.Yaxis[0] != null)
             {

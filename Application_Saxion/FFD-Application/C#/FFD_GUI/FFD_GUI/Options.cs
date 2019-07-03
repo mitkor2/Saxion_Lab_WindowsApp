@@ -264,5 +264,24 @@ namespace FFD_GUI
         {
                 System.Diagnostics.Process.Start("https://www.saxion.nl/onderzoek/smart-industry/advanced-forensic-technology");
             }
+
+        private void NumericUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.mainForm.value_sensor14_d1 = dng141.Text;
+            this.mainForm.value_sensor14_d2 = dng142.Text;
+            this.mainForm.value_sensor14_d3 = dng143.Text;
+        }
+
+        private void Apply_sensor15_Click(object sender, EventArgs e)
+        {
+            this.mainForm.value_sensor15_d1 = dng151.Text;
+            this.mainForm.value_sensor15_d2 = dng152.Text;
+            this.mainForm.value_sensor15_d3 = dng153.Text;
+        }
     }
 }
