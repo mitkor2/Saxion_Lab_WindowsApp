@@ -37,5 +37,10 @@ namespace FFD_GUI
         {
             System.Diagnostics.Process.Start("https://www.brandweer.nl/twente");
         }
+
+        private void PictureBox1_Click_2(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.twentesafetycampus.nl/en/homepage/");
+        }
     }
 }

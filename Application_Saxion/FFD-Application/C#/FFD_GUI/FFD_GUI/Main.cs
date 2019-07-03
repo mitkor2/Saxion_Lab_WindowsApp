@@ -187,7 +187,7 @@ namespace FFD_GUI
             LineItem Curve1 = myPane1.AddCurve("H2S Value", list1, Color.Blue, SymbolType.None);
              myPane1.XAxis.Scale.Min = 0;
              myPane1.XAxis.Scale.Max = 10;
-             myPane1.YAxis.Scale.Min = -10;
+             myPane1.YAxis.Scale.Min = -5;
              myPane1.YAxis.Scale.Max = 10;
             /* myPane1.YAxis.Scale.MinAuto = true;
              myPane1.YAxis.Scale.MaxAuto = true;
@@ -211,7 +211,7 @@ namespace FFD_GUI
             //
             myPane2.XAxis.Scale.Min = 0;
             myPane2.XAxis.Scale.Max = 10;
-            myPane2.YAxis.Scale.Min = -10;
+            myPane2.YAxis.Scale.Min = -5;
             myPane2.YAxis.Scale.Max = 10;
 
             zedGraphControl2.AxisChange();
@@ -220,200 +220,200 @@ namespace FFD_GUI
             /*Display the graph 3 of contents*/
             //Theta graph//
             GraphPane myPane3 = zedGraphControl3.GraphPane;
-            myPane3.Title.Text = "CL2-A1";//Ten do thi
-            myPane3.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane3.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane3.Title.Text = "CL2-A1";
+            myPane3.XAxis.Title.Text = "Time, Seconds";
+            myPane3.YAxis.Title.Text = "Angle, Deg";
             myPane3.XAxis.MajorGrid.IsVisible = true;
             myPane3.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list3 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve3 = myPane3.AddCurve("CL2-A1 Vallue", list3, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list3 = new RollingPointPairList(60000);
+            LineItem Curve3 = myPane3.AddCurve("CL2-A1 Vallue", list3, Color.Blue, SymbolType.None);
 
-            myPane3.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane3.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane3.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane3.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane3.XAxis.Scale.Min = 0;
+            myPane3.XAxis.Scale.Max = 10;
+            myPane3.YAxis.Scale.Min = -5;
+            myPane3.YAxis.Scale.Max = 10;
 
-            zedGraphControl3.AxisChange();//Tu do Scroll do thi
+            zedGraphControl3.AxisChange();
             TickStart3 = Environment.TickCount;
 
             GraphPane myPane4 = zedGraphControl4.GraphPane;
-            myPane4.Title.Text = "HCN";//Ten do thi
-            myPane4.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane4.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane4.Title.Text = "HCN";
+            myPane4.XAxis.Title.Text = "Time, Seconds";
+            myPane4.YAxis.Title.Text = "Angle, Deg";
             myPane4.XAxis.MajorGrid.IsVisible = true;
             myPane4.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list4 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve4 = myPane4.AddCurve("HCN Vallue", list4, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list4 = new RollingPointPairList(60000);
+            LineItem Curve4 = myPane4.AddCurve("HCN Vallue", list4, Color.Blue, SymbolType.None);
 
 
-            myPane4.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane4.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane4.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane4.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane4.XAxis.Scale.Min = 0;
+            myPane4.XAxis.Scale.Max = 10;
+            myPane4.YAxis.Scale.Min = -5;
+            myPane4.YAxis.Scale.Max = 10;
 
-            zedGraphControl4.AxisChange();//Tu do Scroll do thi
+            zedGraphControl4.AxisChange();
             TickStart4 = Environment.TickCount;
 
             GraphPane myPane5 = zedGraphControl5.GraphPane;
-            myPane5.Title.Text = "PID-A1";//Ten do thi
-            myPane5.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane5.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane5.Title.Text = "PID-A1";
+            myPane5.XAxis.Title.Text = "Time, Seconds";
+            myPane5.YAxis.Title.Text = "Angle, Deg";
             myPane5.XAxis.MajorGrid.IsVisible = true;
             myPane5.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list5 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve5 = myPane5.AddCurve("PID-A1 Vallue", list5, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list5 = new RollingPointPairList(60000);
+            LineItem Curve5 = myPane5.AddCurve("PID-A1 Vallue", list5, Color.Blue, SymbolType.None);
 
 
-            myPane5.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane5.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane5.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane5.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane5.XAxis.Scale.Min = 0;
+            myPane5.XAxis.Scale.Max = 10;
+            myPane5.YAxis.Scale.Min = -5;
+            myPane5.YAxis.Scale.Max = 10;
 
-            zedGraphControl5.AxisChange();//Tu do Scroll do thi
+            zedGraphControl5.AxisChange();
             TickStart5 = Environment.TickCount;
 
             GraphPane myPane6 = zedGraphControl6.GraphPane;
-            myPane6.Title.Text = "IRC-A1";//Ten do thi
-            myPane6.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane6.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane6.Title.Text = "IRC-A1";
+            myPane6.XAxis.Title.Text = "Time, Seconds";
+            myPane6.YAxis.Title.Text = "Angle, Deg";
             myPane6.XAxis.MajorGrid.IsVisible = true;
             myPane6.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list6 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve6 = myPane6.AddCurve("IRC-A1 Vallue", list6, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list6 = new RollingPointPairList(60000);
+            LineItem Curve6 = myPane6.AddCurve("IRC-A1 Vallue", list6, Color.Blue, SymbolType.None);
 
 
-            myPane6.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane6.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane6.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane6.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane6.XAxis.Scale.Min = 0;
+            myPane6.XAxis.Scale.Max = 10;
+            myPane6.YAxis.Scale.Min = -5;
+            myPane6.YAxis.Scale.Max = 10;
 
-            zedGraphControl6.AxisChange();//Tu do Scroll do thi
+            zedGraphControl6.AxisChange();
             TickStart6 = Environment.TickCount;
 
             GraphPane myPane7 = zedGraphControl7.GraphPane;
-            myPane7.Title.Text = "HCL";//Ten do thi
-            myPane7.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane7.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane7.Title.Text = "HCL";
+            myPane7.XAxis.Title.Text = "Time, Seconds";
+            myPane7.YAxis.Title.Text = "Angle, Deg";
             myPane7.XAxis.MajorGrid.IsVisible = true;
             myPane7.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list7 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve7 = myPane7.AddCurve("HCL Vallue", list7, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list7 = new RollingPointPairList(60000);
+            LineItem Curve7 = myPane7.AddCurve("HCL Vallue", list7, Color.Blue, SymbolType.None);
 
 
-            myPane7.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane7.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane7.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane7.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane7.XAxis.Scale.Min = 0;
+            myPane7.XAxis.Scale.Max = 10;
+            myPane7.YAxis.Scale.Min = -5;
+            myPane7.YAxis.Scale.Max = 10;
 
-            zedGraphControl7.AxisChange();//Tu do Scroll do thi
+            zedGraphControl7.AxisChange();
             TickStart7 = Environment.TickCount;
 
             GraphPane myPane8 = zedGraphControl8.GraphPane;
-            myPane8.Title.Text = "CH-D3";//Ten do thi
-            myPane8.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane8.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane8.Title.Text = "CH-D3";
+            myPane8.XAxis.Title.Text = "Time, Seconds";
+            myPane8.YAxis.Title.Text = "Angle, Deg";
             myPane8.XAxis.MajorGrid.IsVisible = true;
             myPane8.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list8 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve8 = myPane8.AddCurve("CH-D3 Vallue", list8, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list8 = new RollingPointPairList(60000);
+            LineItem Curve8 = myPane8.AddCurve("CH-D3 Vallue", list8, Color.Blue, SymbolType.None);
 
 
-            myPane8.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane8.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane8.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane8.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane8.XAxis.Scale.Min = 0;
+            myPane8.XAxis.Scale.Max = 10;
+            myPane8.YAxis.Scale.Min = -5;
+            myPane8.YAxis.Scale.Max = 10;
 
-            zedGraphControl8.AxisChange();//Tu do Scroll do thi
+            zedGraphControl8.AxisChange();
             TickStart8 = Environment.TickCount;
 
             GraphPane myPane9 = zedGraphControl9.GraphPane;
-            myPane9.Title.Text = "CO-AF(1)";//Ten do thi
-            myPane9.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane9.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane9.Title.Text = "CO-AF(1)";
+            myPane9.XAxis.Title.Text = "Time, Seconds";
+            myPane9.YAxis.Title.Text = "Angle, Deg";
             myPane9.XAxis.MajorGrid.IsVisible = true;
             myPane9.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list9 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve9 = myPane9.AddCurve("CO-AF(1) Vallue", list9, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list9 = new RollingPointPairList(60000);
+            LineItem Curve9 = myPane9.AddCurve("CO-AF(1) Vallue", list9, Color.Blue, SymbolType.None);
 
 
-            myPane9.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane9.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane9.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane9.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane9.XAxis.Scale.Min = 0;
+            myPane9.XAxis.Scale.Max = 10;
+            myPane9.YAxis.Scale.Min = -5;
+            myPane9.YAxis.Scale.Max = 10;
 
-            zedGraphControl9.AxisChange();//Tu do Scroll do thi
+            zedGraphControl9.AxisChange();
             TickStart9 = Environment.TickCount;
 
             GraphPane myPane10 = zedGraphControl10.GraphPane;
-            myPane10.Title.Text = "NO2-AE";//Ten do thi
-            myPane10.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane10.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane10.Title.Text = "NO2-AE";
+            myPane10.XAxis.Title.Text = "Time, Seconds";
+            myPane10.YAxis.Title.Text = "Angle, Deg";
             myPane10.XAxis.MajorGrid.IsVisible = true;
             myPane10.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list10 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve10 = myPane10.AddCurve("NO2-AE Vallue", list10, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list10 = new RollingPointPairList(60000);
+            LineItem Curve10 = myPane10.AddCurve("NO2-AE Vallue", list10, Color.Blue, SymbolType.None);
 
 
-            myPane10.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane10.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane10.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane10.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane10.XAxis.Scale.Min = 0;
+            myPane10.XAxis.Scale.Max = 10;
+            myPane10.YAxis.Scale.Min = -5;
+            myPane10.YAxis.Scale.Max = 10;
 
-            zedGraphControl10.AxisChange();//Tu do Scroll do thi
+            zedGraphControl10.AxisChange();
             TickStart10 = Environment.TickCount;
 
             GraphPane myPane11 = zedGraphControl11.GraphPane;
-            myPane11.Title.Text = "NO-A1";//Ten do thi
-            myPane11.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane11.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane11.Title.Text = "NO-A1";
+            myPane11.XAxis.Title.Text = "Time, Seconds";
+            myPane11.YAxis.Title.Text = "Angle, Deg";
             myPane11.XAxis.MajorGrid.IsVisible = true;
             myPane11.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list11 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve11 = myPane11.AddCurve("NO-A1 Vallue", list11, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list11 = new RollingPointPairList(60000);
+            LineItem Curve11 = myPane11.AddCurve("NO-A1 Vallue", list11, Color.Blue, SymbolType.None);
 
 
-            myPane11.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane11.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane11.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane11.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane11.XAxis.Scale.Min = 0;
+            myPane11.XAxis.Scale.Max = 10;
+            myPane11.YAxis.Scale.Min = -5;
+            myPane11.YAxis.Scale.Max = 10;
 
-            zedGraphControl11.AxisChange();//Tu do Scroll do thi
+            zedGraphControl11.AxisChange();
             TickStart11 = Environment.TickCount;
 
             GraphPane myPane12 = zedGraphControl12.GraphPane;
-            myPane12.Title.Text = "NH3";//Ten do thi
-            myPane12.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane12.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane12.Title.Text = "NH3";
+            myPane12.XAxis.Title.Text = "Time, Seconds";
+            myPane12.YAxis.Title.Text = "Angle, Deg";
             myPane12.XAxis.MajorGrid.IsVisible = true;
             myPane12.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list12 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve12 = myPane12.AddCurve("NH3 Vallue", list12, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list12 = new RollingPointPairList(60000);
+            LineItem Curve12 = myPane12.AddCurve("NH3 Vallue", list12, Color.Blue, SymbolType.None);
 
 
-            myPane12.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane12.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane12.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane12.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane12.XAxis.Scale.Min = 0;
+            myPane12.XAxis.Scale.Max = 10;
+            myPane12.YAxis.Scale.Min = -5;
+            myPane12.YAxis.Scale.Max = 10;
 
-            zedGraphControl12.AxisChange();//Tu do Scroll do thi
+            zedGraphControl12.AxisChange();
             TickStart12 = Environment.TickCount;
 
             GraphPane myPane13 = zedGraphControl13.GraphPane;
-            myPane13.Title.Text = "CO-AF(2)";//Ten do thi
-            myPane13.XAxis.Title.Text = "Time, Seconds";//Noi dung truc X
-            myPane13.YAxis.Title.Text = "Angle, Deg";//Noi dung truc Y
+            myPane13.Title.Text = "CO-AF(2)";
+            myPane13.XAxis.Title.Text = "Time, Seconds";
+            myPane13.YAxis.Title.Text = "Angle, Deg";
             myPane13.XAxis.MajorGrid.IsVisible = true;
             myPane13.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list13 = new RollingPointPairList(60000);//So diem hien thi tren do thi
-            LineItem Curve13 = myPane13.AddCurve("CO-AF(2) Vallue", list13, Color.Blue, SymbolType.None);//Chon mau cho net ve
+            RollingPointPairList list13 = new RollingPointPairList(60000);
+            LineItem Curve13 = myPane13.AddCurve("CO-AF(2) Vallue", list13, Color.Blue, SymbolType.None);
 
 
-            myPane13.XAxis.Scale.Min = 0;//Gia tri nho nhat cua truc X
-            myPane13.XAxis.Scale.Max = 10;//Gia tri lon nhat cua truc X
-            myPane13.YAxis.Scale.Min = -10;//Gia tri nho nhat cua truc Y
-            myPane13.YAxis.Scale.Max = 10;//Gia tri lon nhat cua truc Y
+            myPane13.XAxis.Scale.Min = 0;
+            myPane13.XAxis.Scale.Max = 10;
+            myPane13.YAxis.Scale.Min = -5;
+            myPane13.YAxis.Scale.Max = 10;
 
-            zedGraphControl13.AxisChange();//Tu do Scroll do thi
+            zedGraphControl13.AxisChange();
             TickStart13 = Environment.TickCount;
         }
 
@@ -802,10 +802,10 @@ namespace FFD_GUI
                     try
                     {
                         myPane1.YAxis.Scale.Max = double.Parse(u.Yaxis[0]);
-                        myPane1.YAxis.Scale.Min = -double.Parse(u.Yaxis[0]);
                         myPane1.XAxis.Scale.Max = double.Parse(u.Xaxis[0]);
                         myPane1.XAxis.Scale.Min = 0;
-                       if (double.Parse(u.Danger1[0]) <= double.Parse(d.dataport_sensor[0]))
+                        myPane1.YAxis.Scale.Min = -5;
+                        if (double.Parse(u.Danger1[0]) <= double.Parse(d.dataport_sensor[0]))
                         {
                             u.Danger1[0] = null;
                             MessageBox.Show("H2S - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
@@ -838,9 +838,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane2.YAxis.Scale.Max = double.Parse(u.Yaxis[1]);
-                        myPane2.YAxis.Scale.Min = -double.Parse(u.Yaxis[1]);
                         myPane2.XAxis.Scale.Max = double.Parse(u.Xaxis[1]);
                         myPane2.XAxis.Scale.Min = 0;
+                        myPane2.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[1]) <= double.Parse(d.dataport_sensor[15]))
                         {
                             u.Danger1[1] = null;
@@ -874,9 +874,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane3.YAxis.Scale.Max = double.Parse(u.Yaxis[2]);
-                        myPane3.YAxis.Scale.Min = -double.Parse(u.Yaxis[2]);
                         myPane3.XAxis.Scale.Max = double.Parse(u.Xaxis[2]);
                         myPane3.XAxis.Scale.Min = 0;
+                        myPane3.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[2]) <= double.Parse(d.dataport_sensor[11]))
                         {
                             u.Danger1[2] = null;
@@ -910,9 +910,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane4.YAxis.Scale.Max = double.Parse(u.Yaxis[3]);
-                        myPane4.YAxis.Scale.Min = -double.Parse(u.Yaxis[3]);
                         myPane4.XAxis.Scale.Max = double.Parse(u.Xaxis[3]);
                         myPane4.XAxis.Scale.Min = 0;
+                        myPane4.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[3]) <= double.Parse(d.dataport_sensor[1]))
                         {
                             u.Danger1[3] = null;
@@ -946,9 +946,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane5.YAxis.Scale.Max = double.Parse(u.Yaxis[4]);
-                        myPane5.YAxis.Scale.Min = -double.Parse(u.Yaxis[4]);
                         myPane5.XAxis.Scale.Max = double.Parse(u.Xaxis[4]);
                         myPane5.XAxis.Scale.Min = 0;
+                        myPane5.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[4]) <= double.Parse(d.dataport_sensor[7]))
                         {
                             u.Danger1[4] = null;
@@ -982,9 +982,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane6.YAxis.Scale.Max = double.Parse(u.Yaxis[5]);
-                        myPane6.YAxis.Scale.Min = -double.Parse(u.Yaxis[5]);
                         myPane6.XAxis.Scale.Max = double.Parse(u.Xaxis[5]);
                         myPane6.XAxis.Scale.Min = 0;
+                        myPane6.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[5]) <= double.Parse(d.dataport_sensor[12]))
                         {
                             u.Danger1[5] = null;
@@ -1018,9 +1018,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane7.YAxis.Scale.Max = double.Parse(u.Yaxis[6]);
-                        myPane7.YAxis.Scale.Min = -double.Parse(u.Yaxis[6]);
                         myPane7.XAxis.Scale.Max = double.Parse(u.Xaxis[6]);
                         myPane7.XAxis.Scale.Min = 0;
+                        myPane7.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[6]) <= double.Parse(d.dataport_sensor[2]))
                         {
                             u.Danger1[6] = null;
@@ -1054,9 +1054,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane8.YAxis.Scale.Max = double.Parse(u.Yaxis[7]);
-                        myPane8.YAxis.Scale.Min = -double.Parse(u.Yaxis[7]);
                         myPane8.XAxis.Scale.Max = double.Parse(u.Xaxis[7]);
                         myPane8.XAxis.Scale.Min = 0;
+                        myPane8.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[7]) <= double.Parse(d.dataport_sensor[8]))
                         {
                             u.Danger1[7] = null;
@@ -1090,9 +1090,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane9.YAxis.Scale.Max = double.Parse(u.Yaxis[8]);
-                        myPane9.YAxis.Scale.Min = -double.Parse(u.Yaxis[8]);
                         myPane9.XAxis.Scale.Max = double.Parse(u.Xaxis[8]);
                         myPane9.XAxis.Scale.Min = 0;
+                        myPane9.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[8]) <= double.Parse(d.dataport_sensor[6]))
                         {
                             u.Danger1[8] = null;
@@ -1126,9 +1126,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane10.YAxis.Scale.Max = double.Parse(u.Yaxis[9]);
-                        myPane10.YAxis.Scale.Min = -double.Parse(u.Yaxis[9]);
                         myPane10.XAxis.Scale.Max = double.Parse(u.Xaxis[9]);
                         myPane10.XAxis.Scale.Min = 0;
+                        myPane10.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[9]) <= double.Parse(d.dataport_sensor[4]))
                         {
                             u.Danger1[9] = null;
@@ -1162,9 +1162,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane11.YAxis.Scale.Max = double.Parse(u.Yaxis[10]);
-                        myPane11.YAxis.Scale.Min = -double.Parse(u.Yaxis[10]);
                         myPane11.XAxis.Scale.Max = double.Parse(u.Xaxis[10]);
                         myPane11.XAxis.Scale.Min = 0;
+                        myPane11.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[10]) <= double.Parse(d.dataport_sensor[9]))
                         {
                             u.Danger1[10] = null;
@@ -1198,9 +1198,9 @@ namespace FFD_GUI
                     try
                     {
                         myPane12.YAxis.Scale.Max = double.Parse(u.Yaxis[11]);
-                        myPane12.YAxis.Scale.Min = -double.Parse(u.Yaxis[11]);
                         myPane12.XAxis.Scale.Max = double.Parse(u.Xaxis[11]);
                         myPane12.XAxis.Scale.Min = 0;
+                        myPane12.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[11]) <= double.Parse(d.dataport_sensor[14]))
                         {
                             u.Danger1[11] = null;
@@ -1229,14 +1229,14 @@ namespace FFD_GUI
             GraphPane myPane13 = zedGraphControl13.GraphPane;
             if (u.Yaxis[12] != null)
             {
-                if (u.Xaxis[3] != null)
+                if (u.Xaxis[12] != null)
                 {
                     try
                     {
                         myPane13.YAxis.Scale.Max = double.Parse(u.Yaxis[12]);
-                        myPane13.YAxis.Scale.Min = -double.Parse(u.Yaxis[12]);
                         myPane13.XAxis.Scale.Max = double.Parse(u.Xaxis[12]);
                         myPane13.XAxis.Scale.Min = 0;
+                        myPane13.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[12]) <= double.Parse(d.dataport_sensor[13]))
                         {
                             u.Danger1[12] = null;
@@ -1264,5 +1264,24 @@ namespace FFD_GUI
             }
         }
 
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.saxion.nl/onderzoek/smart-industry/advanced-forensic-technology");
+        }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://robor.nl");
+        }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.brandweer.nl/twente");
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.twentesafetycampus.nl/en/homepage/");
+        }
     }
 }
