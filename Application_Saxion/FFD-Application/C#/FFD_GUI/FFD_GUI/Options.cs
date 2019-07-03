@@ -26,7 +26,6 @@ namespace FFD_GUI
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
         }
 
         private void label61_Click(object sender, EventArgs e)
@@ -245,5 +244,25 @@ namespace FFD_GUI
         private void Button13_Click(object sender, EventArgs e)
         {
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+        
+        private void Label79_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TableLayoutPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PictureBox3_Click_1(object sender, EventArgs e)
+        {
+                System.Diagnostics.Process.Start("https://www.saxion.nl/onderzoek/smart-industry/advanced-forensic-technology");
+            }
     }
 }

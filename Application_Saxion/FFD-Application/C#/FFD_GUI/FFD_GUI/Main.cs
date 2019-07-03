@@ -187,8 +187,8 @@ namespace FFD_GUI
             LineItem Curve1 = myPane1.AddCurve("H2S Value", list1, Color.Blue, SymbolType.None);
              myPane1.XAxis.Scale.Min = 0;
              myPane1.XAxis.Scale.Max = 10;
-             myPane1.YAxis.Scale.Min = -5;
              myPane1.YAxis.Scale.Max = 10;
+             myPane1.YAxis.Scale.Min = -0.5;
             /* myPane1.YAxis.Scale.MinAuto = true;
              myPane1.YAxis.Scale.MaxAuto = true;
              myPane1.XAxis.Scale.MinAuto = true;
@@ -211,7 +211,7 @@ namespace FFD_GUI
             //
             myPane2.XAxis.Scale.Min = 0;
             myPane2.XAxis.Scale.Max = 10;
-            myPane2.YAxis.Scale.Min = -5;
+            myPane2.YAxis.Scale.Min = -0.5;
             myPane2.YAxis.Scale.Max = 10;
 
             zedGraphControl2.AxisChange();
@@ -230,7 +230,7 @@ namespace FFD_GUI
 
             myPane3.XAxis.Scale.Min = 0;
             myPane3.XAxis.Scale.Max = 10;
-            myPane3.YAxis.Scale.Min = -5;
+            myPane3.YAxis.Scale.Min = -0.5;
             myPane3.YAxis.Scale.Max = 10;
 
             zedGraphControl3.AxisChange();
@@ -248,7 +248,7 @@ namespace FFD_GUI
 
             myPane4.XAxis.Scale.Min = 0;
             myPane4.XAxis.Scale.Max = 10;
-            myPane4.YAxis.Scale.Min = -5;
+            myPane4.YAxis.Scale.Min = -0.5;
             myPane4.YAxis.Scale.Max = 10;
 
             zedGraphControl4.AxisChange();
@@ -266,7 +266,7 @@ namespace FFD_GUI
 
             myPane5.XAxis.Scale.Min = 0;
             myPane5.XAxis.Scale.Max = 10;
-            myPane5.YAxis.Scale.Min = -5;
+            myPane5.YAxis.Scale.Min = -0.5;
             myPane5.YAxis.Scale.Max = 10;
 
             zedGraphControl5.AxisChange();
@@ -284,7 +284,7 @@ namespace FFD_GUI
 
             myPane6.XAxis.Scale.Min = 0;
             myPane6.XAxis.Scale.Max = 10;
-            myPane6.YAxis.Scale.Min = -5;
+            myPane6.YAxis.Scale.Min = -0.5;
             myPane6.YAxis.Scale.Max = 10;
 
             zedGraphControl6.AxisChange();
@@ -302,7 +302,7 @@ namespace FFD_GUI
 
             myPane7.XAxis.Scale.Min = 0;
             myPane7.XAxis.Scale.Max = 10;
-            myPane7.YAxis.Scale.Min = -5;
+            myPane7.YAxis.Scale.Min = -0.5;
             myPane7.YAxis.Scale.Max = 10;
 
             zedGraphControl7.AxisChange();
@@ -320,7 +320,7 @@ namespace FFD_GUI
 
             myPane8.XAxis.Scale.Min = 0;
             myPane8.XAxis.Scale.Max = 10;
-            myPane8.YAxis.Scale.Min = -5;
+            myPane8.YAxis.Scale.Min = -0.5;
             myPane8.YAxis.Scale.Max = 10;
 
             zedGraphControl8.AxisChange();
@@ -338,7 +338,7 @@ namespace FFD_GUI
 
             myPane9.XAxis.Scale.Min = 0;
             myPane9.XAxis.Scale.Max = 10;
-            myPane9.YAxis.Scale.Min = -5;
+            myPane9.YAxis.Scale.Min = -0.5;
             myPane9.YAxis.Scale.Max = 10;
 
             zedGraphControl9.AxisChange();
@@ -356,7 +356,7 @@ namespace FFD_GUI
 
             myPane10.XAxis.Scale.Min = 0;
             myPane10.XAxis.Scale.Max = 10;
-            myPane10.YAxis.Scale.Min = -5;
+            myPane10.YAxis.Scale.Min = -0.5;
             myPane10.YAxis.Scale.Max = 10;
 
             zedGraphControl10.AxisChange();
@@ -374,7 +374,7 @@ namespace FFD_GUI
 
             myPane11.XAxis.Scale.Min = 0;
             myPane11.XAxis.Scale.Max = 10;
-            myPane11.YAxis.Scale.Min = -5;
+            myPane11.YAxis.Scale.Min = -0.5;
             myPane11.YAxis.Scale.Max = 10;
 
             zedGraphControl11.AxisChange();
@@ -392,7 +392,7 @@ namespace FFD_GUI
 
             myPane12.XAxis.Scale.Min = 0;
             myPane12.XAxis.Scale.Max = 10;
-            myPane12.YAxis.Scale.Min = -5;
+            myPane12.YAxis.Scale.Min = -0.5;
             myPane12.YAxis.Scale.Max = 10;
 
             zedGraphControl12.AxisChange();
@@ -410,7 +410,7 @@ namespace FFD_GUI
 
             myPane13.XAxis.Scale.Min = 0;
             myPane13.XAxis.Scale.Max = 10;
-            myPane13.YAxis.Scale.Min = -5;
+            myPane13.YAxis.Scale.Min = -0.5;
             myPane13.YAxis.Scale.Max = 10;
 
             zedGraphControl13.AxisChange();
@@ -487,6 +487,10 @@ namespace FFD_GUI
             lblsensor12.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[14]));
             lblsensor13.ForeColor = Color.Blue;
             lblsensor13.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[13]));
+            lblsensor14.ForeColor = Color.Blue;
+            lblsensor14.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[20]));
+            lblsensor15.ForeColor = Color.Blue;
+            lblsensor15.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[21]));
 
         }
 
@@ -802,26 +806,30 @@ namespace FFD_GUI
                     try
                     {
                         myPane1.YAxis.Scale.Max = double.Parse(u.Yaxis[0]);
+                        myPane1.YAxis.Scale.Min = -((double.Parse(u.Yaxis[0])*5)/100);
                         myPane1.XAxis.Scale.Max = double.Parse(u.Xaxis[0]);
                         myPane1.XAxis.Scale.Min = 0;
-                        myPane1.YAxis.Scale.Min = -5;
+
                         if (double.Parse(u.Danger1[0]) <= double.Parse(d.dataport_sensor[0]))
                         {
                             u.Danger1[0] = null;
                             MessageBox.Show("H2S - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor1.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[0]) <= double.Parse(d.dataport_sensor[0]))
                         {
                             u.Danger2[0] = null;
                             MessageBox.Show("H2S - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor1.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[0]) <= double.Parse(d.dataport_sensor[0]))
                         {
                             u.Danger3[0] = null;
                             MessageBox.Show("H2S - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor1.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -838,26 +846,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane2.YAxis.Scale.Max = double.Parse(u.Yaxis[1]);
+                        myPane2.YAxis.Scale.Min = -((double.Parse(u.Yaxis[1]) * 5) / 100);
                         myPane2.XAxis.Scale.Max = double.Parse(u.Xaxis[1]);
                         myPane2.XAxis.Scale.Min = 0;
-                        myPane2.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[1]) <= double.Parse(d.dataport_sensor[15]))
                         {
                             u.Danger1[1] = null;
                             MessageBox.Show("SO2 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor2.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[1]) <= double.Parse(d.dataport_sensor[15]))
                         {
                             u.Danger2[1] = null;
                             MessageBox.Show("SO2 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor2.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[1]) <= double.Parse(d.dataport_sensor[15]))
                         {
                             u.Danger3[1] = null;
                             MessageBox.Show("SO2 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor2.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -874,26 +885,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane3.YAxis.Scale.Max = double.Parse(u.Yaxis[2]);
+                        myPane3.YAxis.Scale.Min = -((double.Parse(u.Yaxis[2]) * 5) / 100);
                         myPane3.XAxis.Scale.Max = double.Parse(u.Xaxis[2]);
                         myPane3.XAxis.Scale.Min = 0;
-                        myPane3.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[2]) <= double.Parse(d.dataport_sensor[11]))
                         {
                             u.Danger1[2] = null;
                             MessageBox.Show("CL2-A1 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor3.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[2]) <= double.Parse(d.dataport_sensor[11]))
                         {
                             u.Danger2[2] = null;
                             MessageBox.Show("CL2-A1  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor3.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[2]) <= double.Parse(d.dataport_sensor[11]))
                         {
                             u.Danger3[2] = null;
                             MessageBox.Show("CL2-A1  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor3.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -910,26 +924,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane4.YAxis.Scale.Max = double.Parse(u.Yaxis[3]);
+                        myPane4.YAxis.Scale.Min = -((double.Parse(u.Yaxis[3]) * 5) / 100);
                         myPane4.XAxis.Scale.Max = double.Parse(u.Xaxis[3]);
                         myPane4.XAxis.Scale.Min = 0;
-                        myPane4.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[3]) <= double.Parse(d.dataport_sensor[1]))
                         {
                             u.Danger1[3] = null;
                             MessageBox.Show("HCN - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor4.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[3]) <= double.Parse(d.dataport_sensor[1]))
                         {
                             u.Danger2[3] = null;
                             MessageBox.Show("HCN - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor4.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[3]) <= double.Parse(d.dataport_sensor[1]))
                         {
                             u.Danger3[3] = null;
                             MessageBox.Show("HCN  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor4.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -946,26 +963,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane5.YAxis.Scale.Max = double.Parse(u.Yaxis[4]);
+                        myPane5.YAxis.Scale.Min = -((double.Parse(u.Yaxis[4]) * 5) / 100);
                         myPane5.XAxis.Scale.Max = double.Parse(u.Xaxis[4]);
                         myPane5.XAxis.Scale.Min = 0;
-                        myPane5.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[4]) <= double.Parse(d.dataport_sensor[7]))
                         {
                             u.Danger1[4] = null;
                             MessageBox.Show("PID-A1 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor5.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[4]) <= double.Parse(d.dataport_sensor[7]))
                         {
                             u.Danger2[4] = null;
                             MessageBox.Show("PID-A1  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor5.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[4]) <= double.Parse(d.dataport_sensor[7]))
                         {
                             u.Danger3[4] = null;
                             MessageBox.Show("PID-A1 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor5.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -982,26 +1002,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane6.YAxis.Scale.Max = double.Parse(u.Yaxis[5]);
+                        myPane6.YAxis.Scale.Min = -((double.Parse(u.Yaxis[5]) * 5) / 100);
                         myPane6.XAxis.Scale.Max = double.Parse(u.Xaxis[5]);
                         myPane6.XAxis.Scale.Min = 0;
-                        myPane6.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[5]) <= double.Parse(d.dataport_sensor[12]))
                         {
                             u.Danger1[5] = null;
                             MessageBox.Show("IRC-A1 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor6.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[5]) <= double.Parse(d.dataport_sensor[12]))
                         {
                             u.Danger2[5] = null;
                             MessageBox.Show("IRC-A1  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor6.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[5]) <= double.Parse(d.dataport_sensor[12]))
                         {
                             u.Danger3[5] = null;
                             MessageBox.Show("IRC-A1  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor6.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -1018,26 +1041,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane7.YAxis.Scale.Max = double.Parse(u.Yaxis[6]);
+                        myPane7.YAxis.Scale.Min = -((double.Parse(u.Yaxis[6]) * 5) / 100);
                         myPane7.XAxis.Scale.Max = double.Parse(u.Xaxis[6]);
                         myPane7.XAxis.Scale.Min = 0;
-                        myPane7.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[6]) <= double.Parse(d.dataport_sensor[2]))
                         {
                             u.Danger1[6] = null;
                             MessageBox.Show("HCL - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor7.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[6]) <= double.Parse(d.dataport_sensor[2]))
                         {
                             u.Danger2[6] = null;
                             MessageBox.Show("HCL  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor7.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[6]) <= double.Parse(d.dataport_sensor[2]))
                         {
                             u.Danger3[6] = null;
                             MessageBox.Show("HCL - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor7.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -1054,26 +1080,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane8.YAxis.Scale.Max = double.Parse(u.Yaxis[7]);
+                        myPane8.YAxis.Scale.Min = -((double.Parse(u.Yaxis[7]) * 5) / 100);
                         myPane8.XAxis.Scale.Max = double.Parse(u.Xaxis[7]);
                         myPane8.XAxis.Scale.Min = 0;
-                        myPane8.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[7]) <= double.Parse(d.dataport_sensor[8]))
                         {
                             u.Danger1[7] = null;
                             MessageBox.Show("CH-D3 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor8.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[7]) <= double.Parse(d.dataport_sensor[8]))
                         {
                             u.Danger2[7] = null;
                             MessageBox.Show("CH-D3  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor8.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[7]) <= double.Parse(d.dataport_sensor[8]))
                         {
                             u.Danger3[7] = null;
                             MessageBox.Show("CH-D3 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor8.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -1090,26 +1119,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane9.YAxis.Scale.Max = double.Parse(u.Yaxis[8]);
+                        myPane9.YAxis.Scale.Min = -((double.Parse(u.Yaxis[8]) * 5) / 100);
                         myPane9.XAxis.Scale.Max = double.Parse(u.Xaxis[8]);
                         myPane9.XAxis.Scale.Min = 0;
-                        myPane9.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[8]) <= double.Parse(d.dataport_sensor[6]))
                         {
                             u.Danger1[8] = null;
                             MessageBox.Show("CO-AF-1 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor9.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[8]) <= double.Parse(d.dataport_sensor[6]))
                         {
                             u.Danger2[8] = null;
                             MessageBox.Show("CO-AF-1 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor9.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[8]) <= double.Parse(d.dataport_sensor[6]))
                         {
                             u.Danger3[8] = null;
                             MessageBox.Show("CO-AF-1 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor9.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -1126,26 +1158,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane10.YAxis.Scale.Max = double.Parse(u.Yaxis[9]);
+                        myPane10.YAxis.Scale.Min = -((double.Parse(u.Yaxis[9]) * 5) / 100);
                         myPane10.XAxis.Scale.Max = double.Parse(u.Xaxis[9]);
                         myPane10.XAxis.Scale.Min = 0;
-                        myPane10.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[9]) <= double.Parse(d.dataport_sensor[4]))
                         {
                             u.Danger1[9] = null;
                             MessageBox.Show("NO2-AE- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor10.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[9]) <= double.Parse(d.dataport_sensor[4]))
                         {
                             u.Danger2[9] = null;
                             MessageBox.Show("NO2-AE - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor10.ForeColor = Color.Red;
                         }
-                        if (double.Parse(u.Danger3[9]) <= double.Parse(d.dataport_sensor[4]))
+                        if (double.Parse(u.Danger3[91]) <= double.Parse(d.dataport_sensor[4]))
                         {
                             u.Danger3[9] = null;
                             MessageBox.Show("NO2-AE - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor10.ForeColor = Color.Red;
                         } 
                     }
                     catch
@@ -1162,26 +1197,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane11.YAxis.Scale.Max = double.Parse(u.Yaxis[10]);
+                        myPane11.YAxis.Scale.Min = -((double.Parse(u.Yaxis[10]) * 5) / 100);
                         myPane11.XAxis.Scale.Max = double.Parse(u.Xaxis[10]);
                         myPane11.XAxis.Scale.Min = 0;
-                        myPane11.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[10]) <= double.Parse(d.dataport_sensor[9]))
                         {
                             u.Danger1[10] = null;
                             MessageBox.Show("NO-A1- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor11.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[10]) <= double.Parse(d.dataport_sensor[9]))
                         {
                             u.Danger2[10] = null;
                             MessageBox.Show("NO-A1 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor11.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[10]) <= double.Parse(d.dataport_sensor[9]))
                         {
                             u.Danger3[10] = null;
                             MessageBox.Show("NO-A1- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor11.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -1199,25 +1237,28 @@ namespace FFD_GUI
                     {
                         myPane12.YAxis.Scale.Max = double.Parse(u.Yaxis[11]);
                         myPane12.XAxis.Scale.Max = double.Parse(u.Xaxis[11]);
+                        myPane12.YAxis.Scale.Min = -((double.Parse(u.Yaxis[11]) * 5) / 100);
                         myPane12.XAxis.Scale.Min = 0;
-                        myPane12.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[11]) <= double.Parse(d.dataport_sensor[14]))
                         {
                             u.Danger1[11] = null;
                             MessageBox.Show("NH3- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor12.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[11]) <= double.Parse(d.dataport_sensor[14]))
                         {
                             u.Danger2[11] = null;
                             MessageBox.Show("NH3 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor12.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[11]) <= double.Parse(d.dataport_sensor[14]))
                         {
                             u.Danger3[11] = null;
                             MessageBox.Show("NH3- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor12.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -1234,26 +1275,29 @@ namespace FFD_GUI
                     try
                     {
                         myPane13.YAxis.Scale.Max = double.Parse(u.Yaxis[12]);
+                        myPane13.YAxis.Scale.Min = -((double.Parse(u.Yaxis[12]) * 5) / 100);
                         myPane13.XAxis.Scale.Max = double.Parse(u.Xaxis[12]);
                         myPane13.XAxis.Scale.Min = 0;
-                        myPane13.YAxis.Scale.Min = -5;
                         if (double.Parse(u.Danger1[12]) <= double.Parse(d.dataport_sensor[13]))
                         {
                             u.Danger1[12] = null;
                             MessageBox.Show("CO-AF-2 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor13.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[12]) <= double.Parse(d.dataport_sensor[13]))
                         {
                             u.Danger2[12] = null;
                             MessageBox.Show("CO-AF-2 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor13.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[12]) <= double.Parse(d.dataport_sensor[13]))
                         {
                             u.Danger3[12] = null;
                             MessageBox.Show("CO-AF-2 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor13.ForeColor = Color.Red;
                         }
                     }
                     catch
@@ -1282,6 +1326,11 @@ namespace FFD_GUI
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://www.twentesafetycampus.nl/en/homepage/");
+        }
+
+        private void Label63_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -68,6 +68,10 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblsensor15 = new System.Windows.Forms.Label();
+            this.lblsensor14 = new System.Windows.Forms.Label();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -128,7 +132,7 @@
             // 
             this.zedGraphControl2.IsScrollY2 = true;
             this.zedGraphControl2.IsShowPointValues = true;
-            this.zedGraphControl2.Location = new System.Drawing.Point(16, 336);
+            this.zedGraphControl2.Location = new System.Drawing.Point(893, 640);
             this.zedGraphControl2.Margin = new System.Windows.Forms.Padding(5);
             this.zedGraphControl2.Name = "zedGraphControl2";
             this.zedGraphControl2.ScrollGrace = 0D;
@@ -143,7 +147,7 @@
             // 
             // zedGraphControl1
             // 
-            this.zedGraphControl1.Location = new System.Drawing.Point(16, 31);
+            this.zedGraphControl1.Location = new System.Drawing.Point(1332, 511);
             this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(5);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
@@ -153,7 +157,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(429, 295);
+            this.zedGraphControl1.Size = new System.Drawing.Size(394, 228);
             this.zedGraphControl1.TabIndex = 46;
             this.zedGraphControl1.Load += new System.EventHandler(this.ZedGraphControl1_Load);
             // 
@@ -161,11 +165,11 @@
             // 
             this.lblsensor1.AutoSize = true;
             this.lblsensor1.BackColor = System.Drawing.Color.White;
-            this.lblsensor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblsensor1.Location = new System.Drawing.Point(314, 39);
+            this.lblsensor1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblsensor1.Location = new System.Drawing.Point(1599, 520);
             this.lblsensor1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsensor1.Name = "lblsensor1";
-            this.lblsensor1.Size = new System.Drawing.Size(73, 36);
+            this.lblsensor1.Size = new System.Drawing.Size(70, 32);
             this.lblsensor1.TabIndex = 55;
             this.lblsensor1.Text = "H2S";
             // 
@@ -177,7 +181,7 @@
             // zedGraphControl4
             // 
             this.zedGraphControl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zedGraphControl4.Location = new System.Drawing.Point(453, 31);
+            this.zedGraphControl4.Location = new System.Drawing.Point(453, 335);
             this.zedGraphControl4.Margin = new System.Windows.Forms.Padding(5);
             this.zedGraphControl4.Name = "zedGraphControl4";
             this.zedGraphControl4.ScrollGrace = 0D;
@@ -193,7 +197,7 @@
             // zedGraphControl5
             // 
             this.zedGraphControl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zedGraphControl5.Location = new System.Drawing.Point(453, 336);
+            this.zedGraphControl5.Location = new System.Drawing.Point(14, 31);
             this.zedGraphControl5.Margin = new System.Windows.Forms.Padding(5);
             this.zedGraphControl5.Name = "zedGraphControl5";
             this.zedGraphControl5.ScrollGrace = 0D;
@@ -241,7 +245,7 @@
             // zedGraphControl8
             // 
             this.zedGraphControl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zedGraphControl8.Location = new System.Drawing.Point(890, 336);
+            this.zedGraphControl8.Location = new System.Drawing.Point(16, 336);
             this.zedGraphControl8.Margin = new System.Windows.Forms.Padding(5);
             this.zedGraphControl8.Name = "zedGraphControl8";
             this.zedGraphControl8.ScrollGrace = 0D;
@@ -257,7 +261,7 @@
             // zedGraphControl9
             // 
             this.zedGraphControl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zedGraphControl9.Location = new System.Drawing.Point(890, 643);
+            this.zedGraphControl9.Location = new System.Drawing.Point(451, 31);
             this.zedGraphControl9.Margin = new System.Windows.Forms.Padding(5);
             this.zedGraphControl9.Name = "zedGraphControl9";
             this.zedGraphControl9.ScrollGrace = 0D;
@@ -305,7 +309,7 @@
             // zedGraphControl12
             // 
             this.zedGraphControl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zedGraphControl12.Location = new System.Drawing.Point(1329, 511);
+            this.zedGraphControl12.Location = new System.Drawing.Point(890, 336);
             this.zedGraphControl12.Margin = new System.Windows.Forms.Padding(5);
             this.zedGraphControl12.Name = "zedGraphControl12";
             this.zedGraphControl12.ScrollGrace = 0D;
@@ -315,7 +319,7 @@
             this.zedGraphControl12.ScrollMinX = 0D;
             this.zedGraphControl12.ScrollMinY = 0D;
             this.zedGraphControl12.ScrollMinY2 = 0D;
-            this.zedGraphControl12.Size = new System.Drawing.Size(395, 228);
+            this.zedGraphControl12.Size = new System.Drawing.Size(427, 294);
             this.zedGraphControl12.TabIndex = 74;
             // 
             // zedGraphControl13
@@ -339,7 +343,7 @@
             this.lblsensor2.AutoSize = true;
             this.lblsensor2.BackColor = System.Drawing.Color.White;
             this.lblsensor2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblsensor2.Location = new System.Drawing.Point(314, 345);
+            this.lblsensor2.Location = new System.Drawing.Point(1191, 649);
             this.lblsensor2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsensor2.Name = "lblsensor2";
             this.lblsensor2.Size = new System.Drawing.Size(74, 36);
@@ -363,7 +367,7 @@
             this.lblsensor4.AutoSize = true;
             this.lblsensor4.BackColor = System.Drawing.Color.White;
             this.lblsensor4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblsensor4.Location = new System.Drawing.Point(745, 39);
+            this.lblsensor4.Location = new System.Drawing.Point(745, 343);
             this.lblsensor4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsensor4.Name = "lblsensor4";
             this.lblsensor4.Size = new System.Drawing.Size(79, 36);
@@ -375,7 +379,7 @@
             this.lblsensor5.AutoSize = true;
             this.lblsensor5.BackColor = System.Drawing.Color.White;
             this.lblsensor5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblsensor5.Location = new System.Drawing.Point(745, 345);
+            this.lblsensor5.Location = new System.Drawing.Point(306, 40);
             this.lblsensor5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsensor5.Name = "lblsensor5";
             this.lblsensor5.Size = new System.Drawing.Size(112, 36);
@@ -411,7 +415,7 @@
             this.lblsensor8.AutoSize = true;
             this.lblsensor8.BackColor = System.Drawing.Color.White;
             this.lblsensor8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblsensor8.Location = new System.Drawing.Point(1184, 345);
+            this.lblsensor8.Location = new System.Drawing.Point(310, 345);
             this.lblsensor8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsensor8.Name = "lblsensor8";
             this.lblsensor8.Size = new System.Drawing.Size(105, 36);
@@ -423,7 +427,7 @@
             this.lblsensor9.AutoSize = true;
             this.lblsensor9.BackColor = System.Drawing.Color.White;
             this.lblsensor9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblsensor9.Location = new System.Drawing.Point(1184, 652);
+            this.lblsensor9.Location = new System.Drawing.Point(745, 40);
             this.lblsensor9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsensor9.Name = "lblsensor9";
             this.lblsensor9.Size = new System.Drawing.Size(134, 36);
@@ -457,11 +461,11 @@
             // 
             this.lblsensor12.AutoSize = true;
             this.lblsensor12.BackColor = System.Drawing.Color.White;
-            this.lblsensor12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblsensor12.Location = new System.Drawing.Point(1599, 520);
+            this.lblsensor12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblsensor12.Location = new System.Drawing.Point(1184, 343);
             this.lblsensor12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsensor12.Name = "lblsensor12";
-            this.lblsensor12.Size = new System.Drawing.Size(71, 32);
+            this.lblsensor12.Size = new System.Drawing.Size(75, 36);
             this.lblsensor12.TabIndex = 87;
             this.lblsensor12.Text = "NH3";
             // 
@@ -550,12 +554,61 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label63.Location = new System.Drawing.Point(1722, 40);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(202, 36);
+            this.label63.TabIndex = 93;
+            this.label63.Text = "Temperature:";
+            this.label63.Click += new System.EventHandler(this.Label63_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(1749, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 36);
+            this.label1.TabIndex = 94;
+            this.label1.Text = "Humidity:";
+            // 
+            // lblsensor15
+            // 
+            this.lblsensor15.AutoSize = true;
+            this.lblsensor15.BackColor = System.Drawing.Color.Transparent;
+            this.lblsensor15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblsensor15.Location = new System.Drawing.Point(1788, 86);
+            this.lblsensor15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblsensor15.Name = "lblsensor15";
+            this.lblsensor15.Size = new System.Drawing.Size(59, 36);
+            this.lblsensor15.TabIndex = 95;
+            this.lblsensor15.Text = "Cel";
+            // 
+            // lblsensor14
+            // 
+            this.lblsensor14.AutoSize = true;
+            this.lblsensor14.BackColor = System.Drawing.Color.Transparent;
+            this.lblsensor14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblsensor14.Location = new System.Drawing.Point(1788, 172);
+            this.lblsensor14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblsensor14.Name = "lblsensor14";
+            this.lblsensor14.Size = new System.Drawing.Size(58, 36);
+            this.lblsensor14.TabIndex = 96;
+            this.lblsensor14.Text = "RH";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1924, 1001);
+            this.Controls.Add(this.lblsensor14);
+            this.Controls.Add(this.lblsensor15);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label63);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
@@ -643,5 +696,9 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblsensor15;
+        private System.Windows.Forms.Label lblsensor14;
     }
 }
