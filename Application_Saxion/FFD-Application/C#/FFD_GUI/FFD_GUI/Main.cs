@@ -35,6 +35,8 @@ namespace FFD_GUI
         }
         Datacon d = new Datacon();
         Settings u = new Settings();
+        //double temp = 0;
+        //double humidity = 0;
         int TickStart1;
         int TickStart2;
         int TickStart3;
@@ -47,7 +49,6 @@ namespace FFD_GUI
         int TickStart10;
         int TickStart11;
         int TickStart12;
-        int TickStart13;
         public string port_sensor1 { get { return d.rdata[0]; } set { d.dataport_sensor[0] = Convert.ToString((((Convert.ToDouble(value)-5120)/1.28)/320)); } }
         public string port_sensor2 { get { return d.rdata[1]; } set { d.dataport_sensor[1] = Convert.ToString((((Convert.ToDouble(value) - 4470) / 1.28) / 320)); } }
         public string port_sensor3 { get { return d.rdata[2]; } set { d.dataport_sensor[2] = Convert.ToString((((Convert.ToDouble(value) - 5120) / 1.28) / 80)); } }
@@ -403,24 +404,6 @@ namespace FFD_GUI
 
             zedGraphControl12.AxisChange();
             TickStart12 = Environment.TickCount;
-
-            GraphPane myPane13 = zedGraphControl13.GraphPane;
-            myPane13.Title.Text = "CO-AF(2)";
-            myPane13.XAxis.Title.Text = "Time, Seconds";
-            myPane13.YAxis.Title.Text = "Angle, Deg";
-            myPane13.XAxis.MajorGrid.IsVisible = true;
-            myPane13.YAxis.MajorGrid.IsVisible = true;
-            RollingPointPairList list13 = new RollingPointPairList(60000);
-            LineItem Curve13 = myPane13.AddCurve("CO-AF(2) Vallue", list13, Color.Blue, SymbolType.None);
-
-
-            myPane13.XAxis.Scale.Min = 0;
-            myPane13.XAxis.Scale.Max = 10;
-            myPane13.YAxis.Scale.Min = -0.5;
-            myPane13.YAxis.Scale.Max = 10;
-
-            zedGraphControl13.AxisChange();
-            TickStart13 = Environment.TickCount;
         }
 
         private void Chart1_Click(object sender, EventArgs e)
@@ -491,12 +474,10 @@ namespace FFD_GUI
             lblsensor11.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[9]));
             lblsensor12.ForeColor = Color.Blue;
             lblsensor12.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[14]));
-            lblsensor13.ForeColor = Color.Blue;
-            lblsensor13.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[13]));
             lblsensor14.ForeColor = Color.Blue;
-            lblsensor14.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[20]));
+            lblsensor14.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[20])/100);
             lblsensor15.ForeColor = Color.Blue;
-            lblsensor15.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[21]));
+            lblsensor15.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[21])/100);
 
         }
 
@@ -530,8 +511,7 @@ namespace FFD_GUI
                 return;
             if (zedGraphControl12.GraphPane.CurveList.Count <= 0)
                 return;
-            if (zedGraphControl13.GraphPane.CurveList.Count <= 0)
-                return;
+
 
             LineItem curve1 = zedGraphControl1.GraphPane.CurveList[0] as LineItem;
             LineItem curve2 = zedGraphControl2.GraphPane.CurveList[0] as LineItem;
@@ -545,7 +525,6 @@ namespace FFD_GUI
             LineItem curve10 = zedGraphControl10.GraphPane.CurveList[0] as LineItem;
             LineItem curve11 = zedGraphControl11.GraphPane.CurveList[0] as LineItem;
             LineItem curve12 = zedGraphControl12.GraphPane.CurveList[0] as LineItem;
-            LineItem curve13 = zedGraphControl13.GraphPane.CurveList[0] as LineItem;
 
             if (curve1 == null)
                 return;
@@ -571,8 +550,6 @@ namespace FFD_GUI
                 return;
             if (curve12 == null)
                 return;
-            if (curve13 == null)
-                return;
             //
             IPointListEdit list1 = curve1.Points as IPointListEdit;
             IPointListEdit list2 = curve2.Points as IPointListEdit;
@@ -586,7 +563,6 @@ namespace FFD_GUI
             IPointListEdit list10 = curve10.Points as IPointListEdit;
             IPointListEdit list11 = curve11.Points as IPointListEdit;
             IPointListEdit list12 = curve12.Points as IPointListEdit;
-            IPointListEdit list13 = curve13.Points as IPointListEdit;
             //
             if (list1 == null)
                 return;
@@ -612,8 +588,6 @@ namespace FFD_GUI
                 return;
             if (list12 == null)
                 return;
-            if (list13 == null)
-                return;
             //
             double time1 = (Environment.TickCount - TickStart1) / 1000.0;
             double time2 = (Environment.TickCount - TickStart2) / 1000.0;
@@ -627,7 +601,6 @@ namespace FFD_GUI
             double time10 = (Environment.TickCount - TickStart10) / 1000.0;
             double time11 = (Environment.TickCount - TickStart11) / 1000.0;
             double time12 = (Environment.TickCount - TickStart12) / 1000.0;
-            double time13 = (Environment.TickCount - TickStart13) / 1000.0;
             //
             list1.Add(time1, Convert.ToDouble(d.dataport_sensor[0]));
             list2.Add(time2, Convert.ToDouble(d.dataport_sensor[15]));
@@ -641,7 +614,6 @@ namespace FFD_GUI
             list10.Add(time10, Convert.ToDouble(d.dataport_sensor[4]));
             list11.Add(time11, Convert.ToDouble(d.dataport_sensor[9]));
             list12.Add(time12, Convert.ToDouble(d.dataport_sensor[14]));
-            list13.Add(time13, Convert.ToDouble(d.dataport_sensor[13]));
 
 
             Scale xScale1 = zedGraphControl1.GraphPane.XAxis.Scale;
@@ -656,7 +628,6 @@ namespace FFD_GUI
             Scale xScale10 = zedGraphControl10.GraphPane.XAxis.Scale;
             Scale xScale11 = zedGraphControl11.GraphPane.XAxis.Scale;
             Scale xScale12 = zedGraphControl12.GraphPane.XAxis.Scale;
-            Scale xScale13 = zedGraphControl13.GraphPane.XAxis.Scale;
             //
             Scale yScale1 = zedGraphControl1.GraphPane.YAxis.Scale;
             Scale yScale2 = zedGraphControl2.GraphPane.YAxis.Scale;
@@ -670,7 +641,7 @@ namespace FFD_GUI
             Scale yScale10 = zedGraphControl10.GraphPane.YAxis.Scale;
             Scale yScale11 = zedGraphControl11.GraphPane.YAxis.Scale;
             Scale yScale12 = zedGraphControl12.GraphPane.YAxis.Scale;
-            Scale yScale13 = zedGraphControl13.GraphPane.YAxis.Scale;
+
             //
             if (time1 > xScale1.Max - xScale1.MajorStep)
             {
@@ -732,11 +703,7 @@ namespace FFD_GUI
                 xScale12.Max = time12 + xScale12.MajorStep;
                 xScale12.Min = xScale12.Max - 30;
             }
-            if (time13 > xScale13.Max - xScale13.MajorStep)
-            {
-                xScale13.Max = time13 + xScale13.MajorStep;
-                xScale13.Min = xScale13.Max - 30;
-            }
+
             //
             zedGraphControl1.AxisChange();
             zedGraphControl2.AxisChange();
@@ -750,7 +717,6 @@ namespace FFD_GUI
             zedGraphControl10.AxisChange();
             zedGraphControl11.AxisChange();
             zedGraphControl12.AxisChange();
-            zedGraphControl13.AxisChange();
             //
             zedGraphControl1.Invalidate();
             zedGraphControl2.Invalidate();
@@ -764,7 +730,7 @@ namespace FFD_GUI
             zedGraphControl10.Invalidate();
             zedGraphControl11.Invalidate();
             zedGraphControl12.Invalidate();
-            zedGraphControl13.Invalidate();
+
         }
 
         private void ZedGraphControl1_Load(object sender, EventArgs e)
@@ -1341,45 +1307,6 @@ namespace FFD_GUI
                     }
                 }
             }
-            GraphPane myPane13 = zedGraphControl13.GraphPane;
-            if (u.Yaxis[12] != null)
-            {
-                if (u.Xaxis[12] != null)
-                {
-                    try
-                    {
-                        myPane13.YAxis.Scale.Max = double.Parse(u.Yaxis[12]);
-                        myPane13.YAxis.Scale.Min = -((double.Parse(u.Yaxis[12]) * 5) / 100);
-                        myPane13.XAxis.Scale.Max = double.Parse(u.Xaxis[12]);
-                        myPane13.XAxis.Scale.Min = 0;
-                        if (double.Parse(u.Danger1[12]) <= double.Parse(d.dataport_sensor[13]))
-                        {
-                            u.Danger1[12] = null;
-                            MessageBox.Show("CO-AF-2 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor13.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[12]) <= double.Parse(d.dataport_sensor[13]))
-                        {
-                            u.Danger2[12] = null;
-                            MessageBox.Show("CO-AF-2 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor13.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[12]) <= double.Parse(d.dataport_sensor[13]))
-                        {
-                            u.Danger3[12] = null;
-                            MessageBox.Show("CO-AF-2 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor13.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)
@@ -1403,6 +1330,11 @@ namespace FFD_GUI
         }
 
         private void Label63_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }

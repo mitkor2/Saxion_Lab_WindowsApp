@@ -232,14 +232,6 @@ namespace FFD_GUI
             this.mainForm.value_sensor12_d3 = dng123.Text;
         }
 
-        private void Apply_sensor13_Click(object sender, EventArgs e)
-        {
-            this.mainForm.value_sensor13_y = nudY13.Text;
-            this.mainForm.value_sensor13_x = nudX13.Text;
-            this.mainForm.value_sensor13_d1 = dng131.Text;
-            this.mainForm.value_sensor13_d2 = dng132.Text;
-            this.mainForm.value_sensor13_d3 = dng133.Text;
-        }
 
         private void Button13_Click(object sender, EventArgs e)
         {

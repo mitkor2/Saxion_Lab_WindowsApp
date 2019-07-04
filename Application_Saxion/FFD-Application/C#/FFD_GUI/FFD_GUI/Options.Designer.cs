@@ -126,18 +126,6 @@
             this.dng21 = new System.Windows.Forms.NumericUpDown();
             this.dng22 = new System.Windows.Forms.NumericUpDown();
             this.dng23 = new System.Windows.Forms.NumericUpDown();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.apply_sensor13 = new System.Windows.Forms.Button();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.nudY13 = new System.Windows.Forms.NumericUpDown();
-            this.nudX13 = new System.Windows.Forms.NumericUpDown();
-            this.dng131 = new System.Windows.Forms.NumericUpDown();
-            this.dng132 = new System.Windows.Forms.NumericUpDown();
-            this.dng133 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.apply_sensor9 = new System.Windows.Forms.Button();
             this.label46 = new System.Windows.Forms.Label();
@@ -182,7 +170,6 @@
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
@@ -219,6 +206,18 @@
             this.dng143 = new System.Windows.Forms.NumericUpDown();
             this.apply_sensor14 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudY1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudX1)).BeginInit();
@@ -267,12 +266,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dng21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dng22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dng23)).BeginInit();
-            this.tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudY13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudX13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dng131)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dng132)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dng133)).BeginInit();
             this.tableLayoutPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudY9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudX9)).BeginInit();
@@ -313,7 +306,6 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.apply_sensor1, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
@@ -324,17 +316,19 @@
             this.tableLayoutPanel1.Controls.Add(this.dng11, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.dng12, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.dng13, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.apply_sensor1, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label89, 0, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(962, 530);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel1.TabIndex = 0;
@@ -342,7 +336,7 @@
             // 
             // apply_sensor1
             // 
-            this.apply_sensor1.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor1.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor1.Name = "apply_sensor1";
             this.apply_sensor1.Size = new System.Drawing.Size(114, 31);
@@ -367,7 +361,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 33);
+            this.label2.Location = new System.Drawing.Point(3, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 20);
             this.label2.TabIndex = 7;
@@ -377,7 +371,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 66);
+            this.label3.Location = new System.Drawing.Point(3, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 8;
@@ -387,7 +381,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 99);
+            this.label4.Location = new System.Drawing.Point(3, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 9;
@@ -397,7 +391,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 132);
+            this.label5.Location = new System.Drawing.Point(3, 112);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 20);
             this.label5.TabIndex = 10;
@@ -429,7 +423,7 @@
             // nudX1
             // 
             this.nudX1.DecimalPlaces = 2;
-            this.nudX1.Location = new System.Drawing.Point(123, 36);
+            this.nudX1.Location = new System.Drawing.Point(123, 31);
             this.nudX1.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -452,7 +446,7 @@
             // dng11
             // 
             this.dng11.DecimalPlaces = 2;
-            this.dng11.Location = new System.Drawing.Point(123, 69);
+            this.dng11.Location = new System.Drawing.Point(123, 59);
             this.dng11.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -475,7 +469,7 @@
             // dng12
             // 
             this.dng12.DecimalPlaces = 2;
-            this.dng12.Location = new System.Drawing.Point(123, 102);
+            this.dng12.Location = new System.Drawing.Point(123, 87);
             this.dng12.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -498,7 +492,7 @@
             // dng13
             // 
             this.dng13.DecimalPlaces = 2;
-            this.dng13.Location = new System.Drawing.Point(123, 135);
+            this.dng13.Location = new System.Drawing.Point(123, 115);
             this.dng13.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -533,24 +527,26 @@
             this.tableLayoutPanel2.Controls.Add(this.label8, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label9, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label10, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.apply_sensor4, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.apply_sensor4, 1, 6);
+            this.tableLayoutPanel2.Controls.Add(this.label69, 0, 5);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(345, 281);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 6;
+            this.tableLayoutPanel2.RowCount = 7;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // dng43
             // 
             this.dng43.DecimalPlaces = 2;
-            this.dng43.Location = new System.Drawing.Point(123, 135);
+            this.dng43.Location = new System.Drawing.Point(123, 115);
             this.dng43.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -573,7 +569,7 @@
             // dng42
             // 
             this.dng42.DecimalPlaces = 2;
-            this.dng42.Location = new System.Drawing.Point(123, 102);
+            this.dng42.Location = new System.Drawing.Point(123, 87);
             this.dng42.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -596,7 +592,7 @@
             // dng41
             // 
             this.dng41.DecimalPlaces = 2;
-            this.dng41.Location = new System.Drawing.Point(123, 69);
+            this.dng41.Location = new System.Drawing.Point(123, 59);
             this.dng41.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -620,7 +616,7 @@
             // nudX4
             // 
             this.nudX4.DecimalPlaces = 2;
-            this.nudX4.Location = new System.Drawing.Point(123, 36);
+            this.nudX4.Location = new System.Drawing.Point(123, 31);
             this.nudX4.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -678,7 +674,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 33);
+            this.label7.Location = new System.Drawing.Point(3, 28);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 20);
             this.label7.TabIndex = 7;
@@ -688,7 +684,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 66);
+            this.label8.Location = new System.Drawing.Point(3, 56);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 20);
             this.label8.TabIndex = 8;
@@ -698,7 +694,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 99);
+            this.label9.Location = new System.Drawing.Point(3, 84);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(78, 20);
             this.label9.TabIndex = 9;
@@ -708,7 +704,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(3, 132);
+            this.label10.Location = new System.Drawing.Point(3, 112);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(78, 20);
             this.label10.TabIndex = 10;
@@ -716,7 +712,7 @@
             // 
             // apply_sensor4
             // 
-            this.apply_sensor4.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor4.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor4.Name = "apply_sensor4";
             this.apply_sensor4.Size = new System.Drawing.Size(114, 31);
@@ -730,7 +726,6 @@
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.apply_sensor7, 1, 5);
             this.tableLayoutPanel3.Controls.Add(this.label11, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label12, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label13, 0, 2);
@@ -741,22 +736,25 @@
             this.tableLayoutPanel3.Controls.Add(this.dng71, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.dng72, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.dng73, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.apply_sensor7, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.label43, 0, 5);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(658, 35);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 6;
+            this.tableLayoutPanel3.RowCount = 7;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // apply_sensor7
             // 
-            this.apply_sensor7.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor7.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor7.Name = "apply_sensor7";
             this.apply_sensor7.Size = new System.Drawing.Size(114, 31);
@@ -780,7 +778,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(3, 33);
+            this.label12.Location = new System.Drawing.Point(3, 28);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(55, 20);
             this.label12.TabIndex = 7;
@@ -790,7 +788,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(3, 66);
+            this.label13.Location = new System.Drawing.Point(3, 56);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(78, 20);
             this.label13.TabIndex = 8;
@@ -800,7 +798,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(3, 99);
+            this.label14.Location = new System.Drawing.Point(3, 84);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(78, 20);
             this.label14.TabIndex = 9;
@@ -810,7 +808,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(3, 132);
+            this.label15.Location = new System.Drawing.Point(3, 112);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(78, 20);
             this.label15.TabIndex = 10;
@@ -842,7 +840,7 @@
             // nudX7
             // 
             this.nudX7.DecimalPlaces = 2;
-            this.nudX7.Location = new System.Drawing.Point(123, 36);
+            this.nudX7.Location = new System.Drawing.Point(123, 31);
             this.nudX7.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -866,7 +864,7 @@
             // dng71
             // 
             this.dng71.DecimalPlaces = 2;
-            this.dng71.Location = new System.Drawing.Point(123, 69);
+            this.dng71.Location = new System.Drawing.Point(123, 59);
             this.dng71.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -889,7 +887,7 @@
             // dng72
             // 
             this.dng72.DecimalPlaces = 2;
-            this.dng72.Location = new System.Drawing.Point(123, 102);
+            this.dng72.Location = new System.Drawing.Point(123, 87);
             this.dng72.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -912,7 +910,7 @@
             // dng73
             // 
             this.dng73.DecimalPlaces = 2;
-            this.dng73.Location = new System.Drawing.Point(123, 135);
+            this.dng73.Location = new System.Drawing.Point(123, 115);
             this.dng73.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -942,22 +940,24 @@
             this.tableLayoutPanel4.Controls.Add(this.label18, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.label19, 0, 3);
             this.tableLayoutPanel4.Controls.Add(this.label20, 0, 4);
-            this.tableLayoutPanel4.Controls.Add(this.apply_sensor10, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.nudY10, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.nudX10, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.dng101, 1, 2);
             this.tableLayoutPanel4.Controls.Add(this.dng102, 1, 3);
             this.tableLayoutPanel4.Controls.Add(this.dng103, 1, 4);
+            this.tableLayoutPanel4.Controls.Add(this.apply_sensor10, 1, 6);
+            this.tableLayoutPanel4.Controls.Add(this.label44, 0, 5);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(962, 35);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 6;
+            this.tableLayoutPanel4.RowCount = 7;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
@@ -976,7 +976,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(3, 33);
+            this.label17.Location = new System.Drawing.Point(3, 29);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(55, 20);
             this.label17.TabIndex = 7;
@@ -986,7 +986,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(3, 66);
+            this.label18.Location = new System.Drawing.Point(3, 58);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(78, 20);
             this.label18.TabIndex = 8;
@@ -996,7 +996,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(3, 99);
+            this.label19.Location = new System.Drawing.Point(3, 87);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(78, 20);
             this.label19.TabIndex = 9;
@@ -1006,7 +1006,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(3, 132);
+            this.label20.Location = new System.Drawing.Point(3, 116);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(78, 20);
             this.label20.TabIndex = 10;
@@ -1014,10 +1014,10 @@
             // 
             // apply_sensor10
             // 
-            this.apply_sensor10.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor10.Location = new System.Drawing.Point(123, 176);
             this.apply_sensor10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor10.Name = "apply_sensor10";
-            this.apply_sensor10.Size = new System.Drawing.Size(114, 31);
+            this.apply_sensor10.Size = new System.Drawing.Size(114, 26);
             this.apply_sensor10.TabIndex = 0;
             this.apply_sensor10.Text = "Apply";
             this.apply_sensor10.UseVisualStyleBackColor = true;
@@ -1049,7 +1049,7 @@
             // nudX10
             // 
             this.nudX10.DecimalPlaces = 2;
-            this.nudX10.Location = new System.Drawing.Point(123, 36);
+            this.nudX10.Location = new System.Drawing.Point(123, 32);
             this.nudX10.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1072,7 +1072,7 @@
             // dng101
             // 
             this.dng101.DecimalPlaces = 2;
-            this.dng101.Location = new System.Drawing.Point(123, 69);
+            this.dng101.Location = new System.Drawing.Point(123, 61);
             this.dng101.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1096,7 +1096,7 @@
             // dng102
             // 
             this.dng102.DecimalPlaces = 2;
-            this.dng102.Location = new System.Drawing.Point(123, 102);
+            this.dng102.Location = new System.Drawing.Point(123, 90);
             this.dng102.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1119,7 +1119,7 @@
             // dng103
             // 
             this.dng103.DecimalPlaces = 2;
-            this.dng103.Location = new System.Drawing.Point(123, 135);
+            this.dng103.Location = new System.Drawing.Point(123, 119);
             this.dng103.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1144,7 +1144,6 @@
             this.table.ColumnCount = 2;
             this.table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.table.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.table.Controls.Add(this.apply_sensor11, 1, 5);
             this.table.Controls.Add(this.label21, 0, 0);
             this.table.Controls.Add(this.label22, 0, 1);
             this.table.Controls.Add(this.label23, 0, 2);
@@ -1155,22 +1154,25 @@
             this.table.Controls.Add(this.dng111, 1, 2);
             this.table.Controls.Add(this.dng112, 1, 3);
             this.table.Controls.Add(this.dng113, 1, 4);
+            this.table.Controls.Add(this.apply_sensor11, 1, 6);
+            this.table.Controls.Add(this.label88, 0, 5);
             this.table.Location = new System.Drawing.Point(962, 280);
             this.table.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.table.Name = "table";
-            this.table.RowCount = 6;
+            this.table.RowCount = 7;
             this.table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.table.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.table.Size = new System.Drawing.Size(240, 204);
             this.table.TabIndex = 7;
             // 
             // apply_sensor11
             // 
-            this.apply_sensor11.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor11.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor11.Name = "apply_sensor11";
             this.apply_sensor11.Size = new System.Drawing.Size(114, 31);
@@ -1194,7 +1196,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(3, 33);
+            this.label22.Location = new System.Drawing.Point(3, 28);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(55, 20);
             this.label22.TabIndex = 7;
@@ -1204,7 +1206,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(3, 66);
+            this.label23.Location = new System.Drawing.Point(3, 56);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(78, 20);
             this.label23.TabIndex = 8;
@@ -1214,7 +1216,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(3, 99);
+            this.label24.Location = new System.Drawing.Point(3, 84);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(78, 20);
             this.label24.TabIndex = 9;
@@ -1224,7 +1226,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(3, 132);
+            this.label25.Location = new System.Drawing.Point(3, 112);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(78, 20);
             this.label25.TabIndex = 10;
@@ -1256,7 +1258,7 @@
             // nudX11
             // 
             this.nudX11.DecimalPlaces = 2;
-            this.nudX11.Location = new System.Drawing.Point(123, 36);
+            this.nudX11.Location = new System.Drawing.Point(123, 31);
             this.nudX11.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1279,7 +1281,7 @@
             // dng111
             // 
             this.dng111.DecimalPlaces = 2;
-            this.dng111.Location = new System.Drawing.Point(123, 69);
+            this.dng111.Location = new System.Drawing.Point(123, 59);
             this.dng111.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1303,7 +1305,7 @@
             // dng112
             // 
             this.dng112.DecimalPlaces = 2;
-            this.dng112.Location = new System.Drawing.Point(123, 102);
+            this.dng112.Location = new System.Drawing.Point(123, 87);
             this.dng112.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1326,7 +1328,7 @@
             // dng113
             // 
             this.dng113.DecimalPlaces = 2;
-            this.dng113.Location = new System.Drawing.Point(123, 135);
+            this.dng113.Location = new System.Drawing.Point(123, 115);
             this.dng113.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1351,7 +1353,6 @@
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.apply_sensor8, 1, 5);
             this.tableLayoutPanel6.Controls.Add(this.label26, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.label27, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.label28, 0, 2);
@@ -1362,22 +1363,25 @@
             this.tableLayoutPanel6.Controls.Add(this.dng81, 1, 2);
             this.tableLayoutPanel6.Controls.Add(this.dng82, 1, 3);
             this.tableLayoutPanel6.Controls.Add(this.dng83, 1, 4);
+            this.tableLayoutPanel6.Controls.Add(this.apply_sensor8, 1, 6);
+            this.tableLayoutPanel6.Controls.Add(this.label45, 0, 5);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(29, 283);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 6;
+            this.tableLayoutPanel6.RowCount = 7;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel6.TabIndex = 6;
             // 
             // apply_sensor8
             // 
-            this.apply_sensor8.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor8.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor8.Name = "apply_sensor8";
             this.apply_sensor8.Size = new System.Drawing.Size(114, 31);
@@ -1401,7 +1405,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(3, 33);
+            this.label27.Location = new System.Drawing.Point(3, 28);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(55, 20);
             this.label27.TabIndex = 7;
@@ -1411,7 +1415,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(3, 66);
+            this.label28.Location = new System.Drawing.Point(3, 56);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(78, 20);
             this.label28.TabIndex = 8;
@@ -1421,7 +1425,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(3, 99);
+            this.label29.Location = new System.Drawing.Point(3, 84);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(78, 20);
             this.label29.TabIndex = 9;
@@ -1431,7 +1435,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(3, 132);
+            this.label30.Location = new System.Drawing.Point(3, 112);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(78, 20);
             this.label30.TabIndex = 10;
@@ -1463,7 +1467,7 @@
             // nudX8
             // 
             this.nudX8.DecimalPlaces = 2;
-            this.nudX8.Location = new System.Drawing.Point(123, 36);
+            this.nudX8.Location = new System.Drawing.Point(123, 31);
             this.nudX8.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1486,7 +1490,7 @@
             // dng81
             // 
             this.dng81.DecimalPlaces = 2;
-            this.dng81.Location = new System.Drawing.Point(123, 69);
+            this.dng81.Location = new System.Drawing.Point(123, 59);
             this.dng81.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1510,7 +1514,7 @@
             // dng82
             // 
             this.dng82.DecimalPlaces = 2;
-            this.dng82.Location = new System.Drawing.Point(123, 102);
+            this.dng82.Location = new System.Drawing.Point(123, 87);
             this.dng82.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1533,7 +1537,7 @@
             // dng83
             // 
             this.dng83.DecimalPlaces = 2;
-            this.dng83.Location = new System.Drawing.Point(123, 135);
+            this.dng83.Location = new System.Drawing.Point(123, 115);
             this.dng83.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1558,7 +1562,6 @@
             this.tableLayoutPanel7.ColumnCount = 2;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.apply_sensor5, 1, 5);
             this.tableLayoutPanel7.Controls.Add(this.label31, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.label32, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.label33, 0, 2);
@@ -1569,23 +1572,26 @@
             this.tableLayoutPanel7.Controls.Add(this.dng51, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.dng52, 1, 3);
             this.tableLayoutPanel7.Controls.Add(this.dng53, 1, 4);
+            this.tableLayoutPanel7.Controls.Add(this.apply_sensor5, 1, 6);
+            this.tableLayoutPanel7.Controls.Add(this.label41, 0, 5);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(29, 38);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 6;
+            this.tableLayoutPanel7.RowCount = 7;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel7.TabIndex = 5;
             this.tableLayoutPanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel7_Paint);
             // 
             // apply_sensor5
             // 
-            this.apply_sensor5.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor5.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor5.Name = "apply_sensor5";
             this.apply_sensor5.Size = new System.Drawing.Size(114, 31);
@@ -1609,7 +1615,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(3, 33);
+            this.label32.Location = new System.Drawing.Point(3, 28);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(55, 20);
             this.label32.TabIndex = 7;
@@ -1619,7 +1625,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(3, 66);
+            this.label33.Location = new System.Drawing.Point(3, 56);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(78, 20);
             this.label33.TabIndex = 8;
@@ -1629,7 +1635,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(3, 99);
+            this.label34.Location = new System.Drawing.Point(3, 84);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(78, 20);
             this.label34.TabIndex = 9;
@@ -1639,7 +1645,7 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(3, 132);
+            this.label35.Location = new System.Drawing.Point(3, 112);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(78, 20);
             this.label35.TabIndex = 10;
@@ -1672,7 +1678,7 @@
             // nudX5
             // 
             this.nudX5.DecimalPlaces = 2;
-            this.nudX5.Location = new System.Drawing.Point(123, 36);
+            this.nudX5.Location = new System.Drawing.Point(123, 31);
             this.nudX5.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1695,7 +1701,7 @@
             // dng51
             // 
             this.dng51.DecimalPlaces = 2;
-            this.dng51.Location = new System.Drawing.Point(123, 69);
+            this.dng51.Location = new System.Drawing.Point(123, 59);
             this.dng51.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1718,7 +1724,7 @@
             // dng52
             // 
             this.dng52.DecimalPlaces = 2;
-            this.dng52.Location = new System.Drawing.Point(123, 102);
+            this.dng52.Location = new System.Drawing.Point(123, 87);
             this.dng52.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1741,7 +1747,7 @@
             // dng53
             // 
             this.dng53.DecimalPlaces = 2;
-            this.dng53.Location = new System.Drawing.Point(123, 135);
+            this.dng53.Location = new System.Drawing.Point(123, 115);
             this.dng53.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1766,7 +1772,6 @@
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.apply_sensor2, 1, 5);
             this.tableLayoutPanel8.Controls.Add(this.label36, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.label37, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.label38, 0, 2);
@@ -1777,22 +1782,25 @@
             this.tableLayoutPanel8.Controls.Add(this.dng21, 1, 2);
             this.tableLayoutPanel8.Controls.Add(this.dng22, 1, 3);
             this.tableLayoutPanel8.Controls.Add(this.dng23, 1, 4);
+            this.tableLayoutPanel8.Controls.Add(this.apply_sensor2, 1, 6);
+            this.tableLayoutPanel8.Controls.Add(this.label90, 0, 5);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(651, 525);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 6;
+            this.tableLayoutPanel8.RowCount = 7;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel8.TabIndex = 4;
             // 
             // apply_sensor2
             // 
-            this.apply_sensor2.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor2.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor2.Name = "apply_sensor2";
             this.apply_sensor2.Size = new System.Drawing.Size(114, 31);
@@ -1816,7 +1824,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(3, 33);
+            this.label37.Location = new System.Drawing.Point(3, 28);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(55, 20);
             this.label37.TabIndex = 7;
@@ -1826,7 +1834,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(3, 66);
+            this.label38.Location = new System.Drawing.Point(3, 56);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(78, 20);
             this.label38.TabIndex = 8;
@@ -1836,7 +1844,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(3, 99);
+            this.label39.Location = new System.Drawing.Point(3, 84);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(78, 20);
             this.label39.TabIndex = 9;
@@ -1846,7 +1854,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(3, 132);
+            this.label40.Location = new System.Drawing.Point(3, 112);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(78, 20);
             this.label40.TabIndex = 10;
@@ -1878,7 +1886,7 @@
             // nudX2
             // 
             this.nudX2.DecimalPlaces = 2;
-            this.nudX2.Location = new System.Drawing.Point(123, 36);
+            this.nudX2.Location = new System.Drawing.Point(123, 31);
             this.nudX2.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1901,7 +1909,7 @@
             // dng21
             // 
             this.dng21.DecimalPlaces = 2;
-            this.dng21.Location = new System.Drawing.Point(123, 69);
+            this.dng21.Location = new System.Drawing.Point(123, 59);
             this.dng21.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1924,7 +1932,7 @@
             // dng22
             // 
             this.dng22.DecimalPlaces = 2;
-            this.dng22.Location = new System.Drawing.Point(123, 102);
+            this.dng22.Location = new System.Drawing.Point(123, 87);
             this.dng22.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1947,7 +1955,7 @@
             // dng23
             // 
             this.dng23.DecimalPlaces = 2;
-            this.dng23.Location = new System.Drawing.Point(123, 135);
+            this.dng23.Location = new System.Drawing.Point(123, 115);
             this.dng23.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -1967,220 +1975,11 @@
             0,
             0});
             // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.ColumnCount = 2;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel9.Controls.Add(this.apply_sensor13, 1, 5);
-            this.tableLayoutPanel9.Controls.Add(this.label41, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label42, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.label43, 0, 2);
-            this.tableLayoutPanel9.Controls.Add(this.label44, 0, 3);
-            this.tableLayoutPanel9.Controls.Add(this.label45, 0, 4);
-            this.tableLayoutPanel9.Controls.Add(this.nudY13, 1, 0);
-            this.tableLayoutPanel9.Controls.Add(this.nudX13, 1, 1);
-            this.tableLayoutPanel9.Controls.Add(this.dng131, 1, 2);
-            this.tableLayoutPanel9.Controls.Add(this.dng132, 1, 3);
-            this.tableLayoutPanel9.Controls.Add(this.dng133, 1, 4);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(1244, 35);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 6;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(240, 204);
-            this.tableLayoutPanel9.TabIndex = 11;
-            this.tableLayoutPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel9_Paint);
-            // 
-            // apply_sensor13
-            // 
-            this.apply_sensor13.Location = new System.Drawing.Point(123, 167);
-            this.apply_sensor13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.apply_sensor13.Name = "apply_sensor13";
-            this.apply_sensor13.Size = new System.Drawing.Size(114, 31);
-            this.apply_sensor13.TabIndex = 0;
-            this.apply_sensor13.Text = "Apply";
-            this.apply_sensor13.UseVisualStyleBackColor = true;
-            this.apply_sensor13.Click += new System.EventHandler(this.Apply_sensor13_Click);
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(3, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(54, 20);
-            this.label41.TabIndex = 6;
-            this.label41.Text = "Y axis";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(3, 33);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(55, 20);
-            this.label42.TabIndex = 7;
-            this.label42.Text = "X axis";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(3, 66);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(78, 20);
-            this.label43.TabIndex = 8;
-            this.label43.Text = "Danger 1";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(3, 99);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(78, 20);
-            this.label44.TabIndex = 9;
-            this.label44.Text = "Danger 2";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(3, 132);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(78, 20);
-            this.label45.TabIndex = 10;
-            this.label45.Text = "Danger 3";
-            // 
-            // nudY13
-            // 
-            this.nudY13.DecimalPlaces = 2;
-            this.nudY13.Location = new System.Drawing.Point(123, 3);
-            this.nudY13.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.nudY13.Minimum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            -2147483648});
-            this.nudY13.Name = "nudY13";
-            this.nudY13.Size = new System.Drawing.Size(113, 22);
-            this.nudY13.TabIndex = 12;
-            this.nudY13.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // nudX13
-            // 
-            this.nudX13.DecimalPlaces = 2;
-            this.nudX13.Location = new System.Drawing.Point(123, 36);
-            this.nudX13.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.nudX13.Minimum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            -2147483648});
-            this.nudX13.Name = "nudX13";
-            this.nudX13.Size = new System.Drawing.Size(113, 22);
-            this.nudX13.TabIndex = 13;
-            this.nudX13.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.nudX13.ValueChanged += new System.EventHandler(this.NumericUpDown46_ValueChanged);
-            // 
-            // dng131
-            // 
-            this.dng131.DecimalPlaces = 2;
-            this.dng131.Location = new System.Drawing.Point(123, 69);
-            this.dng131.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.dng131.Minimum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            -2147483648});
-            this.dng131.Name = "dng131";
-            this.dng131.Size = new System.Drawing.Size(113, 22);
-            this.dng131.TabIndex = 14;
-            this.dng131.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // dng132
-            // 
-            this.dng132.DecimalPlaces = 2;
-            this.dng132.Location = new System.Drawing.Point(123, 102);
-            this.dng132.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.dng132.Minimum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            -2147483648});
-            this.dng132.Name = "dng132";
-            this.dng132.Size = new System.Drawing.Size(113, 22);
-            this.dng132.TabIndex = 15;
-            this.dng132.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // dng133
-            // 
-            this.dng133.DecimalPlaces = 2;
-            this.dng133.Location = new System.Drawing.Point(123, 135);
-            this.dng133.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.dng133.Minimum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            -2147483648});
-            this.dng133.Name = "dng133";
-            this.dng133.Size = new System.Drawing.Size(113, 22);
-            this.dng133.TabIndex = 16;
-            this.dng133.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.ColumnCount = 2;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Controls.Add(this.apply_sensor9, 1, 5);
             this.tableLayoutPanel10.Controls.Add(this.label46, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.label47, 0, 1);
             this.tableLayoutPanel10.Controls.Add(this.label48, 0, 2);
@@ -2191,23 +1990,25 @@
             this.tableLayoutPanel10.Controls.Add(this.dng91, 1, 2);
             this.tableLayoutPanel10.Controls.Add(this.dng92, 1, 3);
             this.tableLayoutPanel10.Controls.Add(this.dng93, 1, 4);
+            this.tableLayoutPanel10.Controls.Add(this.apply_sensor9, 1, 6);
+            this.tableLayoutPanel10.Controls.Add(this.label42, 0, 5);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(353, 41);
             this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 6;
+            this.tableLayoutPanel10.RowCount = 7;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel10.TabIndex = 10;
             // 
             // apply_sensor9
             // 
-            this.apply_sensor9.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor9.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor9.Name = "apply_sensor9";
             this.apply_sensor9.Size = new System.Drawing.Size(114, 31);
@@ -2231,7 +2032,7 @@
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(3, 33);
+            this.label47.Location = new System.Drawing.Point(3, 28);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(55, 20);
             this.label47.TabIndex = 7;
@@ -2241,7 +2042,7 @@
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(3, 66);
+            this.label48.Location = new System.Drawing.Point(3, 56);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(78, 20);
             this.label48.TabIndex = 8;
@@ -2251,7 +2052,7 @@
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(3, 99);
+            this.label49.Location = new System.Drawing.Point(3, 84);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(78, 20);
             this.label49.TabIndex = 9;
@@ -2261,7 +2062,7 @@
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(3, 132);
+            this.label50.Location = new System.Drawing.Point(3, 112);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(78, 20);
             this.label50.TabIndex = 10;
@@ -2294,7 +2095,7 @@
             // nudX9
             // 
             this.nudX9.DecimalPlaces = 2;
-            this.nudX9.Location = new System.Drawing.Point(123, 36);
+            this.nudX9.Location = new System.Drawing.Point(123, 31);
             this.nudX9.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2317,7 +2118,7 @@
             // dng91
             // 
             this.dng91.DecimalPlaces = 2;
-            this.dng91.Location = new System.Drawing.Point(123, 69);
+            this.dng91.Location = new System.Drawing.Point(123, 59);
             this.dng91.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2340,7 +2141,7 @@
             // dng92
             // 
             this.dng92.DecimalPlaces = 2;
-            this.dng92.Location = new System.Drawing.Point(123, 102);
+            this.dng92.Location = new System.Drawing.Point(123, 87);
             this.dng92.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2364,7 +2165,7 @@
             // dng93
             // 
             this.dng93.DecimalPlaces = 2;
-            this.dng93.Location = new System.Drawing.Point(123, 135);
+            this.dng93.Location = new System.Drawing.Point(123, 115);
             this.dng93.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2389,7 +2190,6 @@
             this.tableLayoutPanel11.ColumnCount = 2;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Controls.Add(this.apply_sensor6, 1, 5);
             this.tableLayoutPanel11.Controls.Add(this.label51, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.label52, 0, 1);
             this.tableLayoutPanel11.Controls.Add(this.label53, 0, 2);
@@ -2400,22 +2200,25 @@
             this.tableLayoutPanel11.Controls.Add(this.dng61, 1, 2);
             this.tableLayoutPanel11.Controls.Add(this.dng62, 1, 3);
             this.tableLayoutPanel11.Controls.Add(this.dng63, 1, 4);
+            this.tableLayoutPanel11.Controls.Add(this.apply_sensor6, 1, 6);
+            this.tableLayoutPanel11.Controls.Add(this.label91, 0, 5);
             this.tableLayoutPanel11.Location = new System.Drawing.Point(346, 527);
             this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 6;
+            this.tableLayoutPanel11.RowCount = 7;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel11.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel11.TabIndex = 9;
             // 
             // apply_sensor6
             // 
-            this.apply_sensor6.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor6.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor6.Name = "apply_sensor6";
             this.apply_sensor6.Size = new System.Drawing.Size(114, 31);
@@ -2439,7 +2242,7 @@
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(3, 33);
+            this.label52.Location = new System.Drawing.Point(3, 28);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(55, 20);
             this.label52.TabIndex = 7;
@@ -2449,7 +2252,7 @@
             // 
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(3, 66);
+            this.label53.Location = new System.Drawing.Point(3, 56);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(78, 20);
             this.label53.TabIndex = 8;
@@ -2459,7 +2262,7 @@
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(3, 99);
+            this.label54.Location = new System.Drawing.Point(3, 84);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(78, 20);
             this.label54.TabIndex = 9;
@@ -2469,7 +2272,7 @@
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(3, 132);
+            this.label55.Location = new System.Drawing.Point(3, 112);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(78, 20);
             this.label55.TabIndex = 10;
@@ -2501,7 +2304,7 @@
             // nudX6
             // 
             this.nudX6.DecimalPlaces = 2;
-            this.nudX6.Location = new System.Drawing.Point(123, 36);
+            this.nudX6.Location = new System.Drawing.Point(123, 31);
             this.nudX6.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2524,7 +2327,7 @@
             // dng61
             // 
             this.dng61.DecimalPlaces = 2;
-            this.dng61.Location = new System.Drawing.Point(123, 69);
+            this.dng61.Location = new System.Drawing.Point(123, 59);
             this.dng61.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2547,7 +2350,7 @@
             // dng62
             // 
             this.dng62.DecimalPlaces = 2;
-            this.dng62.Location = new System.Drawing.Point(123, 102);
+            this.dng62.Location = new System.Drawing.Point(123, 87);
             this.dng62.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2570,7 +2373,7 @@
             // dng63
             // 
             this.dng63.DecimalPlaces = 2;
-            this.dng63.Location = new System.Drawing.Point(123, 135);
+            this.dng63.Location = new System.Drawing.Point(123, 115);
             this.dng63.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2595,7 +2398,6 @@
             this.tableLayoutPanel12.ColumnCount = 2;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.apply_sensor3, 1, 5);
             this.tableLayoutPanel12.Controls.Add(this.label56, 0, 0);
             this.tableLayoutPanel12.Controls.Add(this.label57, 0, 1);
             this.tableLayoutPanel12.Controls.Add(this.label58, 0, 2);
@@ -2606,22 +2408,25 @@
             this.tableLayoutPanel12.Controls.Add(this.dng31, 1, 2);
             this.tableLayoutPanel12.Controls.Add(this.dng32, 1, 3);
             this.tableLayoutPanel12.Controls.Add(this.dng33, 1, 4);
+            this.tableLayoutPanel12.Controls.Add(this.apply_sensor3, 1, 6);
+            this.tableLayoutPanel12.Controls.Add(this.label92, 0, 5);
             this.tableLayoutPanel12.Location = new System.Drawing.Point(27, 524);
             this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 6;
+            this.tableLayoutPanel12.RowCount = 7;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel12.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel12.TabIndex = 8;
             // 
             // apply_sensor3
             // 
-            this.apply_sensor3.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor3.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor3.Name = "apply_sensor3";
             this.apply_sensor3.Size = new System.Drawing.Size(114, 31);
@@ -2645,7 +2450,7 @@
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(3, 33);
+            this.label57.Location = new System.Drawing.Point(3, 28);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(55, 20);
             this.label57.TabIndex = 7;
@@ -2655,7 +2460,7 @@
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(3, 66);
+            this.label58.Location = new System.Drawing.Point(3, 56);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(78, 20);
             this.label58.TabIndex = 8;
@@ -2665,7 +2470,7 @@
             // 
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(3, 99);
+            this.label59.Location = new System.Drawing.Point(3, 84);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(78, 20);
             this.label59.TabIndex = 9;
@@ -2675,7 +2480,7 @@
             // 
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(3, 132);
+            this.label60.Location = new System.Drawing.Point(3, 112);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(78, 20);
             this.label60.TabIndex = 10;
@@ -2707,7 +2512,7 @@
             // nudX3
             // 
             this.nudX3.DecimalPlaces = 2;
-            this.nudX3.Location = new System.Drawing.Point(123, 36);
+            this.nudX3.Location = new System.Drawing.Point(123, 31);
             this.nudX3.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2730,7 +2535,7 @@
             // dng31
             // 
             this.dng31.DecimalPlaces = 2;
-            this.dng31.Location = new System.Drawing.Point(123, 69);
+            this.dng31.Location = new System.Drawing.Point(123, 59);
             this.dng31.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2754,7 +2559,7 @@
             // dng32
             // 
             this.dng32.DecimalPlaces = 2;
-            this.dng32.Location = new System.Drawing.Point(123, 102);
+            this.dng32.Location = new System.Drawing.Point(123, 87);
             this.dng32.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2777,7 +2582,7 @@
             // dng33
             // 
             this.dng33.DecimalPlaces = 2;
-            this.dng33.Location = new System.Drawing.Point(123, 135);
+            this.dng33.Location = new System.Drawing.Point(123, 115);
             this.dng33.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -2878,16 +2683,6 @@
             this.label68.TabIndex = 19;
             this.label68.Text = "NO-A1";
             // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(1240, 6);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(99, 24);
-            this.label69.TabIndex = 23;
-            this.label69.Text = "CO-AF(2)";
-            // 
             // label70
             // 
             this.label70.AutoSize = true;
@@ -2933,7 +2728,6 @@
             this.tableLayoutPanel13.ColumnCount = 2;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel13.Controls.Add(this.apply_sensor12, 1, 5);
             this.tableLayoutPanel13.Controls.Add(this.label74, 0, 0);
             this.tableLayoutPanel13.Controls.Add(this.label75, 0, 1);
             this.tableLayoutPanel13.Controls.Add(this.label76, 0, 2);
@@ -2944,22 +2738,26 @@
             this.tableLayoutPanel13.Controls.Add(this.dng121, 1, 2);
             this.tableLayoutPanel13.Controls.Add(this.dng122, 1, 3);
             this.tableLayoutPanel13.Controls.Add(this.dng123, 1, 4);
+            this.tableLayoutPanel13.Controls.Add(this.apply_sensor12, 1, 6);
+            this.tableLayoutPanel13.Controls.Add(this.label87, 0, 5);
             this.tableLayoutPanel13.Location = new System.Drawing.Point(654, 283);
             this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
-            this.tableLayoutPanel13.RowCount = 6;
+            this.tableLayoutPanel13.RowCount = 7;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel13.Size = new System.Drawing.Size(240, 204);
             this.tableLayoutPanel13.TabIndex = 24;
             // 
             // apply_sensor12
             // 
-            this.apply_sensor12.Location = new System.Drawing.Point(123, 167);
+            this.apply_sensor12.Location = new System.Drawing.Point(123, 170);
             this.apply_sensor12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.apply_sensor12.Name = "apply_sensor12";
             this.apply_sensor12.Size = new System.Drawing.Size(114, 31);
@@ -2983,7 +2781,7 @@
             // 
             this.label75.AutoSize = true;
             this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(3, 33);
+            this.label75.Location = new System.Drawing.Point(3, 28);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(55, 20);
             this.label75.TabIndex = 7;
@@ -2993,7 +2791,7 @@
             // 
             this.label76.AutoSize = true;
             this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(3, 66);
+            this.label76.Location = new System.Drawing.Point(3, 56);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(78, 20);
             this.label76.TabIndex = 8;
@@ -3003,7 +2801,7 @@
             // 
             this.label77.AutoSize = true;
             this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.Location = new System.Drawing.Point(3, 99);
+            this.label77.Location = new System.Drawing.Point(3, 84);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(78, 20);
             this.label77.TabIndex = 9;
@@ -3013,7 +2811,7 @@
             // 
             this.label78.AutoSize = true;
             this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(3, 132);
+            this.label78.Location = new System.Drawing.Point(3, 112);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(78, 20);
             this.label78.TabIndex = 10;
@@ -3045,7 +2843,7 @@
             // nudX12
             // 
             this.nudX12.DecimalPlaces = 2;
-            this.nudX12.Location = new System.Drawing.Point(123, 36);
+            this.nudX12.Location = new System.Drawing.Point(123, 31);
             this.nudX12.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -3068,7 +2866,7 @@
             // dng121
             // 
             this.dng121.DecimalPlaces = 2;
-            this.dng121.Location = new System.Drawing.Point(123, 69);
+            this.dng121.Location = new System.Drawing.Point(123, 59);
             this.dng121.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -3091,7 +2889,7 @@
             // dng122
             // 
             this.dng122.DecimalPlaces = 2;
-            this.dng122.Location = new System.Drawing.Point(123, 102);
+            this.dng122.Location = new System.Drawing.Point(123, 87);
             this.dng122.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -3114,7 +2912,7 @@
             // dng123
             // 
             this.dng123.DecimalPlaces = 2;
-            this.dng123.Location = new System.Drawing.Point(123, 135);
+            this.dng123.Location = new System.Drawing.Point(123, 115);
             this.dng123.Maximum = new decimal(new int[] {
             999999999,
             0,
@@ -3143,7 +2941,7 @@
             // 
             this.label79.AutoSize = true;
             this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(1240, 441);
+            this.label79.Location = new System.Drawing.Point(1215, 196);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(130, 24);
             this.label79.TabIndex = 27;
@@ -3273,7 +3071,7 @@
             this.tableLayoutPanel5.Controls.Add(this.dng152, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.dng153, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.apply_sensor15, 1, 3);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(1244, 470);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(1219, 225);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 4;
@@ -3291,7 +3089,7 @@
             // 
             this.label80.AutoSize = true;
             this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(1240, 251);
+            this.label80.Location = new System.Drawing.Point(1215, 6);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(91, 24);
             this.label80.TabIndex = 29;
@@ -3309,7 +3107,7 @@
             this.tableLayoutPanel14.Controls.Add(this.dng142, 1, 1);
             this.tableLayoutPanel14.Controls.Add(this.dng143, 1, 2);
             this.tableLayoutPanel14.Controls.Add(this.apply_sensor14, 1, 3);
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(1244, 280);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(1219, 35);
             this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 4;
@@ -3446,6 +3244,126 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.PictureBox3_Click_1);
             // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(3, 140);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(89, 20);
+            this.label41.TabIndex = 17;
+            this.label41.Text = "Calibration";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(3, 140);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(89, 20);
+            this.label42.TabIndex = 18;
+            this.label42.Text = "Calibration";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(3, 140);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(89, 20);
+            this.label43.TabIndex = 18;
+            this.label43.Text = "Calibration";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(3, 145);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(89, 20);
+            this.label44.TabIndex = 18;
+            this.label44.Text = "Calibration";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(3, 140);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(89, 20);
+            this.label45.TabIndex = 18;
+            this.label45.Text = "Calibration";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(3, 140);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(89, 20);
+            this.label69.TabIndex = 18;
+            this.label69.Text = "Calibration";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.Location = new System.Drawing.Point(3, 140);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(89, 20);
+            this.label87.TabIndex = 18;
+            this.label87.Text = "Calibration";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.Location = new System.Drawing.Point(3, 140);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(89, 20);
+            this.label88.TabIndex = 18;
+            this.label88.Text = "Calibration";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.Location = new System.Drawing.Point(3, 140);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(89, 20);
+            this.label89.TabIndex = 18;
+            this.label89.Text = "Calibration";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.Location = new System.Drawing.Point(3, 140);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(89, 20);
+            this.label90.TabIndex = 18;
+            this.label90.Text = "Calibration";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.Location = new System.Drawing.Point(3, 140);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(89, 20);
+            this.label91.TabIndex = 18;
+            this.label91.Text = "Calibration";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.Location = new System.Drawing.Point(3, 140);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(89, 20);
+            this.label92.TabIndex = 18;
+            this.label92.Text = "Calibration";
+            // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3459,7 +3377,6 @@
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.label73);
             this.Controls.Add(this.tableLayoutPanel13);
-            this.Controls.Add(this.label69);
             this.Controls.Add(this.label70);
             this.Controls.Add(this.label71);
             this.Controls.Add(this.label72);
@@ -3471,7 +3388,6 @@
             this.Controls.Add(this.label63);
             this.Controls.Add(this.label62);
             this.Controls.Add(this.label61);
-            this.Controls.Add(this.tableLayoutPanel9);
             this.Controls.Add(this.tableLayoutPanel10);
             this.Controls.Add(this.tableLayoutPanel11);
             this.Controls.Add(this.tableLayoutPanel12);
@@ -3545,13 +3461,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dng21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dng22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dng23)).EndInit();
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudY13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudX13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dng131)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dng132)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dng133)).EndInit();
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudY9)).EndInit();
@@ -3654,13 +3563,6 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.Button apply_sensor13;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Button apply_sensor9;
         private System.Windows.Forms.Label label46;
@@ -3690,7 +3592,6 @@
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
@@ -3743,11 +3644,6 @@
         private System.Windows.Forms.NumericUpDown dng21;
         private System.Windows.Forms.NumericUpDown dng22;
         private System.Windows.Forms.NumericUpDown dng23;
-        private System.Windows.Forms.NumericUpDown nudY13;
-        private System.Windows.Forms.NumericUpDown nudX13;
-        private System.Windows.Forms.NumericUpDown dng131;
-        private System.Windows.Forms.NumericUpDown dng132;
-        private System.Windows.Forms.NumericUpDown dng133;
         private System.Windows.Forms.NumericUpDown nudY9;
         private System.Windows.Forms.NumericUpDown nudX9;
         private System.Windows.Forms.NumericUpDown dng91;
@@ -3787,5 +3683,17 @@
         private System.Windows.Forms.NumericUpDown dng143;
         private System.Windows.Forms.Button apply_sensor14;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label87;
     }
 }
