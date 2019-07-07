@@ -26,6 +26,8 @@ namespace FFD_GUI
             public string[] Danger2 = new string[15];
             public string[] Danger3 = new string[15];
             public string[] sensor_data = new string[13];
+            public string[] calib = new string[13];
+            public string[] calibbuff = new string[13];
         }
         class Datacon
         {
@@ -49,22 +51,34 @@ namespace FFD_GUI
         int TickStart10;
         int TickStart11;
         int TickStart12;
-        public string port_sensor1 { get { return d.rdata[0]; } set { d.dataport_sensor[0] = Convert.ToString((((Convert.ToDouble(value)-5120)/1.28)/320)); } }
-        public string port_sensor2 { get { return d.rdata[1]; } set { d.dataport_sensor[1] = Convert.ToString((((Convert.ToDouble(value) - 4470) / 1.28) / 320)); } }
-        public string port_sensor3 { get { return d.rdata[2]; } set { d.dataport_sensor[2] = Convert.ToString((((Convert.ToDouble(value) - 5120) / 1.28) / 80)); } }
+        public string calibration1 { get { return u.calibbuff[0]; } set { u.calib[0] = value; } }
+        public string calibration2 { get { return u.calibbuff[1]; } set { u.calib[1] = value; } }
+        public string calibration3 { get { return u.calibbuff[2]; } set { u.calib[2] = value; } }
+        public string calibration4 { get { return u.calibbuff[3]; } set { u.calib[3] = value; } }
+        public string calibration5 { get { return u.calibbuff[4]; } set { u.calib[4] = value; } }
+        public string calibration6 { get { return u.calibbuff[5]; } set { u.calib[5] = value; } }
+        public string calibration7 { get { return u.calibbuff[6]; } set { u.calib[6] = value; } }
+        public string calibration8 { get { return u.calibbuff[7]; } set { u.calib[7] = value; } }
+        public string calibration9 { get { return u.calibbuff[8]; } set { u.calib[8] = value; } }
+        public string calibration10 { get { return u.calibbuff[9]; } set { u.calib[9] = value; } }
+        public string calibration11 { get { return u.calibbuff[10]; } set { u.calib[10] = value; } }
+        public string calibration12 { get { return u.calibbuff[11]; } set { u.calib[11] = value; } }
+        public string port_sensor1 { get { return d.rdata[0]; } set { d.dataport_sensor[0] = Convert.ToString((((Convert.ToDouble(value)- Convert.ToDouble(u.calib[0])) /1.28)/320)); } }
+        public string port_sensor2 { get { return d.rdata[1]; } set { d.dataport_sensor[1] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[3])) / 1.28) / 320)); } }
+        public string port_sensor3 { get { return d.rdata[2]; } set { d.dataport_sensor[2] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[6])) / 1.28) / 80)); } }
         public string port_sensor4 { get { return d.rdata[3]; } set { d.dataport_sensor[3] = value; } }
-        public string port_sensor5 { get { return d.rdata[4]; } set { d.dataport_sensor[4] = Convert.ToString((((Convert.ToDouble(value) - 5068) / 1.28) / 80)); } }
+        public string port_sensor5 { get { return d.rdata[4]; } set { d.dataport_sensor[4] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[9])) / 1.28) / 80)); } }
         public string port_sensor6 { get { return d.rdata[5]; } set { d.dataport_sensor[5] = value; } }
-        public string port_sensor7 { get { return d.rdata[6]; } set { d.dataport_sensor[6] = Convert.ToString((((Convert.ToDouble(value) - 5070) / 1.28) / 3.2)); } }
-        public string port_sensor8 { get { return d.rdata[7]; } set { d.dataport_sensor[7] = Convert.ToString((((Convert.ToDouble(value) - 0) * 0.015625) / 0.3)); } }
-        public string port_sensor9 { get { return d.rdata[8]; } set { d.dataport_sensor[8] = Convert.ToString((((Convert.ToDouble(value) - 5087) / 1.28)*3.2)); } }
-        public string port_sensor10 { get { return d.rdata[9]; } set { d.dataport_sensor[9] = Convert.ToString((((Convert.ToDouble(value) - 5095) / 1.28) /64)); } }
+        public string port_sensor7 { get { return d.rdata[6]; } set { d.dataport_sensor[6] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[8])) / 1.28) / 3.2)); } }
+        public string port_sensor8 { get { return d.rdata[7]; } set { d.dataport_sensor[7] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[4])) * 0.015625) / 0.3)); } }
+        public string port_sensor9 { get { return d.rdata[8]; } set { d.dataport_sensor[8] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[7])) / 1.28)*3.2)); } }
+        public string port_sensor10 { get { return d.rdata[9]; } set { d.dataport_sensor[9] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[9])) / 1.28) /64)); } }
         public string port_sensor11 { get { return d.rdata[10]; } set { d.dataport_sensor[10] = value; } }
-        public string port_sensor12 { get { return d.rdata[11]; } set { d.dataport_sensor[11] = Convert.ToString((((Convert.ToDouble(value) - 5120) / 1.28) /800)); } }
-        public string port_sensor13 { get { return d.rdata[12]; } set { d.dataport_sensor[12] = Convert.ToString((((Convert.ToDouble(value) - 3590) / 1.28) /3200)); } }
+        public string port_sensor12 { get { return d.rdata[11]; } set { d.dataport_sensor[11] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[2])) / 1.28) /800)); } }
+        public string port_sensor13 { get { return d.rdata[12]; } set { d.dataport_sensor[12] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[5])) / 1.28) /3200)); } }
         public string port_sensor14 { get { return d.rdata[13]; } set { d.dataport_sensor[13] = Convert.ToString((((Convert.ToDouble(value) - 5120) / 1.28) / 3.2)); } }
-        public string port_sensor15 { get { return d.rdata[14]; } set { d.dataport_sensor[14] = Convert.ToString((((Convert.ToDouble(value) - 5120) / 1.28) / 16)); } }
-        public string port_sensor16 { get { return d.rdata[15]; } set { d.dataport_sensor[15] = Convert.ToString((((Convert.ToDouble(value) - 4030) / 1.28) /160)); } }
+        public string port_sensor15 { get { return d.rdata[14]; } set { d.dataport_sensor[14] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[11])) / 1.28) / 16)); } }
+        public string port_sensor16 { get { return d.rdata[15]; } set { d.dataport_sensor[15] = Convert.ToString((((Convert.ToDouble(value) - Convert.ToDouble(u.calib[1])) / 1.28) /160)); } }
         public string port_sensor17 { get { return d.rdata[16]; } set { d.dataport_sensor[16] = value; } }
         public string port_sensor18 { get { return d.rdata[17]; } set { d.dataport_sensor[17] = value; } }
         public string port_sensor19 { get { return d.rdata[18]; } set { d.dataport_sensor[18] = value; } }
@@ -90,7 +104,6 @@ namespace FFD_GUI
         public string value_sensor10_y { get { return u.returndata[9]; } set { u.Yaxis[9] = value; } }
         public string value_sensor11_y { get { return u.returndata[10]; } set { u.Yaxis[10] = value; } }
         public string value_sensor12_y { get { return u.returndata[11]; } set { u.Yaxis[11] = value; } }
-        public string value_sensor13_y { get { return u.returndata[12]; } set { u.Yaxis[12] = value; } }
         public string value_sensor1_x { get { return u.returndata[13]; } set { u.Xaxis[0] = value; } }
         public string value_sensor2_x { get { return u.returndata[14]; } set { u.Xaxis[1] = value; } }
         public string value_sensor3_x { get { return u.returndata[15]; } set { u.Xaxis[2] = value; } }
@@ -103,7 +116,6 @@ namespace FFD_GUI
         public string value_sensor10_x { get { return u.returndata[22]; } set { u.Xaxis[9] = value; } }
         public string value_sensor11_x { get { return u.returndata[23]; } set { u.Xaxis[10] = value; } }
         public string value_sensor12_x { get { return u.returndata[24]; } set { u.Xaxis[11] = value; } }
-        public string value_sensor13_x { get { return u.returndata[25]; } set { u.Xaxis[12] = value; } }
         public string value_sensor1_d1 { get { return u.returndata[26]; } set { u.Danger1[0] = value; } }
         public string value_sensor2_d1 { get { return u.returndata[27]; } set { u.Danger1[1] = value; } }
         public string value_sensor3_d1 { get { return u.returndata[28]; } set { u.Danger1[2] = value; } }
@@ -116,7 +128,6 @@ namespace FFD_GUI
         public string value_sensor10_d1 { get { return u.returndata[35]; } set { u.Danger1[9] = value; } }
         public string value_sensor11_d1 { get { return u.returndata[36]; } set { u.Danger1[10] = value; } }
         public string value_sensor12_d1 { get { return u.returndata[37]; } set { u.Danger1[11] = value; } }
-        public string value_sensor13_d1 { get { return u.returndata[38]; } set { u.Danger1[12] = value; } }
         public string value_sensor14_d1 { get { return u.returndata[39]; } set { u.Danger1[13] = value; } }
         public string value_sensor15_d1 { get { return u.returndata[40]; } set { u.Danger1[14] = value; } }
         public string value_sensor1_d2 { get { return u.returndata[39]; } set { u.Danger2[0] = value; } }
@@ -131,7 +142,6 @@ namespace FFD_GUI
         public string value_sensor10_d2 { get { return u.returndata[48]; } set { u.Danger2[9] = value; } }
         public string value_sensor11_d2 { get { return u.returndata[49]; } set { u.Danger2[10] = value; } }
         public string value_sensor12_d2 { get { return u.returndata[50]; } set { u.Danger2[11] = value; } }
-        public string value_sensor13_d2 { get { return u.returndata[51]; } set { u.Danger2[12] = value; } }
         public string value_sensor14_d2 { get { return u.returndata[52]; } set { u.Danger2[13] = value; } }
         public string value_sensor15_d2 { get { return u.returndata[53]; } set { u.Danger2[14] = value; } }
         public string value_sensor1_d3 { get { return u.returndata[52]; } set { u.Danger3[0] = value; } }
@@ -146,7 +156,6 @@ namespace FFD_GUI
         public string value_sensor10_d3 { get { return u.returndata[61]; } set { u.Danger3[9] = value; } }
         public string value_sensor11_d3 { get { return u.returndata[62]; } set { u.Danger3[10] = value; } }
         public string value_sensor12_d3 { get { return u.returndata[63]; } set { u.Danger3[11] = value; } }
-        public string value_sensor13_d3 { get { return u.returndata[64]; } set { u.Danger3[12] = value; } }
         public string value_sensor14_d3 { get { return u.returndata[65]; } set { u.Danger3[13] = value; } }
         public string value_sensor15_d3 { get { return u.returndata[66]; } set { u.Danger3[14] = value; } }
         private About about;
@@ -475,9 +484,9 @@ namespace FFD_GUI
             lblsensor12.ForeColor = Color.Blue;
             lblsensor12.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[14]));
             lblsensor14.ForeColor = Color.Blue;
-            lblsensor14.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[20])/100);
+            lblsensor14.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[20])/1);
             lblsensor15.ForeColor = Color.Blue;
-            lblsensor15.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[21])/100);
+            lblsensor15.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[21])/1);
 
         }
 

@@ -218,6 +218,18 @@
             this.label90 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
+            this.cal5 = new System.Windows.Forms.NumericUpDown();
+            this.cal9 = new System.Windows.Forms.NumericUpDown();
+            this.cal7 = new System.Windows.Forms.NumericUpDown();
+            this.cal10 = new System.Windows.Forms.NumericUpDown();
+            this.cal8 = new System.Windows.Forms.NumericUpDown();
+            this.cal4 = new System.Windows.Forms.NumericUpDown();
+            this.cal12 = new System.Windows.Forms.NumericUpDown();
+            this.cal11 = new System.Windows.Forms.NumericUpDown();
+            this.cal3 = new System.Windows.Forms.NumericUpDown();
+            this.cal6 = new System.Windows.Forms.NumericUpDown();
+            this.cal2 = new System.Windows.Forms.NumericUpDown();
+            this.cal1 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudY1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudX1)).BeginInit();
@@ -299,6 +311,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.dng142)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dng143)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -318,6 +342,7 @@
             this.tableLayoutPanel1.Controls.Add(this.dng13, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.apply_sensor1, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.label89, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.cal1, 1, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(962, 530);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -529,6 +554,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label10, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.apply_sensor4, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.label69, 0, 5);
+            this.tableLayoutPanel2.Controls.Add(this.cal4, 1, 5);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(345, 281);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -738,6 +764,7 @@
             this.tableLayoutPanel3.Controls.Add(this.dng73, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.apply_sensor7, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.label43, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.cal7, 1, 5);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(658, 35);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -947,6 +974,7 @@
             this.tableLayoutPanel4.Controls.Add(this.dng103, 1, 4);
             this.tableLayoutPanel4.Controls.Add(this.apply_sensor10, 1, 6);
             this.tableLayoutPanel4.Controls.Add(this.label44, 0, 5);
+            this.tableLayoutPanel4.Controls.Add(this.cal10, 1, 5);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(962, 35);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -1156,6 +1184,7 @@
             this.table.Controls.Add(this.dng113, 1, 4);
             this.table.Controls.Add(this.apply_sensor11, 1, 6);
             this.table.Controls.Add(this.label88, 0, 5);
+            this.table.Controls.Add(this.cal11, 1, 5);
             this.table.Location = new System.Drawing.Point(962, 280);
             this.table.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.table.Name = "table";
@@ -1365,6 +1394,7 @@
             this.tableLayoutPanel6.Controls.Add(this.dng83, 1, 4);
             this.tableLayoutPanel6.Controls.Add(this.apply_sensor8, 1, 6);
             this.tableLayoutPanel6.Controls.Add(this.label45, 0, 5);
+            this.tableLayoutPanel6.Controls.Add(this.cal8, 1, 5);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(29, 283);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -1574,6 +1604,7 @@
             this.tableLayoutPanel7.Controls.Add(this.dng53, 1, 4);
             this.tableLayoutPanel7.Controls.Add(this.apply_sensor5, 1, 6);
             this.tableLayoutPanel7.Controls.Add(this.label41, 0, 5);
+            this.tableLayoutPanel7.Controls.Add(this.cal5, 1, 5);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(29, 38);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -1781,9 +1812,10 @@
             this.tableLayoutPanel8.Controls.Add(this.nudX2, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.dng21, 1, 2);
             this.tableLayoutPanel8.Controls.Add(this.dng22, 1, 3);
-            this.tableLayoutPanel8.Controls.Add(this.dng23, 1, 4);
             this.tableLayoutPanel8.Controls.Add(this.apply_sensor2, 1, 6);
             this.tableLayoutPanel8.Controls.Add(this.label90, 0, 5);
+            this.tableLayoutPanel8.Controls.Add(this.dng23, 1, 4);
+            this.tableLayoutPanel8.Controls.Add(this.cal2, 1, 5);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(651, 525);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -1992,6 +2024,7 @@
             this.tableLayoutPanel10.Controls.Add(this.dng93, 1, 4);
             this.tableLayoutPanel10.Controls.Add(this.apply_sensor9, 1, 6);
             this.tableLayoutPanel10.Controls.Add(this.label42, 0, 5);
+            this.tableLayoutPanel10.Controls.Add(this.cal9, 1, 5);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(353, 41);
             this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
@@ -2184,6 +2217,7 @@
             0,
             0,
             0});
+            this.dng93.ValueChanged += new System.EventHandler(this.Dng93_ValueChanged);
             // 
             // tableLayoutPanel11
             // 
@@ -2202,6 +2236,7 @@
             this.tableLayoutPanel11.Controls.Add(this.dng63, 1, 4);
             this.tableLayoutPanel11.Controls.Add(this.apply_sensor6, 1, 6);
             this.tableLayoutPanel11.Controls.Add(this.label91, 0, 5);
+            this.tableLayoutPanel11.Controls.Add(this.cal6, 1, 5);
             this.tableLayoutPanel11.Location = new System.Drawing.Point(346, 527);
             this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
@@ -2407,9 +2442,10 @@
             this.tableLayoutPanel12.Controls.Add(this.nudX3, 1, 1);
             this.tableLayoutPanel12.Controls.Add(this.dng31, 1, 2);
             this.tableLayoutPanel12.Controls.Add(this.dng32, 1, 3);
-            this.tableLayoutPanel12.Controls.Add(this.dng33, 1, 4);
             this.tableLayoutPanel12.Controls.Add(this.apply_sensor3, 1, 6);
             this.tableLayoutPanel12.Controls.Add(this.label92, 0, 5);
+            this.tableLayoutPanel12.Controls.Add(this.dng33, 1, 4);
+            this.tableLayoutPanel12.Controls.Add(this.cal3, 1, 5);
             this.tableLayoutPanel12.Location = new System.Drawing.Point(27, 524);
             this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
@@ -2740,6 +2776,7 @@
             this.tableLayoutPanel13.Controls.Add(this.dng123, 1, 4);
             this.tableLayoutPanel13.Controls.Add(this.apply_sensor12, 1, 6);
             this.tableLayoutPanel13.Controls.Add(this.label87, 0, 5);
+            this.tableLayoutPanel13.Controls.Add(this.cal12, 1, 5);
             this.tableLayoutPanel13.Location = new System.Drawing.Point(654, 283);
             this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
@@ -3364,6 +3401,277 @@
             this.label92.TabIndex = 18;
             this.label92.Text = "Calibration";
             // 
+            // cal5
+            // 
+            this.cal5.DecimalPlaces = 2;
+            this.cal5.Location = new System.Drawing.Point(123, 143);
+            this.cal5.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal5.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal5.Name = "cal5";
+            this.cal5.Size = new System.Drawing.Size(113, 22);
+            this.cal5.TabIndex = 18;
+            // 
+            // cal9
+            // 
+            this.cal9.DecimalPlaces = 2;
+            this.cal9.Location = new System.Drawing.Point(123, 143);
+            this.cal9.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal9.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal9.Name = "cal9";
+            this.cal9.Size = new System.Drawing.Size(113, 22);
+            this.cal9.TabIndex = 19;
+            this.cal9.Value = new decimal(new int[] {
+            5070,
+            0,
+            0,
+            0});
+            // 
+            // cal7
+            // 
+            this.cal7.DecimalPlaces = 2;
+            this.cal7.Location = new System.Drawing.Point(123, 143);
+            this.cal7.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal7.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal7.Name = "cal7";
+            this.cal7.Size = new System.Drawing.Size(113, 22);
+            this.cal7.TabIndex = 19;
+            this.cal7.Value = new decimal(new int[] {
+            5120,
+            0,
+            0,
+            0});
+            // 
+            // cal10
+            // 
+            this.cal10.DecimalPlaces = 2;
+            this.cal10.Location = new System.Drawing.Point(123, 148);
+            this.cal10.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal10.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal10.Name = "cal10";
+            this.cal10.Size = new System.Drawing.Size(113, 22);
+            this.cal10.TabIndex = 19;
+            this.cal10.Value = new decimal(new int[] {
+            5068,
+            0,
+            0,
+            0});
+            // 
+            // cal8
+            // 
+            this.cal8.DecimalPlaces = 2;
+            this.cal8.Location = new System.Drawing.Point(123, 143);
+            this.cal8.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal8.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal8.Name = "cal8";
+            this.cal8.Size = new System.Drawing.Size(113, 22);
+            this.cal8.TabIndex = 19;
+            this.cal8.Value = new decimal(new int[] {
+            5087,
+            0,
+            0,
+            0});
+            // 
+            // cal4
+            // 
+            this.cal4.DecimalPlaces = 2;
+            this.cal4.Location = new System.Drawing.Point(123, 143);
+            this.cal4.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal4.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal4.Name = "cal4";
+            this.cal4.Size = new System.Drawing.Size(113, 22);
+            this.cal4.TabIndex = 19;
+            this.cal4.Value = new decimal(new int[] {
+            4470,
+            0,
+            0,
+            0});
+            // 
+            // cal12
+            // 
+            this.cal12.DecimalPlaces = 2;
+            this.cal12.Location = new System.Drawing.Point(123, 143);
+            this.cal12.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal12.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal12.Name = "cal12";
+            this.cal12.Size = new System.Drawing.Size(113, 22);
+            this.cal12.TabIndex = 19;
+            this.cal12.Value = new decimal(new int[] {
+            5120,
+            0,
+            0,
+            0});
+            // 
+            // cal11
+            // 
+            this.cal11.DecimalPlaces = 2;
+            this.cal11.Location = new System.Drawing.Point(123, 143);
+            this.cal11.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal11.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal11.Name = "cal11";
+            this.cal11.Size = new System.Drawing.Size(113, 22);
+            this.cal11.TabIndex = 19;
+            this.cal11.Value = new decimal(new int[] {
+            5095,
+            0,
+            0,
+            0});
+            // 
+            // cal3
+            // 
+            this.cal3.DecimalPlaces = 2;
+            this.cal3.Location = new System.Drawing.Point(123, 143);
+            this.cal3.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal3.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal3.Name = "cal3";
+            this.cal3.Size = new System.Drawing.Size(113, 22);
+            this.cal3.TabIndex = 19;
+            this.cal3.Value = new decimal(new int[] {
+            5120,
+            0,
+            0,
+            0});
+            // 
+            // cal6
+            // 
+            this.cal6.DecimalPlaces = 2;
+            this.cal6.Location = new System.Drawing.Point(123, 143);
+            this.cal6.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal6.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal6.Name = "cal6";
+            this.cal6.Size = new System.Drawing.Size(113, 22);
+            this.cal6.TabIndex = 20;
+            this.cal6.Value = new decimal(new int[] {
+            3590,
+            0,
+            0,
+            0});
+            // 
+            // cal2
+            // 
+            this.cal2.DecimalPlaces = 2;
+            this.cal2.Location = new System.Drawing.Point(123, 143);
+            this.cal2.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal2.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal2.Name = "cal2";
+            this.cal2.Size = new System.Drawing.Size(113, 22);
+            this.cal2.TabIndex = 20;
+            this.cal2.Value = new decimal(new int[] {
+            4030,
+            0,
+            0,
+            0});
+            // 
+            // cal1
+            // 
+            this.cal1.DecimalPlaces = 2;
+            this.cal1.Location = new System.Drawing.Point(123, 143);
+            this.cal1.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.cal1.Minimum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            -2147483648});
+            this.cal1.Name = "cal1";
+            this.cal1.Size = new System.Drawing.Size(113, 22);
+            this.cal1.TabIndex = 21;
+            this.cal1.Value = new decimal(new int[] {
+            5120,
+            0,
+            0,
+            0});
+            // 
             // Options
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3500,6 +3808,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.dng142)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dng143)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cal1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3695,5 +4015,17 @@
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.NumericUpDown cal1;
+        private System.Windows.Forms.NumericUpDown cal4;
+        private System.Windows.Forms.NumericUpDown cal7;
+        private System.Windows.Forms.NumericUpDown cal10;
+        private System.Windows.Forms.NumericUpDown cal11;
+        private System.Windows.Forms.NumericUpDown cal8;
+        private System.Windows.Forms.NumericUpDown cal5;
+        private System.Windows.Forms.NumericUpDown cal2;
+        private System.Windows.Forms.NumericUpDown cal9;
+        private System.Windows.Forms.NumericUpDown cal6;
+        private System.Windows.Forms.NumericUpDown cal3;
+        private System.Windows.Forms.NumericUpDown cal12;
     }
 }
