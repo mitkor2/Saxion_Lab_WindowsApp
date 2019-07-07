@@ -564,6 +564,7 @@
             this.lblsensor15.Size = new System.Drawing.Size(59, 36);
             this.lblsensor15.TabIndex = 95;
             this.lblsensor15.Text = "Cel";
+            this.lblsensor15.Click += new System.EventHandler(this.Lblsensor15_Click);
             // 
             // lblsensor14
             // 

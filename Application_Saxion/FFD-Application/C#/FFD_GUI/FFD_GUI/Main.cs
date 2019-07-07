@@ -195,12 +195,12 @@ namespace FFD_GUI
         {
 
             GraphPane myPane1 = zedGraphControl1.GraphPane;
-            myPane1.Title.Text = "H2S";
+            myPane1.Title.Text = "Zwavelwaterstof";
             myPane1.XAxis.Title.Text = "Time, Seconds";
             myPane1.YAxis.Title.Text = "Angle, Deg";
 
             RollingPointPairList list1 = new RollingPointPairList(60000);
-            LineItem Curve1 = myPane1.AddCurve("H2S Value", list1, Color.Blue, SymbolType.None);
+            LineItem Curve1 = myPane1.AddCurve("Zwavelwaterstof Value", list1, Color.Blue, SymbolType.None);
              myPane1.XAxis.Scale.Min = 0;
              myPane1.XAxis.Scale.Max = 10;
              myPane1.YAxis.Scale.Max = 10;
@@ -217,13 +217,13 @@ namespace FFD_GUI
             /*Display the graph 2 of contents*/
             //Psidot graph//
             GraphPane myPane2 = zedGraphControl2.GraphPane;
-            myPane2.Title.Text = "SO2";
+            myPane2.Title.Text = "Zwaveldioxide";
             myPane2.XAxis.Title.Text = "Time, Seconds";
             myPane2.YAxis.Title.Text = "Angle, Deg";
             myPane2.XAxis.MajorGrid.IsVisible = true;
             myPane2.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list2 = new RollingPointPairList(60000);
-            LineItem Curve2 = myPane2.AddCurve("SO2 Value", list2, Color.Blue, SymbolType.None);
+            LineItem Curve2 = myPane2.AddCurve("Zwaveldioxide Value", list2, Color.Blue, SymbolType.None);
             //
             myPane2.XAxis.Scale.Min = 0;
             myPane2.XAxis.Scale.Max = 10;
@@ -236,13 +236,13 @@ namespace FFD_GUI
             /*Display the graph 3 of contents*/
             //Theta graph//
             GraphPane myPane3 = zedGraphControl3.GraphPane;
-            myPane3.Title.Text = "CL2-A1";
+            myPane3.Title.Text = "Chloorgas";
             myPane3.XAxis.Title.Text = "Time, Seconds";
             myPane3.YAxis.Title.Text = "Angle, Deg";
             myPane3.XAxis.MajorGrid.IsVisible = true;
             myPane3.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list3 = new RollingPointPairList(60000);
-            LineItem Curve3 = myPane3.AddCurve("CL2-A1 Vallue", list3, Color.Blue, SymbolType.None);
+            LineItem Curve3 = myPane3.AddCurve("Chloorgas Vallue", list3, Color.Blue, SymbolType.None);
 
             myPane3.XAxis.Scale.Min = 0;
             myPane3.XAxis.Scale.Max = 10;
@@ -253,13 +253,13 @@ namespace FFD_GUI
             TickStart3 = Environment.TickCount;
 
             GraphPane myPane4 = zedGraphControl4.GraphPane;
-            myPane4.Title.Text = "HCN";
+            myPane4.Title.Text = "Waterstofcyanide";
             myPane4.XAxis.Title.Text = "Time, Seconds";
             myPane4.YAxis.Title.Text = "Angle, Deg";
             myPane4.XAxis.MajorGrid.IsVisible = true;
             myPane4.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list4 = new RollingPointPairList(60000);
-            LineItem Curve4 = myPane4.AddCurve("HCN Vallue", list4, Color.Blue, SymbolType.None);
+            LineItem Curve4 = myPane4.AddCurve("Waterstofcyanide Vallue", list4, Color.Blue, SymbolType.None);
 
 
             myPane4.XAxis.Scale.Min = 0;
@@ -271,13 +271,13 @@ namespace FFD_GUI
             TickStart4 = Environment.TickCount;
 
             GraphPane myPane5 = zedGraphControl5.GraphPane;
-            myPane5.Title.Text = "PID-A1";
+            myPane5.Title.Text = "PID";
             myPane5.XAxis.Title.Text = "Time, Seconds";
             myPane5.YAxis.Title.Text = "Angle, Deg";
             myPane5.XAxis.MajorGrid.IsVisible = true;
             myPane5.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list5 = new RollingPointPairList(60000);
-            LineItem Curve5 = myPane5.AddCurve("PID-A1 Vallue", list5, Color.Blue, SymbolType.None);
+            LineItem Curve5 = myPane5.AddCurve("PID Vallue", list5, Color.Blue, SymbolType.None);
 
 
             myPane5.XAxis.Scale.Min = 0;
@@ -289,13 +289,13 @@ namespace FFD_GUI
             TickStart5 = Environment.TickCount;
 
             GraphPane myPane6 = zedGraphControl6.GraphPane;
-            myPane6.Title.Text = "IRC-A1";
+            myPane6.Title.Text = "Koolstofdioxide ";
             myPane6.XAxis.Title.Text = "Time, Seconds";
             myPane6.YAxis.Title.Text = "Angle, Deg";
             myPane6.XAxis.MajorGrid.IsVisible = true;
             myPane6.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list6 = new RollingPointPairList(60000);
-            LineItem Curve6 = myPane6.AddCurve("IRC-A1 Vallue", list6, Color.Blue, SymbolType.None);
+            LineItem Curve6 = myPane6.AddCurve("Koolstofdioxide  Vallue", list6, Color.Blue, SymbolType.None);
 
 
             myPane6.XAxis.Scale.Min = 0;
@@ -307,13 +307,13 @@ namespace FFD_GUI
             TickStart6 = Environment.TickCount;
 
             GraphPane myPane7 = zedGraphControl7.GraphPane;
-            myPane7.Title.Text = "HCL";
+            myPane7.Title.Text = "Zoutzuur";
             myPane7.XAxis.Title.Text = "Time, Seconds";
             myPane7.YAxis.Title.Text = "Angle, Deg";
             myPane7.XAxis.MajorGrid.IsVisible = true;
             myPane7.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list7 = new RollingPointPairList(60000);
-            LineItem Curve7 = myPane7.AddCurve("HCL Vallue", list7, Color.Blue, SymbolType.None);
+            LineItem Curve7 = myPane7.AddCurve("Zoutzuur Vallue", list7, Color.Blue, SymbolType.None);
 
 
             myPane7.XAxis.Scale.Min = 0;
@@ -325,13 +325,13 @@ namespace FFD_GUI
             TickStart7 = Environment.TickCount;
 
             GraphPane myPane8 = zedGraphControl8.GraphPane;
-            myPane8.Title.Text = "CH-D3";
+            myPane8.Title.Text = "LEL Vluchtige organisch stoffen ";
             myPane8.XAxis.Title.Text = "Time, Seconds";
             myPane8.YAxis.Title.Text = "Angle, Deg";
             myPane8.XAxis.MajorGrid.IsVisible = true;
             myPane8.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list8 = new RollingPointPairList(60000);
-            LineItem Curve8 = myPane8.AddCurve("CH-D3 Vallue", list8, Color.Blue, SymbolType.None);
+            LineItem Curve8 = myPane8.AddCurve("LEL Vluchtige organisch stoffen  Vallue", list8, Color.Blue, SymbolType.None);
 
 
             myPane8.XAxis.Scale.Min = 0;
@@ -343,13 +343,13 @@ namespace FFD_GUI
             TickStart8 = Environment.TickCount;
 
             GraphPane myPane9 = zedGraphControl9.GraphPane;
-            myPane9.Title.Text = "CO-AF(1)";
+            myPane9.Title.Text = "Koolmonoxide";
             myPane9.XAxis.Title.Text = "Time, Seconds";
             myPane9.YAxis.Title.Text = "Angle, Deg";
             myPane9.XAxis.MajorGrid.IsVisible = true;
             myPane9.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list9 = new RollingPointPairList(60000);
-            LineItem Curve9 = myPane9.AddCurve("CO-AF(1) Vallue", list9, Color.Blue, SymbolType.None);
+            LineItem Curve9 = myPane9.AddCurve("Koolmonoxide Vallue", list9, Color.Blue, SymbolType.None);
 
 
             myPane9.XAxis.Scale.Min = 0;
@@ -361,13 +361,13 @@ namespace FFD_GUI
             TickStart9 = Environment.TickCount;
 
             GraphPane myPane10 = zedGraphControl10.GraphPane;
-            myPane10.Title.Text = "NO2-AE";
+            myPane10.Title.Text = "Stikstofdioxide";
             myPane10.XAxis.Title.Text = "Time, Seconds";
             myPane10.YAxis.Title.Text = "Angle, Deg";
             myPane10.XAxis.MajorGrid.IsVisible = true;
             myPane10.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list10 = new RollingPointPairList(60000);
-            LineItem Curve10 = myPane10.AddCurve("NO2-AE Vallue", list10, Color.Blue, SymbolType.None);
+            LineItem Curve10 = myPane10.AddCurve("Stikstofdioxide Vallue", list10, Color.Blue, SymbolType.None);
 
 
             myPane10.XAxis.Scale.Min = 0;
@@ -379,13 +379,13 @@ namespace FFD_GUI
             TickStart10 = Environment.TickCount;
 
             GraphPane myPane11 = zedGraphControl11.GraphPane;
-            myPane11.Title.Text = "NO-A1";
+            myPane11.Title.Text = "Stikstofmonoxide";
             myPane11.XAxis.Title.Text = "Time, Seconds";
             myPane11.YAxis.Title.Text = "Angle, Deg";
             myPane11.XAxis.MajorGrid.IsVisible = true;
             myPane11.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list11 = new RollingPointPairList(60000);
-            LineItem Curve11 = myPane11.AddCurve("NO-A1 Vallue", list11, Color.Blue, SymbolType.None);
+            LineItem Curve11 = myPane11.AddCurve("Stikstofmonoxide Vallue", list11, Color.Blue, SymbolType.None);
 
 
             myPane11.XAxis.Scale.Min = 0;
@@ -397,13 +397,13 @@ namespace FFD_GUI
             TickStart11 = Environment.TickCount;
 
             GraphPane myPane12 = zedGraphControl12.GraphPane;
-            myPane12.Title.Text = "NH3";
+            myPane12.Title.Text = "Ammoniak";
             myPane12.XAxis.Title.Text = "Time, Seconds";
             myPane12.YAxis.Title.Text = "Angle, Deg";
             myPane12.XAxis.MajorGrid.IsVisible = true;
             myPane12.YAxis.MajorGrid.IsVisible = true;
             RollingPointPairList list12 = new RollingPointPairList(60000);
-            LineItem Curve12 = myPane12.AddCurve("NH3 Vallue", list12, Color.Blue, SymbolType.None);
+            LineItem Curve12 = myPane12.AddCurve("Ammoniak Vallue", list12, Color.Blue, SymbolType.None);
 
 
             myPane12.XAxis.Scale.Min = 0;
@@ -484,9 +484,9 @@ namespace FFD_GUI
             lblsensor12.ForeColor = Color.Blue;
             lblsensor12.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[14]));
             lblsensor14.ForeColor = Color.Blue;
-            lblsensor14.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[20])/1);
+            lblsensor14.Text = String.Format("{0} %", Convert.ToDouble(d.dataport_sensor[20])/1);
             lblsensor15.ForeColor = Color.Blue;
-            lblsensor15.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[21])/1);
+            lblsensor15.Text = String.Format("{0} °C", Convert.ToDouble(d.dataport_sensor[21])/1);
 
         }
 
@@ -789,21 +789,24 @@ namespace FFD_GUI
                         {
                             if (double.Parse(u.Danger1[13]) <= double.Parse(d.dataport_sensor[20]))
                             {
-                                lblsensor14.ForeColor = Color.Red;
+                                u.Danger1[13] = null;
                                 MessageBox.Show("Humidity - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                lblsensor14.ForeColor = Color.Red;
                             }
                             if (double.Parse(u.Danger2[13]) <= double.Parse(d.dataport_sensor[20]))
                             {
-                                lblsensor14.ForeColor = Color.Red;
+                                u.Danger2[13] = null;
                                 MessageBox.Show("Humidity - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                lblsensor14.ForeColor = Color.Red;
                             }
                             if (double.Parse(u.Danger3[13]) <= double.Parse(d.dataport_sensor[20]))
                             {
-                                lblsensor14.ForeColor = Color.Red;
+                                u.Danger3[13] = null;
                                 MessageBox.Show("Humidity- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                lblsensor14.ForeColor = Color.Red;
                             }
                         }
                         catch
@@ -823,21 +826,24 @@ namespace FFD_GUI
                         {
                             if (double.Parse(u.Danger1[14]) <= double.Parse(d.dataport_sensor[21]))
                             {
-                                lblsensor15.ForeColor = Color.Red;
+                                u.Danger1[14] = null;
                                 MessageBox.Show("Temperature - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                lblsensor15.ForeColor = Color.Red;
                             }
                             if (double.Parse(u.Danger2[14]) <= double.Parse(d.dataport_sensor[21]))
                             {
-                                lblsensor15.ForeColor = Color.Red;
+                                u.Danger2[14] = null;
                                 MessageBox.Show("Temperature - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                lblsensor15.ForeColor = Color.Red;
                             }
                             if (double.Parse(u.Danger3[14]) <= double.Parse(d.dataport_sensor[21]))
                             {
-                                lblsensor15.ForeColor = Color.Red;
+                                u.Danger3[14] = null;
                                 MessageBox.Show("Temperature Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                lblsensor15.ForeColor = Color.Red;
                             }
                         }
                         catch
@@ -862,21 +868,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[0]) <= double.Parse(d.dataport_sensor[0]))
                         {
                             u.Danger1[0] = null;
-                            MessageBox.Show("H2S - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Zwavelwaterstof - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor1.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[0]) <= double.Parse(d.dataport_sensor[0]))
                         {
                             u.Danger2[0] = null;
-                            MessageBox.Show("H2S - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Zwavelwaterstof - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor1.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[0]) <= double.Parse(d.dataport_sensor[0]))
                         {
                             u.Danger3[0] = null;
-                            MessageBox.Show("H2S - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Zwavelwaterstof - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor1.ForeColor = Color.Red;
                         }
@@ -901,21 +907,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[1]) <= double.Parse(d.dataport_sensor[15]))
                         {
                             u.Danger1[1] = null;
-                            MessageBox.Show("SO2 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Zwaveldioxide - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor2.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[1]) <= double.Parse(d.dataport_sensor[15]))
                         {
                             u.Danger2[1] = null;
-                            MessageBox.Show("SO2 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Zwaveldioxide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor2.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[1]) <= double.Parse(d.dataport_sensor[15]))
                         {
                             u.Danger3[1] = null;
-                            MessageBox.Show("SO2 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Zwaveldioxide - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor2.ForeColor = Color.Red;
                         }
@@ -940,21 +946,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[2]) <= double.Parse(d.dataport_sensor[11]))
                         {
                             u.Danger1[2] = null;
-                            MessageBox.Show("CL2-A1 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Chloorgas - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor3.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[2]) <= double.Parse(d.dataport_sensor[11]))
                         {
                             u.Danger2[2] = null;
-                            MessageBox.Show("CL2-A1  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Chloorgas  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor3.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[2]) <= double.Parse(d.dataport_sensor[11]))
                         {
                             u.Danger3[2] = null;
-                            MessageBox.Show("CL2-A1  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Chloorgas  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor3.ForeColor = Color.Red;
                         }
@@ -979,21 +985,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[3]) <= double.Parse(d.dataport_sensor[1]))
                         {
                             u.Danger1[3] = null;
-                            MessageBox.Show("HCN - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Waterstofcyanide - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor4.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[3]) <= double.Parse(d.dataport_sensor[1]))
                         {
                             u.Danger2[3] = null;
-                            MessageBox.Show("HCN - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Waterstofcyanide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor4.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[3]) <= double.Parse(d.dataport_sensor[1]))
                         {
                             u.Danger3[3] = null;
-                            MessageBox.Show("HCN  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Waterstofcyanide  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor4.ForeColor = Color.Red;
                         }
@@ -1018,21 +1024,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[4]) <= double.Parse(d.dataport_sensor[7]))
                         {
                             u.Danger1[4] = null;
-                            MessageBox.Show("PID-A1 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("PID - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor5.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[4]) <= double.Parse(d.dataport_sensor[7]))
                         {
                             u.Danger2[4] = null;
-                            MessageBox.Show("PID-A1  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("PID  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor5.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[4]) <= double.Parse(d.dataport_sensor[7]))
                         {
                             u.Danger3[4] = null;
-                            MessageBox.Show("PID-A1 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("PID - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor5.ForeColor = Color.Red;
                         }
@@ -1057,21 +1063,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[5]) <= double.Parse(d.dataport_sensor[12]))
                         {
                             u.Danger1[5] = null;
-                            MessageBox.Show("IRC-A1 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Koolstofdioxide  - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor6.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[5]) <= double.Parse(d.dataport_sensor[12]))
                         {
                             u.Danger2[5] = null;
-                            MessageBox.Show("IRC-A1  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Koolstofdioxide   - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor6.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[5]) <= double.Parse(d.dataport_sensor[12]))
                         {
                             u.Danger3[5] = null;
-                            MessageBox.Show("IRC-A1  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Koolstofdioxide   - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor6.ForeColor = Color.Red;
                         }
@@ -1096,21 +1102,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[6]) <= double.Parse(d.dataport_sensor[2]))
                         {
                             u.Danger1[6] = null;
-                            MessageBox.Show("HCL - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Zoutzuur - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor7.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[6]) <= double.Parse(d.dataport_sensor[2]))
                         {
                             u.Danger2[6] = null;
-                            MessageBox.Show("HCL  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Zoutzuur  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor7.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[6]) <= double.Parse(d.dataport_sensor[2]))
                         {
                             u.Danger3[6] = null;
-                            MessageBox.Show("HCL - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Zoutzuur - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor7.ForeColor = Color.Red;
                         }
@@ -1135,21 +1141,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[7]) <= double.Parse(d.dataport_sensor[8]))
                         {
                             u.Danger1[7] = null;
-                            MessageBox.Show("CH-D3 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("LEL Vluchtige organisch stoffen  - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor8.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[7]) <= double.Parse(d.dataport_sensor[8]))
                         {
                             u.Danger2[7] = null;
-                            MessageBox.Show("CH-D3  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("LEL Vluchtige organisch stoffen   - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor8.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[7]) <= double.Parse(d.dataport_sensor[8]))
                         {
                             u.Danger3[7] = null;
-                            MessageBox.Show("CH-D3 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("LEL Vluchtige organisch stoffen  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor8.ForeColor = Color.Red;
                         }
@@ -1213,21 +1219,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[9]) <= double.Parse(d.dataport_sensor[4]))
                         {
                             u.Danger1[9] = null;
-                            MessageBox.Show("NO2-AE- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Stikstofdioxide- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor10.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[9]) <= double.Parse(d.dataport_sensor[4]))
                         {
                             u.Danger2[9] = null;
-                            MessageBox.Show("NO2-AE - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Stikstofdioxide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor10.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[91]) <= double.Parse(d.dataport_sensor[4]))
                         {
                             u.Danger3[9] = null;
-                            MessageBox.Show("NO2-AE - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Stikstofdioxide - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor10.ForeColor = Color.Red;
                         } 
@@ -1252,21 +1258,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[10]) <= double.Parse(d.dataport_sensor[9]))
                         {
                             u.Danger1[10] = null;
-                            MessageBox.Show("NO-A1- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Stikstofmonoxide- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor11.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[10]) <= double.Parse(d.dataport_sensor[9]))
                         {
                             u.Danger2[10] = null;
-                            MessageBox.Show("NO-A1 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Stikstofmonoxide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor11.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[10]) <= double.Parse(d.dataport_sensor[9]))
                         {
                             u.Danger3[10] = null;
-                            MessageBox.Show("NO-A1- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Stikstofmonoxide- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor11.ForeColor = Color.Red;
                         }
@@ -1291,21 +1297,21 @@ namespace FFD_GUI
                         if (double.Parse(u.Danger1[11]) <= double.Parse(d.dataport_sensor[14]))
                         {
                             u.Danger1[11] = null;
-                            MessageBox.Show("NH3- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Ammoniak- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor12.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger2[11]) <= double.Parse(d.dataport_sensor[14]))
                         {
                             u.Danger2[11] = null;
-                            MessageBox.Show("NH3 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Ammoniak - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor12.ForeColor = Color.Red;
                         }
                         if (double.Parse(u.Danger3[11]) <= double.Parse(d.dataport_sensor[14]))
                         {
                             u.Danger3[11] = null;
-                            MessageBox.Show("NH3- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBox.Show("Ammoniak- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                             lblsensor12.ForeColor = Color.Red;
                         }
@@ -1344,6 +1350,11 @@ namespace FFD_GUI
         }
 
         private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lblsensor15_Click(object sender, EventArgs e)
         {
 
         }
