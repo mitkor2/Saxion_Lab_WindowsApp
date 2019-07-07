@@ -484,9 +484,9 @@ namespace FFD_GUI
             lblsensor12.ForeColor = Color.Blue;
             lblsensor12.Text = String.Format("{0:0.00}", Convert.ToDouble(d.dataport_sensor[14]));
             lblsensor14.ForeColor = Color.Blue;
-            lblsensor14.Text = String.Format("{0} %", Convert.ToDouble(d.dataport_sensor[20])/1);
+            lblsensor14.Text = String.Format("{0} %", Convert.ToDouble(d.dataport_sensor[20])/100);
             lblsensor15.ForeColor = Color.Blue;
-            lblsensor15.Text = String.Format("{0} °C", Convert.ToDouble(d.dataport_sensor[21])/1);
+            lblsensor15.Text = String.Format("{0} °C", Convert.ToDouble(d.dataport_sensor[21])/100);
 
         }
 
