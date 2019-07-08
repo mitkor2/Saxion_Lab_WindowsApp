@@ -201,10 +201,10 @@ namespace FFD_GUI
 
             RollingPointPairList list1 = new RollingPointPairList(60000);
             LineItem Curve1 = myPane1.AddCurve("Zwavelwaterstof Value", list1, Color.Blue, SymbolType.None);
-             myPane1.XAxis.Scale.Min = 0;
-             myPane1.XAxis.Scale.Max = 10;
-             myPane1.YAxis.Scale.Max = 10;
-             myPane1.YAxis.Scale.Min = -0.5;
+            myPane1.YAxis.Scale.MaxAuto = true;
+            myPane1.YAxis.Scale.MinAuto = true;
+            myPane1.XAxis.Scale.MaxAuto = true;
+            myPane1.XAxis.Scale.MinAuto = true;
             /* myPane1.YAxis.Scale.MinAuto = true;
              myPane1.YAxis.Scale.MaxAuto = true;
              myPane1.XAxis.Scale.MinAuto = true;
@@ -225,10 +225,10 @@ namespace FFD_GUI
             RollingPointPairList list2 = new RollingPointPairList(60000);
             LineItem Curve2 = myPane2.AddCurve("Zwaveldioxide Value", list2, Color.Blue, SymbolType.None);
             //
-            myPane2.XAxis.Scale.Min = 0;
-            myPane2.XAxis.Scale.Max = 10;
-            myPane2.YAxis.Scale.Min = -0.5;
-            myPane2.YAxis.Scale.Max = 10;
+            myPane2.YAxis.Scale.MaxAuto = true;
+            myPane2.YAxis.Scale.MinAuto = true;
+            myPane2.XAxis.Scale.MaxAuto = true;
+            myPane2.XAxis.Scale.MinAuto = true;
 
             zedGraphControl2.AxisChange();
             TickStart2 = Environment.TickCount;
@@ -244,10 +244,10 @@ namespace FFD_GUI
             RollingPointPairList list3 = new RollingPointPairList(60000);
             LineItem Curve3 = myPane3.AddCurve("Chloorgas Vallue", list3, Color.Blue, SymbolType.None);
 
-            myPane3.XAxis.Scale.Min = 0;
-            myPane3.XAxis.Scale.Max = 10;
-            myPane3.YAxis.Scale.Min = -0.5;
-            myPane3.YAxis.Scale.Max = 10;
+            myPane3.YAxis.Scale.MaxAuto = true;
+            myPane3.YAxis.Scale.MinAuto = true;
+            myPane3.XAxis.Scale.MaxAuto = true;
+            myPane3.XAxis.Scale.MinAuto = true;
 
             zedGraphControl3.AxisChange();
             TickStart3 = Environment.TickCount;
@@ -262,10 +262,10 @@ namespace FFD_GUI
             LineItem Curve4 = myPane4.AddCurve("Waterstofcyanide Vallue", list4, Color.Blue, SymbolType.None);
 
 
-            myPane4.XAxis.Scale.Min = 0;
-            myPane4.XAxis.Scale.Max = 10;
-            myPane4.YAxis.Scale.Min = -0.5;
-            myPane4.YAxis.Scale.Max = 10;
+            myPane4.YAxis.Scale.MaxAuto = true;
+            myPane4.YAxis.Scale.MinAuto = true;
+            myPane4.XAxis.Scale.MaxAuto = true;
+            myPane4.XAxis.Scale.MinAuto = true;
 
             zedGraphControl4.AxisChange();
             TickStart4 = Environment.TickCount;
@@ -280,10 +280,10 @@ namespace FFD_GUI
             LineItem Curve5 = myPane5.AddCurve("PID Vallue", list5, Color.Blue, SymbolType.None);
 
 
-            myPane5.XAxis.Scale.Min = 0;
-            myPane5.XAxis.Scale.Max = 10;
-            myPane5.YAxis.Scale.Min = -0.5;
-            myPane5.YAxis.Scale.Max = 10;
+            myPane5.YAxis.Scale.MaxAuto = true;
+            myPane5.YAxis.Scale.MinAuto = true;
+            myPane5.XAxis.Scale.MaxAuto = true;
+            myPane5.XAxis.Scale.MinAuto = true;
 
             zedGraphControl5.AxisChange();
             TickStart5 = Environment.TickCount;
@@ -298,10 +298,10 @@ namespace FFD_GUI
             LineItem Curve6 = myPane6.AddCurve("Koolstofdioxide  Vallue", list6, Color.Blue, SymbolType.None);
 
 
-            myPane6.XAxis.Scale.Min = 0;
-            myPane6.XAxis.Scale.Max = 10;
-            myPane6.YAxis.Scale.Min = -0.5;
-            myPane6.YAxis.Scale.Max = 10;
+            myPane6.YAxis.Scale.MaxAuto = true;
+            myPane6.YAxis.Scale.MinAuto = true;
+            myPane6.XAxis.Scale.MaxAuto = true;
+            myPane6.XAxis.Scale.MinAuto = true;
 
             zedGraphControl6.AxisChange();
             TickStart6 = Environment.TickCount;
@@ -316,10 +316,10 @@ namespace FFD_GUI
             LineItem Curve7 = myPane7.AddCurve("Zoutzuur Vallue", list7, Color.Blue, SymbolType.None);
 
 
-            myPane7.XAxis.Scale.Min = 0;
-            myPane7.XAxis.Scale.Max = 10;
-            myPane7.YAxis.Scale.Min = -0.5;
-            myPane7.YAxis.Scale.Max = 10;
+            myPane7.YAxis.Scale.MaxAuto = true;
+            myPane7.YAxis.Scale.MinAuto = true;
+            myPane7.XAxis.Scale.MaxAuto = true;
+            myPane7.XAxis.Scale.MinAuto = true;
 
             zedGraphControl7.AxisChange();
             TickStart7 = Environment.TickCount;
@@ -334,10 +334,10 @@ namespace FFD_GUI
             LineItem Curve8 = myPane8.AddCurve("LEL Vluchtige organisch stoffen  Vallue", list8, Color.Blue, SymbolType.None);
 
 
-            myPane8.XAxis.Scale.Min = 0;
-            myPane8.XAxis.Scale.Max = 10;
-            myPane8.YAxis.Scale.Min = -0.5;
-            myPane8.YAxis.Scale.Max = 10;
+            myPane8.YAxis.Scale.MaxAuto = true;
+            myPane8.YAxis.Scale.MinAuto = true;
+            myPane8.XAxis.Scale.MaxAuto = true;
+            myPane8.XAxis.Scale.MinAuto = true;
 
             zedGraphControl8.AxisChange();
             TickStart8 = Environment.TickCount;
@@ -352,10 +352,10 @@ namespace FFD_GUI
             LineItem Curve9 = myPane9.AddCurve("Koolmonoxide Vallue", list9, Color.Blue, SymbolType.None);
 
 
-            myPane9.XAxis.Scale.Min = 0;
-            myPane9.XAxis.Scale.Max = 10;
-            myPane9.YAxis.Scale.Min = -0.5;
-            myPane9.YAxis.Scale.Max = 10;
+            myPane9.YAxis.Scale.MaxAuto = true;
+            myPane9.YAxis.Scale.MinAuto = true;
+            myPane9.XAxis.Scale.MaxAuto = true;
+            myPane9.XAxis.Scale.MinAuto = true;
 
             zedGraphControl9.AxisChange();
             TickStart9 = Environment.TickCount;
@@ -370,10 +370,11 @@ namespace FFD_GUI
             LineItem Curve10 = myPane10.AddCurve("Stikstofdioxide Vallue", list10, Color.Blue, SymbolType.None);
 
 
-            myPane10.XAxis.Scale.Min = 0;
-            myPane10.XAxis.Scale.Max = 10;
-            myPane10.YAxis.Scale.Min = -0.5;
-            myPane10.YAxis.Scale.Max = 10;
+
+            myPane10.YAxis.Scale.MaxAuto = true;
+            myPane10.YAxis.Scale.MinAuto = true;
+            myPane10.XAxis.Scale.MaxAuto = true;
+            myPane10.XAxis.Scale.MinAuto = true;
 
             zedGraphControl10.AxisChange();
             TickStart10 = Environment.TickCount;
@@ -388,10 +389,11 @@ namespace FFD_GUI
             LineItem Curve11 = myPane11.AddCurve("Stikstofmonoxide Vallue", list11, Color.Blue, SymbolType.None);
 
 
-            myPane11.XAxis.Scale.Min = 0;
-            myPane11.XAxis.Scale.Max = 10;
-            myPane11.YAxis.Scale.Min = -0.5;
-            myPane11.YAxis.Scale.Max = 10;
+
+            myPane11.YAxis.Scale.MaxAuto = true;
+            myPane11.YAxis.Scale.MinAuto = true;
+            myPane11.XAxis.Scale.MaxAuto = true;
+            myPane11.XAxis.Scale.MinAuto = true;
 
             zedGraphControl11.AxisChange();
             TickStart11 = Environment.TickCount;
@@ -406,11 +408,10 @@ namespace FFD_GUI
             LineItem Curve12 = myPane12.AddCurve("Ammoniak Vallue", list12, Color.Blue, SymbolType.None);
 
 
-            myPane12.XAxis.Scale.Min = 0;
-            myPane12.XAxis.Scale.Max = 10;
-            myPane12.YAxis.Scale.Min = -0.5;
-            myPane12.YAxis.Scale.Max = 10;
-
+            myPane12.YAxis.Scale.MaxAuto = true;
+            myPane12.YAxis.Scale.MinAuto = true;
+            myPane12.XAxis.Scale.MaxAuto = true;
+            myPane12.XAxis.Scale.MinAuto = true;
             zedGraphControl12.AxisChange();
             TickStart12 = Environment.TickCount;
         }
@@ -749,27 +750,6 @@ namespace FFD_GUI
 
         private void BtnConn_Click(object sender, EventArgs e)
         {
-            //Console.WriteLine(double.Parse(u.Xaxis[0]));
-            string mitko = "10";
-            GraphPane myPane1 = zedGraphControl1.GraphPane;
-            myPane1.YAxis.Scale.Min = -10;
-            if (u.Xaxis[0] != null)
-            {
-                try
-                {
-                    myPane1.YAxis.Scale.Max = double.Parse(u.Xaxis[0]);
-                }
-                catch
-                {
-                    return;
-                }
-            }
-            else
-            {
-                myPane1.YAxis.Scale.Max = double.Parse(mitko);
-            }
-
-            Console.WriteLine(u.Xaxis[0]);
         }
 
         private void Lblsensor13_Click(object sender, EventArgs e)
@@ -860,10 +840,9 @@ namespace FFD_GUI
                 { 
                     try
                     {
-                        myPane1.YAxis.Scale.Max = double.Parse(u.Yaxis[0]);
-                        myPane1.YAxis.Scale.Min = -((double.Parse(u.Yaxis[0])*5)/100);
-                        myPane1.XAxis.Scale.Max = double.Parse(u.Xaxis[0]);
-                        myPane1.XAxis.Scale.Min = 0;
+                       // myPane1.YAxis.Scale.Max = double.Parse(u.Yaxis[0]);
+                        //myPane1.YAxis.Scale.Min = -((double.Parse(u.Yaxis[0])*5)/100);
+                       // myPane1.XAxis.Scale.Max = double.Parse(u.Xaxis[0]);
 
                         if (double.Parse(u.Danger1[0]) <= double.Parse(d.dataport_sensor[0]))
                         {
@@ -900,10 +879,10 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane2.YAxis.Scale.Max = double.Parse(u.Yaxis[1]);
-                        myPane2.YAxis.Scale.Min = -((double.Parse(u.Yaxis[1]) * 5) / 100);
-                        myPane2.XAxis.Scale.Max = double.Parse(u.Xaxis[1]);
-                        myPane2.XAxis.Scale.Min = 0;
+                        //myPane2.YAxis.Scale.Max = double.Parse(u.Yaxis[1]);
+                        //myPane2.YAxis.Scale.Min = -((double.Parse(u.Yaxis[1]) * 5) / 100);
+                        //myPane2.XAxis.Scale.Max = double.Parse(u.Xaxis[1]);
+
                         if (double.Parse(u.Danger1[1]) <= double.Parse(d.dataport_sensor[15]))
                         {
                             u.Danger1[1] = null;
@@ -939,10 +918,10 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane3.YAxis.Scale.Max = double.Parse(u.Yaxis[2]);
-                        myPane3.YAxis.Scale.Min = -((double.Parse(u.Yaxis[2]) * 5) / 100);
-                        myPane3.XAxis.Scale.Max = double.Parse(u.Xaxis[2]);
-                        myPane3.XAxis.Scale.Min = 0;
+                        //myPane3.YAxis.Scale.Max = double.Parse(u.Yaxis[2]);
+                        //myPane3.YAxis.Scale.Min = -((double.Parse(u.Yaxis[2]) * 5) / 100);
+                        //myPane3.XAxis.Scale.Max = double.Parse(u.Xaxis[2]);
+
                         if (double.Parse(u.Danger1[2]) <= double.Parse(d.dataport_sensor[11]))
                         {
                             u.Danger1[2] = null;
@@ -978,10 +957,10 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane4.YAxis.Scale.Max = double.Parse(u.Yaxis[3]);
-                        myPane4.YAxis.Scale.Min = -((double.Parse(u.Yaxis[3]) * 5) / 100);
-                        myPane4.XAxis.Scale.Max = double.Parse(u.Xaxis[3]);
-                        myPane4.XAxis.Scale.Min = 0;
+                        //myPane4.YAxis.Scale.Max = double.Parse(u.Yaxis[3]);
+                        //myPane4.YAxis.Scale.Min = -((double.Parse(u.Yaxis[3]) * 5) / 100);
+                        //myPane4.XAxis.Scale.Max = double.Parse(u.Xaxis[3]);
+
                         if (double.Parse(u.Danger1[3]) <= double.Parse(d.dataport_sensor[1]))
                         {
                             u.Danger1[3] = null;
@@ -1017,10 +996,10 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane5.YAxis.Scale.Max = double.Parse(u.Yaxis[4]);
-                        myPane5.YAxis.Scale.Min = -((double.Parse(u.Yaxis[4]) * 5) / 100);
-                        myPane5.XAxis.Scale.Max = double.Parse(u.Xaxis[4]);
-                        myPane5.XAxis.Scale.Min = 0;
+                        //myPane5.YAxis.Scale.Max = double.Parse(u.Yaxis[4]);
+                        //myPane5.YAxis.Scale.Min = -((double.Parse(u.Yaxis[4]) * 5) / 100);
+                        //myPane5.XAxis.Scale.Max = double.Parse(u.Xaxis[4]);
+
                         if (double.Parse(u.Danger1[4]) <= double.Parse(d.dataport_sensor[7]))
                         {
                             u.Danger1[4] = null;
@@ -1056,10 +1035,10 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane6.YAxis.Scale.Max = double.Parse(u.Yaxis[5]);
-                        myPane6.YAxis.Scale.Min = -((double.Parse(u.Yaxis[5]) * 5) / 100);
-                        myPane6.XAxis.Scale.Max = double.Parse(u.Xaxis[5]);
-                        myPane6.XAxis.Scale.Min = 0;
+                        //myPane6.YAxis.Scale.Max = double.Parse(u.Yaxis[5]);
+                        //myPane6.YAxis.Scale.Min = -((double.Parse(u.Yaxis[5]) * 5) / 100);
+                        //myPane6.XAxis.Scale.Max = double.Parse(u.Xaxis[5]);
+
                         if (double.Parse(u.Danger1[5]) <= double.Parse(d.dataport_sensor[12]))
                         {
                             u.Danger1[5] = null;
@@ -1095,10 +1074,10 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane7.YAxis.Scale.Max = double.Parse(u.Yaxis[6]);
-                        myPane7.YAxis.Scale.Min = -((double.Parse(u.Yaxis[6]) * 5) / 100);
-                        myPane7.XAxis.Scale.Max = double.Parse(u.Xaxis[6]);
-                        myPane7.XAxis.Scale.Min = 0;
+                        //myPane7.YAxis.Scale.Max = double.Parse(u.Yaxis[6]);
+                        //myPane7.YAxis.Scale.Min = -((double.Parse(u.Yaxis[6]) * 5) / 100);
+                        // myPane7.XAxis.Scale.Max = double.Parse(u.Xaxis[6]);
+
                         if (double.Parse(u.Danger1[6]) <= double.Parse(d.dataport_sensor[2]))
                         {
                             u.Danger1[6] = null;
@@ -1134,10 +1113,10 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane8.YAxis.Scale.Max = double.Parse(u.Yaxis[7]);
-                        myPane8.YAxis.Scale.Min = -((double.Parse(u.Yaxis[7]) * 5) / 100);
-                        myPane8.XAxis.Scale.Max = double.Parse(u.Xaxis[7]);
-                        myPane8.XAxis.Scale.Min = 0;
+                        //myPane8.YAxis.Scale.Max = double.Parse(u.Yaxis[7]);
+                        //myPane8.YAxis.Scale.Min = -((double.Parse(u.Yaxis[7]) * 5) / 100);
+                        //myPane8.XAxis.Scale.Max = double.Parse(u.Xaxis[7]);
+
                         if (double.Parse(u.Danger1[7]) <= double.Parse(d.dataport_sensor[8]))
                         {
                             u.Danger1[7] = null;
@@ -1173,10 +1152,9 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane9.YAxis.Scale.Max = double.Parse(u.Yaxis[8]);
-                        myPane9.YAxis.Scale.Min = -((double.Parse(u.Yaxis[8]) * 5) / 100);
-                        myPane9.XAxis.Scale.Max = double.Parse(u.Xaxis[8]);
-                        myPane9.XAxis.Scale.Min = 0;
+                        //myPane9.YAxis.Scale.Max = double.Parse(u.Yaxis[8]);
+                        //myPane9.YAxis.Scale.Min = -((double.Parse(u.Yaxis[8]) * 5) / 100);
+                        //myPane9.XAxis.Scale.Max = double.Parse(u.Xaxis[8]);
                         if (double.Parse(u.Danger1[8]) <= double.Parse(d.dataport_sensor[6]))
                         {
                             u.Danger1[8] = null;
@@ -1212,10 +1190,9 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane10.YAxis.Scale.Max = double.Parse(u.Yaxis[9]);
-                        myPane10.YAxis.Scale.Min = -((double.Parse(u.Yaxis[9]) * 5) / 100);
-                        myPane10.XAxis.Scale.Max = double.Parse(u.Xaxis[9]);
-                        myPane10.XAxis.Scale.Min = 0;
+                        //myPane10.YAxis.Scale.Max = double.Parse(u.Yaxis[9]);
+                        //myPane10.YAxis.Scale.Min = -((double.Parse(u.Yaxis[9]) * 5) / 100);
+                        //myPane10.XAxis.Scale.Max = double.Parse(u.Xaxis[9]);
                         if (double.Parse(u.Danger1[9]) <= double.Parse(d.dataport_sensor[4]))
                         {
                             u.Danger1[9] = null;
@@ -1251,9 +1228,9 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane11.YAxis.Scale.Max = double.Parse(u.Yaxis[10]);
-                        myPane11.YAxis.Scale.Min = -((double.Parse(u.Yaxis[10]) * 5) / 100);
-                        myPane11.XAxis.Scale.Max = double.Parse(u.Xaxis[10]);
+                        // myPane11.YAxis.Scale.Max = double.Parse(u.Yaxis[10]);
+                        //myPane11.YAxis.Scale.Min = -((double.Parse(u.Yaxis[10]) * 5) / 100);
+                        //myPane11.XAxis.Scale.Max = double.Parse(u.Xaxis[10]);    
                         myPane11.XAxis.Scale.Min = 0;
                         if (double.Parse(u.Danger1[10]) <= double.Parse(d.dataport_sensor[9]))
                         {
@@ -1290,10 +1267,10 @@ namespace FFD_GUI
                 {
                     try
                     {
-                        myPane12.YAxis.Scale.Max = double.Parse(u.Yaxis[11]);
-                        myPane12.XAxis.Scale.Max = double.Parse(u.Xaxis[11]);
-                        myPane12.YAxis.Scale.Min = -((double.Parse(u.Yaxis[11]) * 5) / 100);
-                        myPane12.XAxis.Scale.Min = 0;
+                        //myPane12.YAxis.Scale.Max = double.Parse(u.Yaxis[11]);
+                        //myPane12.XAxis.Scale.Max = double.Parse(u.Xaxis[11]);
+                        //myPane12.YAxis.Scale.Min = -((double.Parse(u.Yaxis[11]) * 5) / 100);
+                        //myPane12.XAxis.Scale.Min = 0;
                         if (double.Parse(u.Danger1[11]) <= double.Parse(d.dataport_sensor[14]))
                         {
                             u.Danger1[11] = null;
