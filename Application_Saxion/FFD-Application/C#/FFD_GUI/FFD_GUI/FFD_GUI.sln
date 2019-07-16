@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFD_GUI", "FFD_GUI.csproj", "{953C4E05-0B3E-43D5-BFAB-D54BBBF5D89D}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\Setup\Setup.vdproj", "{1235E871-0AA4-431B-B316-251ED082E63D}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SaxionLab", "..\SaxionLab\SaxionLab.vdproj", "{D451B9E5-F2F7-40B2-8BB1-78D7811DFF11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{953C4E05-0B3E-43D5-BFAB-D54BBBF5D89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{953C4E05-0B3E-43D5-BFAB-D54BBBF5D89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{953C4E05-0B3E-43D5-BFAB-D54BBBF5D89D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1235E871-0AA4-431B-B316-251ED082E63D}.Debug|Any CPU.ActiveCfg = Debug
-		{1235E871-0AA4-431B-B316-251ED082E63D}.Release|Any CPU.ActiveCfg = Release
+		{D451B9E5-F2F7-40B2-8BB1-78D7811DFF11}.Debug|Any CPU.ActiveCfg = Debug
+		{D451B9E5-F2F7-40B2-8BB1-78D7811DFF11}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

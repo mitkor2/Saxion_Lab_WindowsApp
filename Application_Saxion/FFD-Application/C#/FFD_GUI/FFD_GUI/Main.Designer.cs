@@ -74,6 +74,18 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.timer5 = new System.Windows.Forms.Timer(this.components);
+            this.timer6 = new System.Windows.Forms.Timer(this.components);
+            this.timer7 = new System.Windows.Forms.Timer(this.components);
+            this.timer8 = new System.Windows.Forms.Timer(this.components);
+            this.timer9 = new System.Windows.Forms.Timer(this.components);
+            this.timer10 = new System.Windows.Forms.Timer(this.components);
+            this.timer11 = new System.Windows.Forms.Timer(this.components);
+            this.timer12 = new System.Windows.Forms.Timer(this.components);
+            this.timer13 = new System.Windows.Forms.Timer(this.components);
+            this.timer14 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -105,27 +117,27 @@
             this.toolStripMenuItem2,
             this.optionsToolStripMenuItem1});
             this.filesToolStripMenuItem.Name = "filesToolStripMenuItem";
-            this.filesToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
+            this.filesToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.filesToolStripMenuItem.Text = "Files";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(159, 26);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(167, 26);
             this.toolStripMenuItem2.Text = "Connection";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem2_Click);
             // 
             // optionsToolStripMenuItem1
             // 
             this.optionsToolStripMenuItem1.Name = "optionsToolStripMenuItem1";
-            this.optionsToolStripMenuItem1.Size = new System.Drawing.Size(159, 26);
+            this.optionsToolStripMenuItem1.Size = new System.Drawing.Size(167, 26);
             this.optionsToolStripMenuItem1.Text = "Options";
             this.optionsToolStripMenuItem1.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -630,6 +642,66 @@
             this.pictureBox8.TabIndex = 100;
             this.pictureBox8.TabStop = false;
             // 
+            // timer3
+            // 
+            this.timer3.Interval = 10;
+            this.timer3.Tick += new System.EventHandler(this.Timer3_Tick);
+            // 
+            // timer4
+            // 
+            this.timer4.Interval = 10;
+            this.timer4.Tick += new System.EventHandler(this.Timer4_Tick);
+            // 
+            // timer5
+            // 
+            this.timer5.Interval = 10;
+            this.timer5.Tick += new System.EventHandler(this.Timer5_Tick);
+            // 
+            // timer6
+            // 
+            this.timer6.Interval = 10;
+            this.timer6.Tick += new System.EventHandler(this.Timer6_Tick);
+            // 
+            // timer7
+            // 
+            this.timer7.Interval = 10;
+            this.timer7.Tick += new System.EventHandler(this.Timer7_Tick);
+            // 
+            // timer8
+            // 
+            this.timer8.Interval = 10;
+            this.timer8.Tick += new System.EventHandler(this.Timer8_Tick);
+            // 
+            // timer9
+            // 
+            this.timer9.Interval = 10;
+            this.timer9.Tick += new System.EventHandler(this.Timer9_Tick);
+            // 
+            // timer10
+            // 
+            this.timer10.Interval = 10;
+            this.timer10.Tick += new System.EventHandler(this.Timer10_Tick);
+            // 
+            // timer11
+            // 
+            this.timer11.Interval = 10;
+            this.timer11.Tick += new System.EventHandler(this.Timer11_Tick);
+            // 
+            // timer12
+            // 
+            this.timer12.Interval = 10;
+            this.timer12.Tick += new System.EventHandler(this.Timer12_Tick);
+            // 
+            // timer13
+            // 
+            this.timer13.Interval = 10;
+            this.timer13.Tick += new System.EventHandler(this.Timer13_Tick);
+            // 
+            // timer14
+            // 
+            this.timer14.Interval = 10;
+            this.timer14.Tick += new System.EventHandler(this.Timer14_Tick);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -739,5 +811,17 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.Timer timer5;
+        private System.Windows.Forms.Timer timer6;
+        private System.Windows.Forms.Timer timer7;
+        private System.Windows.Forms.Timer timer8;
+        private System.Windows.Forms.Timer timer9;
+        private System.Windows.Forms.Timer timer10;
+        private System.Windows.Forms.Timer timer11;
+        private System.Windows.Forms.Timer timer12;
+        private System.Windows.Forms.Timer timer13;
+        private System.Windows.Forms.Timer timer14;
     }
 }

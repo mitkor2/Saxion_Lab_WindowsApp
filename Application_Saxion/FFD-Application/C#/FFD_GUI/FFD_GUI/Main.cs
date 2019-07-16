@@ -167,6 +167,45 @@ namespace FFD_GUI
             timer2.Enabled = true;                       // Enable the timer
             timer2.Start();                              // Start the timer
             timer1.Start();
+            timer3.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer3.Enabled = true;                       // Enable the timer
+            timer3.Start();                              // Start the timer
+            timer4.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer4.Enabled = true;                       // Enable the timer
+            timer4.Start();                              // Start the timer
+            timer5.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer5.Enabled = true;                       // Enable the timer
+            timer5.Start();                              // Start the timer
+            timer6.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer6.Enabled = true;                       // Enable the timer
+            timer6.Start();                              // Start the timer
+            timer7.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer7.Enabled = true;                       // Enable the timer
+            timer7.Start();                              // Start the timer
+            timer8.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer8.Enabled = true;                       // Enable the timer
+            timer8.Start();                              // Start the timer
+            timer9.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer9.Enabled = true;                       // Enable the timer
+            timer9.Start();                              // Start the timer
+            timer10.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer10.Enabled = true;                       // Enable the timer
+            timer10.Start();                              // Start the timer
+            timer11.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer11.Enabled = true;                       // Enable the timer
+            timer11.Start();                              // Start the timer
+            timer11.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer11.Enabled = true;                       // Enable the timer
+            timer11.Start();
+            timer12.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer12.Enabled = true;                       // Enable the timer
+            timer12.Start();
+            timer13.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer13.Enabled = true;                       // Enable the timer
+            timer13.Start();
+            timer14.Tick += new EventHandler(DoUpdate); // Everytime timer ticks, timer_Tick will be called
+            timer14.Enabled = true;                       // Enable the timer
+            timer14.Start();
         }
 
 
@@ -833,472 +872,17 @@ namespace FFD_GUI
                     }
                 }
             }
-            GraphPane myPane1 = zedGraphControl1.GraphPane;
-            if (u.Yaxis[0] != null)
-            {
-                if (u.Xaxis[0] != null)
-                { 
-                    try
-                    {
-                       // myPane1.YAxis.Scale.Max = double.Parse(u.Yaxis[0]);
-                        //myPane1.YAxis.Scale.Min = -((double.Parse(u.Yaxis[0])*5)/100);
-                       // myPane1.XAxis.Scale.Max = double.Parse(u.Xaxis[0]);
 
-                        if (double.Parse(u.Danger1[0]) <= double.Parse(d.dataport_sensor[0]))
-                        {
-                            u.Danger1[0] = null;
-                            MessageBox.Show("Zwavelwaterstof - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor1.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[0]) <= double.Parse(d.dataport_sensor[0]))
-                        {
-                            u.Danger2[0] = null;
-                            MessageBox.Show("Zwavelwaterstof - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor1.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[0]) <= double.Parse(d.dataport_sensor[0]))
-                        {
-                            u.Danger3[0] = null;
-                            MessageBox.Show("Zwavelwaterstof - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor1.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane2 = zedGraphControl2.GraphPane;
-            if (u.Yaxis[1] != null)
-            {
-                if (u.Xaxis[1] != null)
-                {
-                    try
-                    {
-                        //myPane2.YAxis.Scale.Max = double.Parse(u.Yaxis[1]);
-                        //myPane2.YAxis.Scale.Min = -((double.Parse(u.Yaxis[1]) * 5) / 100);
-                        //myPane2.XAxis.Scale.Max = double.Parse(u.Xaxis[1]);
 
-                        if (double.Parse(u.Danger1[1]) <= double.Parse(d.dataport_sensor[15]))
-                        {
-                            u.Danger1[1] = null;
-                            MessageBox.Show("Zwaveldioxide - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor2.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[1]) <= double.Parse(d.dataport_sensor[15]))
-                        {
-                            u.Danger2[1] = null;
-                            MessageBox.Show("Zwaveldioxide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor2.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[1]) <= double.Parse(d.dataport_sensor[15]))
-                        {
-                            u.Danger3[1] = null;
-                            MessageBox.Show("Zwaveldioxide - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor2.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane3 = zedGraphControl3.GraphPane;
-            if (u.Yaxis[2] != null)
-            {
-                if (u.Xaxis[2] != null)
-                {
-                    try
-                    {
-                        //myPane3.YAxis.Scale.Max = double.Parse(u.Yaxis[2]);
-                        //myPane3.YAxis.Scale.Min = -((double.Parse(u.Yaxis[2]) * 5) / 100);
-                        //myPane3.XAxis.Scale.Max = double.Parse(u.Xaxis[2]);
 
-                        if (double.Parse(u.Danger1[2]) <= double.Parse(d.dataport_sensor[11]))
-                        {
-                            u.Danger1[2] = null;
-                            MessageBox.Show("Chloorgas - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor3.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[2]) <= double.Parse(d.dataport_sensor[11]))
-                        {
-                            u.Danger2[2] = null;
-                            MessageBox.Show("Chloorgas  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor3.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[2]) <= double.Parse(d.dataport_sensor[11]))
-                        {
-                            u.Danger3[2] = null;
-                            MessageBox.Show("Chloorgas  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor3.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane4 = zedGraphControl4.GraphPane;
-            if (u.Yaxis[3] != null)
-            {
-                if (u.Xaxis[3] != null)
-                {
-                    try
-                    {
-                        //myPane4.YAxis.Scale.Max = double.Parse(u.Yaxis[3]);
-                        //myPane4.YAxis.Scale.Min = -((double.Parse(u.Yaxis[3]) * 5) / 100);
-                        //myPane4.XAxis.Scale.Max = double.Parse(u.Xaxis[3]);
 
-                        if (double.Parse(u.Danger1[3]) <= double.Parse(d.dataport_sensor[1]))
-                        {
-                            u.Danger1[3] = null;
-                            MessageBox.Show("Waterstofcyanide - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor4.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[3]) <= double.Parse(d.dataport_sensor[1]))
-                        {
-                            u.Danger2[3] = null;
-                            MessageBox.Show("Waterstofcyanide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor4.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[3]) <= double.Parse(d.dataport_sensor[1]))
-                        {
-                            u.Danger3[3] = null;
-                            MessageBox.Show("Waterstofcyanide  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor4.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane5 = zedGraphControl5.GraphPane;
-            if (u.Yaxis[4] != null)
-            {
-                if (u.Xaxis[4] != null)
-                {
-                    try
-                    {
-                        //myPane5.YAxis.Scale.Max = double.Parse(u.Yaxis[4]);
-                        //myPane5.YAxis.Scale.Min = -((double.Parse(u.Yaxis[4]) * 5) / 100);
-                        //myPane5.XAxis.Scale.Max = double.Parse(u.Xaxis[4]);
 
-                        if (double.Parse(u.Danger1[4]) <= double.Parse(d.dataport_sensor[7]))
-                        {
-                            u.Danger1[4] = null;
-                            MessageBox.Show("PID - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor5.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[4]) <= double.Parse(d.dataport_sensor[7]))
-                        {
-                            u.Danger2[4] = null;
-                            MessageBox.Show("PID  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor5.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[4]) <= double.Parse(d.dataport_sensor[7]))
-                        {
-                            u.Danger3[4] = null;
-                            MessageBox.Show("PID - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor5.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane6 = zedGraphControl6.GraphPane;
-            if (u.Yaxis[5] != null)
-            {
-                if (u.Xaxis[5] != null)
-                {
-                    try
-                    {
-                        //myPane6.YAxis.Scale.Max = double.Parse(u.Yaxis[5]);
-                        //myPane6.YAxis.Scale.Min = -((double.Parse(u.Yaxis[5]) * 5) / 100);
-                        //myPane6.XAxis.Scale.Max = double.Parse(u.Xaxis[5]);
 
-                        if (double.Parse(u.Danger1[5]) <= double.Parse(d.dataport_sensor[12]))
-                        {
-                            u.Danger1[5] = null;
-                            MessageBox.Show("Koolstofdioxide  - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor6.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[5]) <= double.Parse(d.dataport_sensor[12]))
-                        {
-                            u.Danger2[5] = null;
-                            MessageBox.Show("Koolstofdioxide   - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor6.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[5]) <= double.Parse(d.dataport_sensor[12]))
-                        {
-                            u.Danger3[5] = null;
-                            MessageBox.Show("Koolstofdioxide   - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor6.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane7 = zedGraphControl7.GraphPane;
-            if (u.Yaxis[6] != null)
-            {
-                if (u.Xaxis[6] != null)
-                {
-                    try
-                    {
-                        //myPane7.YAxis.Scale.Max = double.Parse(u.Yaxis[6]);
-                        //myPane7.YAxis.Scale.Min = -((double.Parse(u.Yaxis[6]) * 5) / 100);
-                        // myPane7.XAxis.Scale.Max = double.Parse(u.Xaxis[6]);
 
-                        if (double.Parse(u.Danger1[6]) <= double.Parse(d.dataport_sensor[2]))
-                        {
-                            u.Danger1[6] = null;
-                            MessageBox.Show("Zoutzuur - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor7.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[6]) <= double.Parse(d.dataport_sensor[2]))
-                        {
-                            u.Danger2[6] = null;
-                            MessageBox.Show("Zoutzuur  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor7.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[6]) <= double.Parse(d.dataport_sensor[2]))
-                        {
-                            u.Danger3[6] = null;
-                            MessageBox.Show("Zoutzuur - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor7.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane8 = zedGraphControl8.GraphPane;
-            if (u.Yaxis[7] != null)
-            {
-                if (u.Xaxis[7] != null)
-                {
-                    try
-                    {
-                        //myPane8.YAxis.Scale.Max = double.Parse(u.Yaxis[7]);
-                        //myPane8.YAxis.Scale.Min = -((double.Parse(u.Yaxis[7]) * 5) / 100);
-                        //myPane8.XAxis.Scale.Max = double.Parse(u.Xaxis[7]);
 
-                        if (double.Parse(u.Danger1[7]) <= double.Parse(d.dataport_sensor[8]))
-                        {
-                            u.Danger1[7] = null;
-                            MessageBox.Show("LEL Vluchtige organisch stoffen  - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor8.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[7]) <= double.Parse(d.dataport_sensor[8]))
-                        {
-                            u.Danger2[7] = null;
-                            MessageBox.Show("LEL Vluchtige organisch stoffen   - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor8.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[7]) <= double.Parse(d.dataport_sensor[8]))
-                        {
-                            u.Danger3[7] = null;
-                            MessageBox.Show("LEL Vluchtige organisch stoffen  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor8.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane9 = zedGraphControl9.GraphPane;
-            if (u.Yaxis[8] != null)
-            {
-                if (u.Xaxis[8] != null)
-                {
-                    try
-                    {
-                        //myPane9.YAxis.Scale.Max = double.Parse(u.Yaxis[8]);
-                        //myPane9.YAxis.Scale.Min = -((double.Parse(u.Yaxis[8]) * 5) / 100);
-                        //myPane9.XAxis.Scale.Max = double.Parse(u.Xaxis[8]);
-                        if (double.Parse(u.Danger1[8]) <= double.Parse(d.dataport_sensor[6]))
-                        {
-                            u.Danger1[8] = null;
-                            MessageBox.Show("CO-AF-1 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor9.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[8]) <= double.Parse(d.dataport_sensor[6]))
-                        {
-                            u.Danger2[8] = null;
-                            MessageBox.Show("CO-AF-1 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor9.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[8]) <= double.Parse(d.dataport_sensor[6]))
-                        {
-                            u.Danger3[8] = null;
-                            MessageBox.Show("CO-AF-1 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor9.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane10 = zedGraphControl10.GraphPane;
-            if (u.Yaxis[9] != null)
-            {
-                if (u.Xaxis[9] != null)
-                {
-                    try
-                    {
-                        //myPane10.YAxis.Scale.Max = double.Parse(u.Yaxis[9]);
-                        //myPane10.YAxis.Scale.Min = -((double.Parse(u.Yaxis[9]) * 5) / 100);
-                        //myPane10.XAxis.Scale.Max = double.Parse(u.Xaxis[9]);
-                        if (double.Parse(u.Danger1[9]) <= double.Parse(d.dataport_sensor[4]))
-                        {
-                            u.Danger1[9] = null;
-                            MessageBox.Show("Stikstofdioxide- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor10.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[9]) <= double.Parse(d.dataport_sensor[4]))
-                        {
-                            u.Danger2[9] = null;
-                            MessageBox.Show("Stikstofdioxide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor10.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[91]) <= double.Parse(d.dataport_sensor[4]))
-                        {
-                            u.Danger3[9] = null;
-                            MessageBox.Show("Stikstofdioxide - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor10.ForeColor = Color.Red;
-                        } 
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane11 = zedGraphControl11.GraphPane;
-            if (u.Yaxis[10] != null)
-            {
-                if (u.Xaxis[10] != null)
-                {
-                    try
-                    {
-                        // myPane11.YAxis.Scale.Max = double.Parse(u.Yaxis[10]);
-                        //myPane11.YAxis.Scale.Min = -((double.Parse(u.Yaxis[10]) * 5) / 100);
-                        //myPane11.XAxis.Scale.Max = double.Parse(u.Xaxis[10]);    
-                        myPane11.XAxis.Scale.Min = 0;
-                        if (double.Parse(u.Danger1[10]) <= double.Parse(d.dataport_sensor[9]))
-                        {
-                            u.Danger1[10] = null;
-                            MessageBox.Show("Stikstofmonoxide- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor11.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[10]) <= double.Parse(d.dataport_sensor[9]))
-                        {
-                            u.Danger2[10] = null;
-                            MessageBox.Show("Stikstofmonoxide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor11.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[10]) <= double.Parse(d.dataport_sensor[9]))
-                        {
-                            u.Danger3[10] = null;
-                            MessageBox.Show("Stikstofmonoxide- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor11.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            GraphPane myPane12 = zedGraphControl12.GraphPane;
-            if (u.Yaxis[11] != null)
-            {
-                if (u.Xaxis[11] != null)
-                {
-                    try
-                    {
-                        //myPane12.YAxis.Scale.Max = double.Parse(u.Yaxis[11]);
-                        //myPane12.XAxis.Scale.Max = double.Parse(u.Xaxis[11]);
-                        //myPane12.YAxis.Scale.Min = -((double.Parse(u.Yaxis[11]) * 5) / 100);
-                        //myPane12.XAxis.Scale.Min = 0;
-                        if (double.Parse(u.Danger1[11]) <= double.Parse(d.dataport_sensor[14]))
-                        {
-                            u.Danger1[11] = null;
-                            MessageBox.Show("Ammoniak- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor12.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger2[11]) <= double.Parse(d.dataport_sensor[14]))
-                        {
-                            u.Danger2[11] = null;
-                            MessageBox.Show("Ammoniak - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor12.ForeColor = Color.Red;
-                        }
-                        if (double.Parse(u.Danger3[11]) <= double.Parse(d.dataport_sensor[14]))
-                        {
-                            u.Danger3[11] = null;
-                            MessageBox.Show("Ammoniak- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            lblsensor12.ForeColor = Color.Red;
-                        }
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
+
+
+
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)
@@ -1334,6 +918,532 @@ namespace FFD_GUI
         private void Lblsensor15_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Timer3_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane1 = zedGraphControl1.GraphPane;
+            if (u.Yaxis[0] != null)
+            {
+                if (u.Xaxis[0] != null)
+                {
+                    try
+                    {
+                        myPane1.YAxis.Scale.Max = double.Parse(u.Yaxis[0]);
+                        myPane1.YAxis.Scale.Min = -((double.Parse(u.Yaxis[0]) * 5) / 100);
+                        myPane1.XAxis.Scale.Max = double.Parse(u.Xaxis[0]);
+                        zedGraphControl1.AxisChange();
+                        if (double.Parse(u.Danger1[0]) <= double.Parse(d.dataport_sensor[0]))
+                        {
+                            u.Danger1[0] = null;
+                            MessageBox.Show("Zwavelwaterstof - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor1.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[0]) <= double.Parse(d.dataport_sensor[0]))
+                        {
+                            u.Danger2[0] = null;
+                            MessageBox.Show("Zwavelwaterstof - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor1.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[0]) <= double.Parse(d.dataport_sensor[0]))
+                        {
+                            u.Danger3[0] = null;
+                            MessageBox.Show("Zwavelwaterstof - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor1.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer4_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane2 = zedGraphControl2.GraphPane;
+            if (u.Yaxis[1] != null)
+            {
+                if (u.Xaxis[1] != null)
+                {
+                    try
+                    {
+                        myPane2.YAxis.Scale.Max = double.Parse(u.Yaxis[1]);
+                        myPane2.YAxis.Scale.Min = -((double.Parse(u.Yaxis[1]) * 5) / 100);
+                        myPane2.XAxis.Scale.Max = double.Parse(u.Xaxis[1]);
+                        zedGraphControl2.AxisChange();
+
+                        if (double.Parse(u.Danger1[1]) <= double.Parse(d.dataport_sensor[15]))
+                        {
+                            u.Danger1[1] = null;
+                            MessageBox.Show("Zwaveldioxide - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor2.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[1]) <= double.Parse(d.dataport_sensor[15]))
+                        {
+                            u.Danger2[1] = null;
+                            MessageBox.Show("Zwaveldioxide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor2.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[1]) <= double.Parse(d.dataport_sensor[15]))
+                        {
+                            u.Danger3[1] = null;
+                            MessageBox.Show("Zwaveldioxide - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor2.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer5_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane3 = zedGraphControl3.GraphPane;
+            if (u.Yaxis[2] != null)
+            {
+                if (u.Xaxis[2] != null)
+                {
+                    try
+                    {
+                        myPane3.YAxis.Scale.Max = double.Parse(u.Yaxis[2]);
+                        myPane3.YAxis.Scale.Min = -((double.Parse(u.Yaxis[2]) * 5) / 100);
+                        myPane3.XAxis.Scale.Max = double.Parse(u.Xaxis[2]);
+                        zedGraphControl3.AxisChange();
+
+                        if (double.Parse(u.Danger1[2]) <= double.Parse(d.dataport_sensor[11]))
+                        {
+                            u.Danger1[2] = null;
+                            MessageBox.Show("Chloorgas - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor3.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[2]) <= double.Parse(d.dataport_sensor[11]))
+                        {
+                            u.Danger2[2] = null;
+                            MessageBox.Show("Chloorgas  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor3.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[2]) <= double.Parse(d.dataport_sensor[11]))
+                        {
+                            u.Danger3[2] = null;
+                            MessageBox.Show("Chloorgas  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor3.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer6_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane4 = zedGraphControl4.GraphPane;
+            if (u.Yaxis[3] != null)
+            {
+                if (u.Xaxis[3] != null)
+                {
+                    try
+                    {
+                        myPane4.YAxis.Scale.Max = double.Parse(u.Yaxis[3]);
+                        myPane4.YAxis.Scale.Min = -((double.Parse(u.Yaxis[3]) * 5) / 100);
+                        myPane4.XAxis.Scale.Max = double.Parse(u.Xaxis[3]);
+                        zedGraphControl4.AxisChange();
+
+                        if (double.Parse(u.Danger1[3]) <= double.Parse(d.dataport_sensor[1]))
+                        {
+                            u.Danger1[3] = null;
+                            MessageBox.Show("Waterstofcyanide - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor4.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[3]) <= double.Parse(d.dataport_sensor[1]))
+                        {
+                            u.Danger2[3] = null;
+                            MessageBox.Show("Waterstofcyanide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor4.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[3]) <= double.Parse(d.dataport_sensor[1]))
+                        {
+                            u.Danger3[3] = null;
+                            MessageBox.Show("Waterstofcyanide  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor4.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer7_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane5 = zedGraphControl5.GraphPane;
+            if (u.Yaxis[4] != null)
+            {
+                if (u.Xaxis[4] != null)
+                {
+                    try
+                    {
+                        myPane5.YAxis.Scale.Max = double.Parse(u.Yaxis[4]);
+                        myPane5.YAxis.Scale.Min = -((double.Parse(u.Yaxis[4]) * 5) / 100);
+                        myPane5.XAxis.Scale.Max = double.Parse(u.Xaxis[4]);
+                        zedGraphControl5.AxisChange();
+
+                        if (double.Parse(u.Danger1[4]) <= double.Parse(d.dataport_sensor[7]))
+                        {
+                            u.Danger1[4] = null;
+                            MessageBox.Show("PID - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor5.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[4]) <= double.Parse(d.dataport_sensor[7]))
+                        {
+                            u.Danger2[4] = null;
+                            MessageBox.Show("PID  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor5.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[4]) <= double.Parse(d.dataport_sensor[7]))
+                        {
+                            u.Danger3[4] = null;
+                            MessageBox.Show("PID - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor5.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer8_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane6 = zedGraphControl6.GraphPane;
+            if (u.Yaxis[5] != null)
+            {
+                if (u.Xaxis[5] != null)
+                {
+                    try
+                    {
+                        myPane6.YAxis.Scale.Max = double.Parse(u.Yaxis[5]);
+                        myPane6.YAxis.Scale.Min = -((double.Parse(u.Yaxis[5]) * 5) / 100);
+                        myPane6.XAxis.Scale.Max = double.Parse(u.Xaxis[5]);
+                        zedGraphControl6.AxisChange();
+
+                        if (double.Parse(u.Danger1[5]) <= double.Parse(d.dataport_sensor[12]))
+                        {
+                            u.Danger1[5] = null;
+                            MessageBox.Show("Koolstofdioxide  - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor6.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[5]) <= double.Parse(d.dataport_sensor[12]))
+                        {
+                            u.Danger2[5] = null;
+                            MessageBox.Show("Koolstofdioxide   - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor6.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[5]) <= double.Parse(d.dataport_sensor[12]))
+                        {
+                            u.Danger3[5] = null;
+                            MessageBox.Show("Koolstofdioxide   - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor6.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer9_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane7 = zedGraphControl7.GraphPane;
+            if (u.Yaxis[6] != null)
+            {
+                if (u.Xaxis[6] != null)
+                {
+                    try
+                    {
+                        myPane7.YAxis.Scale.Max = double.Parse(u.Yaxis[6]);
+                        myPane7.YAxis.Scale.Min = -((double.Parse(u.Yaxis[6]) * 5) / 100);
+                        myPane7.XAxis.Scale.Max = double.Parse(u.Xaxis[6]);
+                        zedGraphControl7.AxisChange();
+
+                        if (double.Parse(u.Danger1[6]) <= double.Parse(d.dataport_sensor[2]))
+                        {
+                            u.Danger1[6] = null;
+                            MessageBox.Show("Zoutzuur - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor7.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[6]) <= double.Parse(d.dataport_sensor[2]))
+                        {
+                            u.Danger2[6] = null;
+                            MessageBox.Show("Zoutzuur  - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor7.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[6]) <= double.Parse(d.dataport_sensor[2]))
+                        {
+                            u.Danger3[6] = null;
+                            MessageBox.Show("Zoutzuur - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor7.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer10_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane8 = zedGraphControl8.GraphPane;
+            if (u.Yaxis[7] != null)
+            {
+                if (u.Xaxis[7] != null)
+                {
+                    try
+                    {
+                        myPane8.YAxis.Scale.Max = double.Parse(u.Yaxis[7]);
+                        myPane8.YAxis.Scale.Min = -((double.Parse(u.Yaxis[7]) * 5) / 100);
+                        myPane8.XAxis.Scale.Max = double.Parse(u.Xaxis[7]);
+                        zedGraphControl8.AxisChange();
+                        if (double.Parse(u.Danger1[7]) <= double.Parse(d.dataport_sensor[8]))
+                        {
+                            u.Danger1[7] = null;
+                            MessageBox.Show("LEL Vluchtige organisch stoffen  - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor8.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[7]) <= double.Parse(d.dataport_sensor[8]))
+                        {
+                            u.Danger2[7] = null;
+                            MessageBox.Show("LEL Vluchtige organisch stoffen   - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor8.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[7]) <= double.Parse(d.dataport_sensor[8]))
+                        {
+                            u.Danger3[7] = null;
+                            MessageBox.Show("LEL Vluchtige organisch stoffen  - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor8.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer11_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane9 = zedGraphControl9.GraphPane;
+            if (u.Yaxis[8] != null)
+            {
+                if (u.Xaxis[8] != null)
+                {
+                    try
+                    {
+                        myPane9.YAxis.Scale.Max = double.Parse(u.Yaxis[8]);
+                        myPane9.YAxis.Scale.Min = -((double.Parse(u.Yaxis[8]) * 5) / 100);
+                        myPane9.XAxis.Scale.Max = double.Parse(u.Xaxis[8]);
+                        zedGraphControl9.AxisChange();
+
+                        if (double.Parse(u.Danger1[8]) <= double.Parse(d.dataport_sensor[6]))
+                        {
+                            u.Danger1[8] = null;
+                            MessageBox.Show("CO-AF-1 - Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor9.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[8]) <= double.Parse(d.dataport_sensor[6]))
+                        {
+                            u.Danger2[8] = null;
+                            MessageBox.Show("CO-AF-1 - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor9.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[8]) <= double.Parse(d.dataport_sensor[6]))
+                        {
+                            u.Danger3[8] = null;
+                            MessageBox.Show("CO-AF-1 - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor9.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer12_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane10 = zedGraphControl10.GraphPane;
+            if (u.Yaxis[9] != null)
+            {
+                if (u.Xaxis[9] != null)
+                {
+                    try
+                    {
+                        myPane10.YAxis.Scale.Max = double.Parse(u.Yaxis[9]);
+                        myPane10.YAxis.Scale.Min = -((double.Parse(u.Yaxis[9]) * 5) / 100);
+                        myPane10.XAxis.Scale.Max = double.Parse(u.Xaxis[9]);
+                        zedGraphControl10.AxisChange();
+
+                        if (double.Parse(u.Danger1[9]) <= double.Parse(d.dataport_sensor[4]))
+                        {
+                            u.Danger1[9] = null;
+                            MessageBox.Show("Stikstofdioxide- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor10.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[9]) <= double.Parse(d.dataport_sensor[4]))
+                        {
+                            u.Danger2[9] = null;
+                            MessageBox.Show("Stikstofdioxide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor10.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[91]) <= double.Parse(d.dataport_sensor[4]))
+                        {
+                            u.Danger3[9] = null;
+                            MessageBox.Show("Stikstofdioxide - Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor10.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer13_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane11 = zedGraphControl11.GraphPane;
+            if (u.Yaxis[10] != null)
+            {
+                if (u.Xaxis[10] != null)
+                {
+                    try
+                    {
+                        myPane11.YAxis.Scale.Max = double.Parse(u.Yaxis[10]);
+                        myPane11.YAxis.Scale.Min = -((double.Parse(u.Yaxis[10]) * 5) / 100);
+                        myPane11.XAxis.Scale.Max = double.Parse(u.Xaxis[10]);
+                        myPane11.XAxis.Scale.Min = 0;
+                        zedGraphControl11.AxisChange();
+                        if (double.Parse(u.Danger1[10]) <= double.Parse(d.dataport_sensor[9]))
+                        {
+                            u.Danger1[10] = null;
+                            MessageBox.Show("Stikstofmonoxide- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor11.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[10]) <= double.Parse(d.dataport_sensor[9]))
+                        {
+                            u.Danger2[10] = null;
+                            MessageBox.Show("Stikstofmonoxide - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor11.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[10]) <= double.Parse(d.dataport_sensor[9]))
+                        {
+                            u.Danger3[10] = null;
+                            MessageBox.Show("Stikstofmonoxide- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor11.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void Timer14_Tick(object sender, EventArgs e)
+        {
+            GraphPane myPane12 = zedGraphControl12.GraphPane;
+            if (u.Yaxis[11] != null)
+            {
+                if (u.Xaxis[11] != null)
+                {
+                    try
+                    {
+                        myPane12.YAxis.Scale.Max = double.Parse(u.Yaxis[11]);
+                        myPane12.XAxis.Scale.Max = double.Parse(u.Xaxis[11]);
+                        myPane12.YAxis.Scale.Min = -((double.Parse(u.Yaxis[11]) * 5) / 100);
+                        myPane12.XAxis.Scale.Min = 0;
+                        zedGraphControl12.AxisChange();
+                        if (double.Parse(u.Danger1[11]) <= double.Parse(d.dataport_sensor[14]))
+                        {
+                            u.Danger1[11] = null;
+                            MessageBox.Show("Ammoniak- Danger level 1 is reached.  Please enter new danger level 1 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor12.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger2[11]) <= double.Parse(d.dataport_sensor[14]))
+                        {
+                            u.Danger2[11] = null;
+                            MessageBox.Show("Ammoniak - Danger level 2 is reached.  Please enter new danger level 2 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor12.ForeColor = Color.Red;
+                        }
+                        if (double.Parse(u.Danger3[11]) <= double.Parse(d.dataport_sensor[14]))
+                        {
+                            u.Danger3[11] = null;
+                            MessageBox.Show("Ammoniak- Danger level 3 is reached.  Please enter new danger level 3 value!", "Danger Level Is Reached",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            lblsensor12.ForeColor = Color.Red;
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
         }
     }
 }
